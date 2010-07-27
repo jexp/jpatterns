@@ -16,17 +16,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" readonly="true" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/Type.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/Type.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/command/_Command.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/command/_Command.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpatterns.iml" afterPath="$PROJECT_DIR$/jpatterns.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/Source.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/Source.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/jpatterns/command/CommandTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/jpatterns/command/CommandTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/jpatterns/gof/facade/FacadeTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/command/_CommandProcessor.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/command/_CommandProcessor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/DesignPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/DesignPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpatterns.iws" afterPath="$PROJECT_DIR$/jpatterns.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/command/_CommandDispatcher.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/command/_CommandDispatcher.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpatterns.ipr" afterPath="$PROJECT_DIR$/jpatterns.ipr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/jpatterns/gof/proxy/ProxyTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/jpatterns/gof/adapter/AdapterTest.java" />
     </list>
     <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path="$USER_HOME_GRIFFON$/" />
