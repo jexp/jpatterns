@@ -1,18 +1,17 @@
 package org.jpatterns;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
 /**
  * @author Michael Hunger
  * @since 14.07.2010
  */
-@Retention(value = RetentionPolicy.CLASS)
+@Retention(value = RetentionPolicy.RUNTIME)
 @Target(value = ElementType.ANNOTATION_TYPE)
+@Documented
+@Inherited
 public @interface DesignPattern {
-    Source source();
-    Type type();
+  Source source() default Source.GoF;
 
+  Type type();
 }

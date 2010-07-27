@@ -5,5 +5,5 @@ package org.jpatterns;
  * @since 14.07.2010
  */
 public enum Type {
-    Behavioural, Structural, Messaging, Creational, UserInterface
+  CREATIONAL, STRUCTURAL, BEHAVIORAL, USER_INTERFACE, MESSAGING
 }

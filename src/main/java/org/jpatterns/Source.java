@@ -5,5 +5,5 @@ package org.jpatterns;
  * @since 14.07.2010
  */
 public enum Source {
-    GOF, POSA, PoEAA, Hophe
+  GoF, POSA, PoEAA, Hophe
 }
