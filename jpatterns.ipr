@@ -24,6 +24,7 @@
             <option name="LABEL_INDENT_ABSOLUTE" value="false" />
           </value>
         </option>
+        <option name="BLANK_LINES_AROUND_METHOD" value="0" />
         <option name="CLASS_COUNT_TO_USE_IMPORT_ON_DEMAND" value="2" />
         <option name="RIGHT_MARGIN" value="65" />
         <ADDITIONAL_INDENT_OPTIONS fileType="js">
