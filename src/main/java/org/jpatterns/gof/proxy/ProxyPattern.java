@@ -1,7 +1,6 @@
 package org.jpatterns.gof.proxy;
 
 import org.jpatterns.*;
-import org.jpatterns.gof.adapter.*;
 
 import java.lang.annotation.*;
 
@@ -11,11 +10,13 @@ import java.lang.annotation.*;
 @Documented
 @DesignPattern(type = Type.STRUCTURAL)
 public @interface ProxyPattern {
-  public abstract ProxyVariation variation() default ProxyVariation.STATIC_MANUAL;
+  ProxyVariation variation() default ProxyVariation.STATIC_MANUAL;
 
-  public abstract ProxyRole role() default ProxyRole.SUBJECT;
+  // need different types: virtual, remote, protection, etc.
 
-  public abstract Class[] participants() default {};
+  ProxyRole role() default ProxyRole.SUBJECT;
 
-  public abstract String comment() default "";
+  Class[] participants() default {};
+
+  String comment() default "";
 }

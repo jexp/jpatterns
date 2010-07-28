@@ -15,5 +15,5 @@ public @interface AdapterPattern {
 
   Class[] participants() default {};
 
-  String comment() default "";  
+  String comment() default "";
 }
