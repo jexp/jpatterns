@@ -1,6 +1,9 @@
 package org.jpatterns.gof.adapter;
 
+import org.junit.Test;
+
 import static org.jpatterns.gof.adapter.AdapterVariation.CLASS;
+import static org.junit.Assert.assertEquals;
 
 public class AdapterTest {
   private static interface Singer {
@@ -43,5 +46,16 @@ public class AdapterTest {
     public String sing() {
       return talk();
     }
+  }
+
+  @Test 
+  public void testRapperClassRapsInsteadOfSinging() {
+      Singer rapperClassAdapter=new RapperClassAdapter();
+      assertEquals("rapper talks",new Rapper().talk(),rapperClassAdapter.sing());
+  }
+  @Test
+  public void testRapperObjectAdapterRapsInsteadOfSinging() {
+      Singer rapperObjectAdapter=new RapperObjectAdapter(new Rapper());
+      assertEquals("rapper talks",new Rapper().talk(),rapperObjectAdapter.sing());
   }
 }

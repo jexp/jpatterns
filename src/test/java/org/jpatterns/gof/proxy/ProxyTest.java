@@ -1,34 +1,89 @@
 package org.jpatterns.gof.proxy;
 
+import org.junit.Test;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
+
 public class ProxyTest {
-  private static class Norwegian {
+
     @ProxyPattern(role = ProxyRole.CLIENT)
-    private final Lutefisk lutefisk = new LutefiskProxy();
-  }
+    private static class Norwegian {
+        private Lutefisk lutefisk;
 
-  @ProxyPattern(role = ProxyRole.SUBJECT)
-  private static interface Lutefisk {
-    public void eat();
-  }
+        private boolean sick;
 
-  @ProxyPattern(role = ProxyRole.PROXY,
-      participants = {Lutefisk.class, LutefiskImpl.class})
-  public static class LutefiskProxy implements Lutefisk {
-    private Lutefisk realSubject;
+        public boolean isSick() {
+            return sick;
+        }
 
-    public void eat() {
-      if (realSubject == null) {
-        realSubject = new LutefiskImpl();
-      }
-      realSubject.eat();
+        public void becomeSick() {
+            this.sick = true;
+        }
+
+        public void buy(Lutefisk lutefisk) {
+            this.lutefisk = lutefisk;
+            lutefisk.boughtBy(this);
+        }
+
+        public void eatFisk() {
+            if (lutefisk == null) throw new IllegalStateException("Have not Lutefisk");
+            lutefisk.eatenBy(this);
+        }
     }
-  }
 
-  @ProxyPattern(role = ProxyRole.REAL_SUBJECT)
-  private static class LutefiskImpl implements Lutefisk {
-    public void eat() {
-      System.out.println("don't");
+    @ProxyPattern(role = ProxyRole.SUBJECT)
+    private interface Lutefisk {
+        void boughtBy(Norwegian eater);
+
+        void eatenBy(Norwegian eater);
     }
-  }
 
+    @ProxyPattern(role = ProxyRole.PROXY,
+            participants = {Lutefisk.class, LutefiskImpl.class})
+    public static class LutefiskProxy implements Lutefisk {
+        private Lutefisk realSubject;
+
+        public void eatenBy(Norwegian eater) {
+            if (realSubject == null) {
+                realSubject = new LutefiskImpl();
+            }
+            realSubject.eatenBy(eater);
+        }
+
+        public void boughtBy(Norwegian eater) {
+            // nothing happens
+        }
+    }
+
+    @ProxyPattern(role = ProxyRole.REAL_SUBJECT)
+    private static class LutefiskImpl implements Lutefisk {
+        public void eatenBy(Norwegian eater) {
+            eater.becomeSick();
+        }
+
+        public void boughtBy(Norwegian eater) {
+            eater.becomeSick();
+        }
+    }
+
+    @Test
+    public void norwegianGetSickWhenBuyingRealLutefisk() {
+        final Norwegian norwegian = new Norwegian();
+        final Lutefisk lutefisk = new LutefiskImpl();
+        norwegian.buy(lutefisk);
+        assertTrue("sick from buying", norwegian.isSick());
+        norwegian.eatFisk();
+        assertTrue("sick from eating", norwegian.isSick());
+    }
+
+    @Test
+    public void norwegianGetSickWhenEatingLutefisk() {
+        final Norwegian norwegian = new Norwegian();
+        final Lutefisk lutefisk = new LutefiskProxy();
+        norwegian.buy(lutefisk);
+        assertFalse("not sick from buying", norwegian.isSick());
+        norwegian.eatFisk();
+        assertTrue("sick from eating", norwegian.isSick());
+    }
 }
