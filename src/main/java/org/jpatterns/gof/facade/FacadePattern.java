@@ -9,5 +9,7 @@ import java.lang.annotation.*;
 @Documented
 @DesignPattern(type = Type.STRUCTURAL)
 public @interface FacadePattern {
+
+  Class[] participants() default {};
   String comment() default "";
 }

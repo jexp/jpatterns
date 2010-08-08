@@ -9,10 +9,10 @@ import java.lang.annotation.*;
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL)
 public @interface TemplateMethodPattern {
-  public abstract TemplateMethodRole role() default
+  TemplateMethodRole role() default
       TemplateMethodRole.ABSTRACT_CLASS;
 
-  public abstract Class[] participants() default {};
+  Class[] participants() default {};
 
-  public abstract String comment() default "";
+  String comment() default "";
 }

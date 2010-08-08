@@ -9,9 +9,9 @@ import java.lang.annotation.*;
 @Documented
 @DesignPattern(type = Type.STRUCTURAL)
 public @interface CompositePattern {
-  public abstract CompositeRole role() default CompositeRole.COMPONENT;
+  CompositeRole role() default CompositeRole.COMPONENT;
 
-  public abstract Class[] participants() default {};
+  Class[] participants() default {};
 
-  public abstract String comment() default "";
+  String comment() default "";
 }
