@@ -14,4 +14,10 @@ public @interface DesignPattern {
   Source source() default Source.GoF;
 
   Type type();
+
+  String[] urls() default {};
+
+  Refactoring[] refactorings() default {};
+
+  Class[] related() default {};
 }
