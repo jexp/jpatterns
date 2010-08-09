@@ -16,22 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="Removed comments() and participants">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/memento/MementoPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/memento/MementoPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/bridge/BridgePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/bridge/BridgePattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/chainofresponsibility/ChainOfResponsibilityPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/chainofresponsibility/ChainOfResponsibilityPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/decorator/DecoratorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/decorator/DecoratorPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/abstractfactory/AbstractFactoryPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/abstractfactory/AbstractFactoryPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/mediator/MediatorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/mediator/MediatorPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/flyweight/FlyweightPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/flyweight/FlyweightPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/prototype/PrototypePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/prototype/PrototypePattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/iterator/IteratorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/iterator/IteratorPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/factorymethod/FactoryMethodPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/factorymethod/FactoryMethodPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/visitor/VisitorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/visitor/VisitorPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/state/StatePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/state/StatePattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpatterns.iws" afterPath="$PROJECT_DIR$/jpatterns.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/builder/BuilderPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/builder/BuilderPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/interpreter/InterpreterPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/interpreter/InterpreterPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/observer/ObserverPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/observer/ObserverPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpatterns-1.0.jar" afterPath="$PROJECT_DIR$/jpatterns-1.0.jar" />
     </list>
     <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path="$USER_HOME_GRIFFON$/" />
