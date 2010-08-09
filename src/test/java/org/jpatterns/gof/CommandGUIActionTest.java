@@ -11,7 +11,7 @@ import java.awt.event.ActionEvent;
  * @author Heinz Kabutz
  * @since 2010-08-09
  */
-public class GUIActionTest {
+public class CommandGUIActionTest {
   @CommandPattern.Invoker
   private static class MyButton extends JButton {
     public MyButton(javax.swing.Action a) {

@@ -15,4 +15,17 @@ public class SingletonTest {
 
     assertSame(singleton, singleton2);
   }
+
+  @SingletonPattern(variation = SingletonPattern.Variation.EAGER)
+  public static class Singleton {
+    private static Singleton INSTANCE = new Singleton();
+
+    private Singleton() {
+    }
+
+    @SingletonPattern.SingletonMethod
+    public static final Singleton getInstance() {
+      return INSTANCE;
+    }
+  }
 }
