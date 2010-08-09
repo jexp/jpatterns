@@ -14,8 +14,4 @@ import java.lang.annotation.*;
 @DesignPattern(type = Type.BEHAVIORAL)
 public @interface StrategyPattern {
   StrategyRole role() default StrategyRole.STRATEGY;
-
-  Class[] participants() default {};
-
-  String comment() default "";
 }

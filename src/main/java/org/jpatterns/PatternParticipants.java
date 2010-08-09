@@ -14,10 +14,9 @@ import java.lang.annotation.*;
     ElementType.LOCAL_VARIABLE,
     ElementType.METHOD,
     ElementType.PARAMETER
-    })
+})
 @Documented
 @Inherited
-public @interface PatternDetails {
-  Class[] participants() default {};
-  String comment() default "";
+public @interface PatternParticipants {
+  Class[] value();
 }

@@ -1,13 +1,16 @@
 package org.jpatterns.gof.command;
 
-import static org.junit.Assert.assertEquals;
+import org.jpatterns.*;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 /**
  * @author Michael Hunger
  * @since 2010-07-14
  */
-@CommandPattern.Invoker(command = CommandTest.Command.class)
+@CommandPattern.Invoker
+@PatternParticipants(CommandTest.Command.class)
 public class CommandTest {
   @Test
   public void executeCommand() {
@@ -16,12 +19,14 @@ public class CommandTest {
     assertEquals(true, command.ran);
   }
 
-  @CommandPattern.Command(receiver = CommandReceiver.class, comment = "BaseCommand")
+  @CommandPattern.Command
+  @PatternParticipants(CommandReceiver.class)
   interface Command {
     void execute();
   }
 
-  @CommandPattern.ConcreteCommand(comment = "This is our TestCommand")
+  @CommandPattern.ConcreteCommand
+  @PatternComment("This is our TestCommand")
   class TestCommand implements Command {
     private boolean ran;
 
@@ -30,7 +35,8 @@ public class CommandTest {
     }
   }
 
-  @CommandPattern.Receiver(command = Command.class)
+  @CommandPattern.Receiver
+  @PatternParticipants(Command.class)
   private class CommandReceiver {
 
     public void receive(Command command) {

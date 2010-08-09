@@ -1,9 +1,10 @@
 package org.jpatterns.gof.proxy;
 
-import org.jpatterns.PatternDetails;
+import org.jpatterns.PatternParticipants;
+import org.junit.Test;
+
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
-import org.junit.Test;
 
 /**
  * @author Heinz Kabutz
@@ -13,11 +14,13 @@ public class ProxyTest {
 
   private static class Norwegian {
     @ProxyPattern.Client
-    @PatternDetails(participants = {LutefiskProxy.class,
-        Lutefisk.class, LutefiskImpl.class})
-    private Lutefisk lutefisk;
-
+    private final Lutefisk lutefisk;
     private boolean sick;
+
+    private Norwegian(Lutefisk lutefisk) {
+      this.lutefisk = lutefisk;
+      lutefisk.storedBy(this);
+    }
 
     public boolean isSick() {
       return sick;
@@ -27,28 +30,20 @@ public class ProxyTest {
       this.sick = true;
     }
 
-    public void buy(Lutefisk lutefisk) {
-      this.lutefisk = lutefisk;
-      lutefisk.boughtBy(this);
-    }
-
     public void eatFisk() {
-      if (lutefisk == null)
-        throw new IllegalStateException("Have not Lutefisk");
       lutefisk.eatenBy(this);
     }
   }
 
   @ProxyPattern.Subject
+  @PatternParticipants({LutefiskProxy.class, LutefiskImpl.class})
   private interface Lutefisk {
-    void boughtBy(Norwegian eater);
-
     void eatenBy(Norwegian eater);
+
+    void storedBy(Norwegian owner);
   }
 
   @ProxyPattern.Proxy
-  @PatternDetails(participants = {Lutefisk.class,
-      LutefiskImpl.class})
   public static class LutefiskProxy implements Lutefisk {
     private Lutefisk realSubject;
 
@@ -59,7 +54,7 @@ public class ProxyTest {
       realSubject.eatenBy(eater);
     }
 
-    public void boughtBy(Norwegian eater) {
+    public void storedBy(Norwegian owner) {
       // nothing happens
     }
   }
@@ -69,28 +64,24 @@ public class ProxyTest {
     public void eatenBy(Norwegian eater) {
       eater.becomeSick();
     }
-
-    public void boughtBy(Norwegian eater) {
-      eater.becomeSick();
+    public void storedBy(Norwegian owner) {
+      owner.becomeSick();
     }
   }
 
   @Test
   public void norwegianGetSickWhenBuyingRealLutefisk() {
-    final Norwegian norwegian = new Norwegian();
-    final Lutefisk lutefisk = new LutefiskImpl();
-    norwegian.buy(lutefisk);
-    assertTrue("sick from buying", norwegian.isSick());
+    Norwegian norwegian = new Norwegian(new LutefiskImpl());
+    Lutefisk lutefisk = new LutefiskImpl();
+    assertTrue("sick from storing", norwegian.isSick());
     norwegian.eatFisk();
     assertTrue("sick from eating", norwegian.isSick());
   }
 
   @Test
   public void norwegianGetSickWhenEatingLutefisk() {
-    final Norwegian norwegian = new Norwegian();
-    final Lutefisk lutefisk = new LutefiskProxy();
-    norwegian.buy(lutefisk);
-    assertFalse("not sick from buying", norwegian.isSick());
+    Norwegian norwegian = new Norwegian(new LutefiskProxy());
+    assertFalse("not sick from storing", norwegian.isSick());
     norwegian.eatFisk();
     assertTrue("sick from eating", norwegian.isSick());
   }

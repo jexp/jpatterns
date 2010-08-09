@@ -15,7 +15,6 @@ import java.lang.annotation.*;
 @DesignPattern(type = Type.STRUCTURAL)
 public @interface ProxyPattern {
   Variation variation() default Variation.STATIC_MANUAL;
-  ProxyRole role() default ProxyRole.SUBJECT;
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
