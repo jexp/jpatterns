@@ -13,5 +13,21 @@ import java.lang.annotation.*;
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL)
 public @interface StrategyPattern {
-  StrategyRole role() default StrategyRole.STRATEGY;
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Context {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Strategy {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface ConcreteStrategy {
+  }
 }
