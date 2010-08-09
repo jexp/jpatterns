@@ -1,5 +1,7 @@
 package org.jpatterns.gof.command;
 
+import org.jpatterns.PatternDetails;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -16,7 +18,8 @@ public class GUIActionTest {
     }
   }
 
-  @CommandPattern.ConcreteCommand(participants = MyReceiver.class)
+  @CommandPattern.ConcreteCommand
+  @PatternDetails(participants = MyReceiver.class)
   private static class FooAction extends AbstractAction {
     private final MyReceiver receiver;
     private FooAction(MyReceiver receiver) {

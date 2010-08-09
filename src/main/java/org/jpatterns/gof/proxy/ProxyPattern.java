@@ -14,13 +14,39 @@ import java.lang.annotation.*;
 @Documented
 @DesignPattern(type = Type.STRUCTURAL)
 public @interface ProxyPattern {
-  ProxyVariation variation() default ProxyVariation.STATIC_MANUAL;
-
-  // need different types: virtual, remote, protection, etc.
-
+  Variation variation() default Variation.STATIC_MANUAL;
   ProxyRole role() default ProxyRole.SUBJECT;
 
-  Class[] participants() default {};
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Subject {
+  }
 
-  String comment() default "";
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface RealSubject {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Proxy {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = {ElementType.TYPE, ElementType.FIELD,
+      ElementType.LOCAL_VARIABLE})
+  @Documented
+  public @interface Client {
+  }
+
+  public static enum Variation {
+    STATIC_MANUAL, STATIC_GENERATED, DYNAMIC
+  }
+
+  public static enum Type {
+    VIRTUAL, REMOTE, PROTECTION
+  }
 }

@@ -13,11 +13,30 @@ import java.lang.annotation.*;
 @Documented
 @DesignPattern(type = Type.STRUCTURAL)
 public @interface AdapterPattern {
-  AdapterVariation variation() default AdapterVariation.OBJECT;
+  Variation variation() default Variation.OBJECT;
 
-  AdapterRole role() default AdapterRole.ADAPTER;
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Adapter {
+  }
 
-  Class[] participants() default {};
+  /**
+   * We would hardly ever use this annotation as the adaptee is
+   * usually not aware that he is being adapted.
+   */
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Adaptee {
+  }
 
-  String comment() default "";
+  public enum Variation {
+    OBJECT,
+    CLASS,
+    /**
+     * See http://www.javaspecialists.eu/archive/Issue108.html
+     */
+    DYNAMIC
+  }
 }

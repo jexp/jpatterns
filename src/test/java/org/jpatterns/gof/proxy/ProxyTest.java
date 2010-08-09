@@ -1,5 +1,6 @@
 package org.jpatterns.gof.proxy;
 
+import org.jpatterns.PatternDetails;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
@@ -10,8 +11,10 @@ import org.junit.Test;
  */
 public class ProxyTest {
 
-  @ProxyPattern(role = ProxyRole.CLIENT)
   private static class Norwegian {
+    @ProxyPattern.Client
+    @PatternDetails(participants = {LutefiskProxy.class,
+        Lutefisk.class, LutefiskImpl.class})
     private Lutefisk lutefisk;
 
     private boolean sick;
@@ -36,15 +39,16 @@ public class ProxyTest {
     }
   }
 
-  @ProxyPattern(role = ProxyRole.SUBJECT)
+  @ProxyPattern.Subject
   private interface Lutefisk {
     void boughtBy(Norwegian eater);
 
     void eatenBy(Norwegian eater);
   }
 
-  @ProxyPattern(role = ProxyRole.PROXY,
-      participants = {Lutefisk.class, LutefiskImpl.class})
+  @ProxyPattern.Proxy
+  @PatternDetails(participants = {Lutefisk.class,
+      LutefiskImpl.class})
   public static class LutefiskProxy implements Lutefisk {
     private Lutefisk realSubject;
 
@@ -60,7 +64,7 @@ public class ProxyTest {
     }
   }
 
-  @ProxyPattern(role = ProxyRole.REAL_SUBJECT)
+  @ProxyPattern.Subject
   private static class LutefiskImpl implements Lutefisk {
     public void eatenBy(Norwegian eater) {
       eater.becomeSick();

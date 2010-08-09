@@ -1,6 +1,6 @@
 package org.jpatterns.gof.adapter;
 
-import static org.jpatterns.gof.adapter.AdapterVariation.CLASS;
+import org.jpatterns.PatternDetails;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
@@ -19,13 +19,15 @@ public class AdapterTest {
     }
   }
 
+  @AdapterPattern.Adaptee
   private static class Rapper {
     public String talk() {
       return "Vulgar lyrics deleted...";
     }
   }
 
-  @AdapterPattern
+  @AdapterPattern.Adapter
+  @AdapterPattern(variation = AdapterPattern.Variation.OBJECT)
   private static class RapperObjectAdapter implements Singer {
     private final Rapper rapper;
 
@@ -42,8 +44,8 @@ public class AdapterTest {
     }
   }
 
-  @AdapterPattern(variation = CLASS, role = AdapterRole.ADAPTER,
-      participants = {Rapper.class, Singer.class})
+  @AdapterPattern(variation = AdapterPattern.Variation.CLASS)
+  @PatternDetails(participants = {Rapper.class, Singer.class})
   private static class RapperClassAdapter extends Rapper
       implements Singer {
     public String sing() {

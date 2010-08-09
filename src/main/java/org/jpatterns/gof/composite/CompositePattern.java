@@ -13,9 +13,21 @@ import java.lang.annotation.*;
 @Documented
 @DesignPattern(type = Type.STRUCTURAL)
 public @interface CompositePattern {
-  CompositeRole role() default CompositeRole.COMPONENT;
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Component {
+  }
 
-  Class[] participants() default {};
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Leaf {
+  }
 
-  String comment() default "";
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Composite {
+  }
 }
