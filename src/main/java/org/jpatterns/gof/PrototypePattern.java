@@ -1,4 +1,4 @@
-package org.jpatterns.gof.prototype;
+package org.jpatterns.gof;
 
 import org.jpatterns.*;
 

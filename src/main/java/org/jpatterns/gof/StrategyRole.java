@@ -1,4 +1,4 @@
-package org.jpatterns.gof.strategy;
+package org.jpatterns.gof;
 
 /**
  * @author Heinz Kabutz

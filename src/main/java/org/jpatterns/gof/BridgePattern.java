@@ -1,4 +1,4 @@
-package org.jpatterns.gof.bridge;
+package org.jpatterns.gof;
 
 import org.jpatterns.*;
 

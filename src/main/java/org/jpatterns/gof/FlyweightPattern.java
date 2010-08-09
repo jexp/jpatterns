@@ -1,4 +1,4 @@
-package org.jpatterns.gof.flyweight;
+package org.jpatterns.gof;
 
 import org.jpatterns.*;
 

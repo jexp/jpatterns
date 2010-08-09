@@ -1,4 +1,4 @@
-package org.jpatterns.gof.proxy;
+package org.jpatterns.gof;
 
 import org.jpatterns.*;
 

@@ -1,4 +1,4 @@
-package org.jpatterns.gof.factorymethod;
+package org.jpatterns.gof;
 
 import org.jpatterns.*;
 

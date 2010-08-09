@@ -1,4 +1,4 @@
-package org.jpatterns.gof.abstractfactory;
+package org.jpatterns.gof;
 
 import org.jpatterns.*;
 

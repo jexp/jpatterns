@@ -1,4 +1,4 @@
-package org.jpatterns.gof.command;
+package org.jpatterns.gof;
 
 import org.jpatterns.*;
 import org.jpatterns.gof.composite.CompositePattern;
