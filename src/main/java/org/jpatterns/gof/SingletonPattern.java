@@ -1,4 +1,4 @@
-package org.jpatterns.gof.singleton;
+package org.jpatterns.gof;
 
 import org.jpatterns.*;
 
