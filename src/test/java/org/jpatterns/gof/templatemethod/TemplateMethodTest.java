@@ -1,14 +1,11 @@
 package org.jpatterns.gof.templatemethod;
 
-import org.easymock.EasyMock;
+import static org.easymock.EasyMock.*;
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import java.io.*;
 import java.sql.*;
-
-import static org.easymock.EasyMock.*;
-import static org.easymock.EasyMock.verify;
-import static org.junit.Assert.assertEquals;
 
 public class TemplateMethodTest {
   @TemplateMethodPattern(role = TemplateMethodRole.ABSTRACT_CLASS)
@@ -90,20 +87,21 @@ public class TemplateMethodTest {
 
   @Test
   public void databaseResourcesAreSetupUsedAndClosed() throws Exception {
-      final String[] params = {"sql"};
-      final int rows = 1;
+    final String[] params = {"sql"};
+    final int rows = 1;
 
-      final Statement statement = createMock(Statement.class);
-      expect(statement.executeUpdate(params[0])).andReturn(rows);
-      statement.close(); expectLastCall().once();
-      final Connection con = createMock(Connection.class);
-      expect(con.createStatement()).andReturn(statement);
+    final Statement statement = createMock(Statement.class);
+    expect(statement.executeUpdate(params[0])).andReturn(rows);
+    statement.close();
+    expectLastCall().once();
+    final Connection con = createMock(Connection.class);
+    expect(con.createStatement()).andReturn(statement);
 
-      replay(con,statement);
+    replay(con, statement);
 
-      final DBHelper dbHelper = new DBHelper(con);
-      assertEquals((Integer)rows, dbHelper.run(params));
-      verify(con,statement);
+    final DBHelper dbHelper = new DBHelper(con);
+    assertEquals((Integer) rows, dbHelper.run(params));
+    verify(con, statement);
 
   }
 }

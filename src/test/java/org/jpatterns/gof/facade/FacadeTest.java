@@ -1,8 +1,7 @@
 package org.jpatterns.gof.facade;
 
-import org.junit.Test;
-
 import static junit.framework.Assert.assertEquals;
+import org.junit.Test;
 
 public class FacadeTest {
   @FacadePattern
@@ -14,6 +13,6 @@ public class FacadeTest {
 
   @Test
   public void facadeProvidesIsEquals() {
-      new Tests().isEquals(1,Integer.valueOf(1));
+    new Tests().isEquals(1, Integer.valueOf(1));
   }
 }

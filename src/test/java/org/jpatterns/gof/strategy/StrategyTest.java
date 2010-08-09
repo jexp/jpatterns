@@ -1,10 +1,9 @@
 package org.jpatterns.gof.strategy;
 
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import java.util.zip.Adler32;
-
-import static org.junit.Assert.assertEquals;
 
 
 public class StrategyTest {
@@ -39,14 +38,14 @@ public class StrategyTest {
 
   @Test
   public void adler32StrategyWorks() {
-      final Checksum checksum = new MyAdler32();
-      byte[] bytes = {1,2,4,8,16};
-      for (byte value : bytes) {
-          checksum.update(value);
-      }
-      final long crc = checksum.getValue();
-      checksum.reset();
-      checksum.update(bytes);
-      assertEquals(crc,checksum.getValue());
+    final Checksum checksum = new MyAdler32();
+    byte[] bytes = {1, 2, 4, 8, 16};
+    for (byte value : bytes) {
+      checksum.update(value);
+    }
+    final long crc = checksum.getValue();
+    checksum.reset();
+    checksum.update(bytes);
+    assertEquals(crc, checksum.getValue());
   }
 }

@@ -1,7 +1,6 @@
 package org.jpatterns.gof.command;
 
 import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
 
 /**
@@ -22,7 +21,7 @@ public class CommandTest {
     void execute();
   }
 
-  @CommandPattern.ConcreteCommand( comment = "This is our TestCommand")
+  @CommandPattern.ConcreteCommand(comment = "This is our TestCommand")
   class TestCommand implements Command {
     private boolean ran;
 
