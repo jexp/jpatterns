@@ -15,99 +15,7 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" name="Default" comment="Removed comments() and participants">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/adapter/ClassAdapterStructure.gif" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/StrategyPattern.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/flyweight/FlyweightPattern.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/templatemethod/TemplateMethodPattern.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/adapter/ObjectAdapterStructure.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/decorator/DecoratorStructure.gif" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/InterpreterPattern.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/strategy/StrategyRole.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/facade/FacadeStructure.gif" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/TemplateMethodStructure.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/VisitorStructure.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/FlyweightPattern.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/abstractfactory/AbstractFactoryPattern.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryStructure.gif" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/factorymethod/FactoryMethodStructure.gif" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/CompositeStructure.gif" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/singleton/SingletonPattern.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/builder/BuilderPattern.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/FacadeStructure.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/VisitorPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/FlyweightStructure.gif" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/bridge/BridgePattern.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/abstractfactory/AbstractFactoryStructure.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/templatemethod/TemplateMethodStructure.gif" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/PrototypePattern.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/mediator/MediatorPattern.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/MediatorPattern.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/flyweight/FlyweightStructure.gif" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/StrategyRole.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/FacadePattern.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/factorymethod/FactoryMethodPattern.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/chainofresponsibility/ChainOfResponsibilityStructure.gif" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/StatePattern.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/abstractfactory/AbstractFactoryUserViewStructure.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/strategy/StrategyStructure.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/singleton/SingletonStructure.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/proxy/ProxyPattern.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/DecoratorPattern.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/state/StateStructure.gif" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/SingletonStructure.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/CommandStructure.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ProxyPattern.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/interpreter/InterpreterPattern.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BridgeStructure.gif" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/bridge/BridgeStructure.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/chainofresponsibility/ChainOfResponsibilityPattern.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ObjectAdapterStructure.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/CompositePattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ObserverPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/FactoryMethodStructure.gif" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/facade/FacadePattern.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ProxyStructure.gif" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/adapter/AdapterPattern.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/TemplateMethodPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/StateStructure.gif" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/iterator/IteratorPattern.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/MementoStructure.gif" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/strategy/StrategyPattern.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AdapterPattern.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/composite/CompositePattern.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ObserverStructure.gif" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/proxy/ProxyStructure.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/prototype/PrototypePattern.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/decorator/DecoratorPattern.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/visitor/VisitorPattern.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/state/StatePattern.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/observer/ObserverStructure.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/visitor/VisitorStructure.gif" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/MementoPattern.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/composite/CompositeStructure.gif" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/IteratorStructure.gif" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/command/CommandPattern.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/command/CommandStructure.gif" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryUserViewStructure.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BuilderPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/IteratorPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/StrategyStructure.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/FactoryMethodPattern.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/memento/MementoStructure.gif" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/CommandPattern.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/observer/ObserverPattern.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/DecoratorStructure.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/SingletonPattern.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/iterator/IteratorStructure.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/memento/MementoPattern.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ChainOfResponsibilityStructure.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ClassAdapterStructure.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpatterns.iws" afterPath="$PROJECT_DIR$/jpatterns.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BridgePattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ChainOfResponsibilityPattern.java" />
-    </list>
+    <list default="true" name="Default" comment="Removed comments() and participants" />
     <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path="$USER_HOME_GRIFFON$/" />
   </component>
@@ -370,40 +278,6 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src/main/java/org/jpatterns" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="jpatterns" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="jpatterns" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src/main" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src/main/java" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src/main/java/org/jpatterns" />
-          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src/main/java/org/jpatterns/gof" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -769,7 +643,7 @@
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added empty annotation classes for each of the GoF patterns" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved gof annotations into a single package" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -803,6 +677,7 @@
     <MESSAGE value="Deleted CompositeRole" />
     <MESSAGE value="Updated strategy to use inner annotations instead of enums for roles" />
     <MESSAGE value="Added empty annotation classes for each of the GoF patterns" />
+    <MESSAGE value="Moved gof annotations into a single package" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
