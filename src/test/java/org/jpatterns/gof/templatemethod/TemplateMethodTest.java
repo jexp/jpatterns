@@ -12,9 +12,9 @@ import java.sql.*;
  * @since 2010-08-09
  */
 public class TemplateMethodTest {
-  @TemplateMethodPattern(role = TemplateMethodRole.ABSTRACT_CLASS)
+  @TemplateMethodPattern.AbstractClass
   private static abstract class CloseHelper {
-    @TemplateMethodPattern(role = TemplateMethodRole.TEMPLATE_METHOD)
+    @TemplateMethodPattern.TemplateMethod
     public final Object run(Object[] params) throws Exception {
       setUp(params);
       Exception ex = null;
@@ -33,15 +33,15 @@ public class TemplateMethodTest {
       }
       throw ex;
     }
-    @TemplateMethodPattern(role = TemplateMethodRole.PRIMITIVE_METHOD)
+    @TemplateMethodPattern.PrimitiveMethod
     protected abstract void setUp(Object[] params) throws Exception;
-    @TemplateMethodPattern(role = TemplateMethodRole.PRIMITIVE_METHOD)
+    @TemplateMethodPattern.PrimitiveMethod
     protected abstract Object doExecute(Object[] params) throws Exception;
-    @TemplateMethodPattern(role = TemplateMethodRole.PRIMITIVE_METHOD)
+    @TemplateMethodPattern.PrimitiveMethod
     protected abstract void tearDown(Object[] params) throws Exception;
   }
 
-  @TemplateMethodPattern(role = TemplateMethodRole.CONCRETE_CLASS)
+  @TemplateMethodPattern.ConcreteClass
   private static class DBHelper extends CloseHelper {
     private final Connection con;
     private Statement st;
@@ -50,14 +50,17 @@ public class TemplateMethodTest {
       this.con = con;
     }
 
+    @TemplateMethodPattern.PrimitiveMethod
     protected void setUp(Object[] params) throws SQLException {
       st = con.createStatement();
     }
 
+    @TemplateMethodPattern.PrimitiveMethod
     protected Integer doExecute(Object[] params) throws SQLException {
       return st.executeUpdate((String) params[0]);
     }
 
+    @TemplateMethodPattern.PrimitiveMethod
     protected void tearDown(Object[] params) throws SQLException {
       st.close();
     }

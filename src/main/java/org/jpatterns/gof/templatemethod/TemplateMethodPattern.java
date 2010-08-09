@@ -13,10 +13,29 @@ import java.lang.annotation.*;
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL)
 public @interface TemplateMethodPattern {
-  TemplateMethodRole role() default
-      TemplateMethodRole.ABSTRACT_CLASS;
-
   Class[] participants() default {};
 
-  String comment() default "";
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface AbstractClass {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface ConcreteClass {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.METHOD)
+  @Documented
+  public @interface TemplateMethod {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.METHOD)
+  @Documented
+  public @interface PrimitiveMethod {
+  }
 }
