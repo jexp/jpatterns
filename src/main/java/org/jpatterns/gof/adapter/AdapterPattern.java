@@ -13,12 +13,11 @@ import java.lang.annotation.*;
 @Documented
 @DesignPattern(type = Type.STRUCTURAL)
 public @interface AdapterPattern {
-  Variation variation() default Variation.OBJECT;
-
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Adapter {
+    Variation value() default Variation.OBJECT;
   }
 
   /**

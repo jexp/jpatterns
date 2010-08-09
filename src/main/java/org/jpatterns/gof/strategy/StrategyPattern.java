@@ -9,13 +9,25 @@ import java.lang.annotation.*;
  * @since 2010-07-28
  */
 @Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = {ElementType.TYPE})
+@Target(value = ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL)
 public @interface StrategyPattern {
-  StrategyRole role() default StrategyRole.STRATEGY;
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Context {
+  }
 
-  Class[] participants() default {};
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Strategy {
+  }
 
-  String comment() default "";
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface ConcreteStrategy {
+  }
 }

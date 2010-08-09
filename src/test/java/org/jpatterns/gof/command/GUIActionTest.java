@@ -1,6 +1,7 @@
 package org.jpatterns.gof.command;
 
-import org.jpatterns.PatternDetails;
+import org.jpatterns.PatternParticipants;
+import org.junit.Test;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,7 +20,7 @@ public class GUIActionTest {
   }
 
   @CommandPattern.ConcreteCommand
-  @PatternDetails(participants = MyReceiver.class)
+  @PatternParticipants(MyReceiver.class)
   private static class FooAction extends AbstractAction {
     private final MyReceiver receiver;
     private FooAction(MyReceiver receiver) {
@@ -96,5 +97,13 @@ public class GUIActionTest {
         new MyClient(foo_action, bar_action);
       }
     });
+  }
+
+  @Test
+  public void bindUpReceivers() {
+    MyReceiver receiver = new MyReceiver();
+    final FooAction foo_action = new FooAction(receiver);
+    final BarAction bar_action = new BarAction(receiver);
+    foo_action.actionPerformed(null);
   }
 }

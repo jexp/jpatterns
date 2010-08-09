@@ -1,4 +1,4 @@
-package org.jpatterns.gof.facade;
+package org.jpatterns.gof.bridge;
 
 import org.jpatterns.*;
 
@@ -12,5 +12,5 @@ import java.lang.annotation.*;
 @Target(value = ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.STRUCTURAL)
-public @interface FacadePattern {
+public @interface BridgePattern {
 }

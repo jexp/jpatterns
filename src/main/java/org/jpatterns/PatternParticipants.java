@@ -3,8 +3,8 @@ package org.jpatterns;
 import java.lang.annotation.*;
 
 /**
- * @author Michael Hunger
- * @since 2010-07-14
+ * @author Heinz Kabutz
+ * @since 2010-08-09
  */
 @Retention(value = RetentionPolicy.RUNTIME)
 @Target(value = {
@@ -14,10 +14,9 @@ import java.lang.annotation.*;
     ElementType.LOCAL_VARIABLE,
     ElementType.METHOD,
     ElementType.PARAMETER
-    })
+})
 @Documented
 @Inherited
-public @interface PatternDetails {
-  Class[] participants() default {};
-  String comment() default "";
+public @interface PatternParticipants {
+  Class[] value();
 }

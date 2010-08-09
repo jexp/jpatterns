@@ -13,8 +13,6 @@ import java.lang.annotation.*;
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL)
 public @interface TemplateMethodPattern {
-  Class[] participants() default {};
-
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented

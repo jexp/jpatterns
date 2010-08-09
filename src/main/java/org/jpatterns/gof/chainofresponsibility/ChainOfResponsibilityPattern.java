@@ -1,4 +1,4 @@
-package org.jpatterns.gof.facade;
+package org.jpatterns.gof.chainofresponsibility;
 
 import org.jpatterns.*;
 
@@ -11,6 +11,6 @@ import java.lang.annotation.*;
 @Retention(value = RetentionPolicy.RUNTIME)
 @Target(value = ElementType.TYPE)
 @Documented
-@DesignPattern(type = Type.STRUCTURAL)
-public @interface FacadePattern {
+@DesignPattern(type = Type.BEHAVIORAL)
+public @interface ChainOfResponsibilityPattern {
 }
