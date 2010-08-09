@@ -9,7 +9,7 @@ import java.lang.annotation.*;
  * @since 2010-07-28
  */
 @Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = {ElementType.TYPE})
+@Target(value = ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL)
 public @interface StrategyPattern {
