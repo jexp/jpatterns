@@ -1,7 +1,6 @@
 package org.jpatterns.gof;
 
 import org.jpatterns.*;
-import org.jpatterns.gof.composite.CompositePattern;
 
 import java.lang.annotation.*;
 
