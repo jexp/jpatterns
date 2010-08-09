@@ -12,6 +12,7 @@ import java.lang.annotation.*;
 @Retention(value = RetentionPolicy.RUNTIME)
 // HK: I think we should use RUNTIME so that the information about the patterns is always available, even to Reflection
 @Target(value = ElementType.TYPE)
+@Documented
 @DesignPattern(source = Source.GoF,
     type = Type.BEHAVIORAL,
     urls = {"http://en.wikipedia.org/wiki/Command_pattern",
@@ -25,6 +26,7 @@ import java.lang.annotation.*;
 public @interface CommandPattern {
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
+  @Documented
   public @interface Command {
     boolean undoable() default false;
     String comment() default "";
@@ -33,6 +35,7 @@ public @interface CommandPattern {
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
+  @Documented
   public @interface ConcreteCommand {
     String comment() default "";
     // HK: This one would know about the receiver it was created for
@@ -41,6 +44,7 @@ public @interface CommandPattern {
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
+  @Documented
   public @interface Invoker {
     String comment() default "";
     Class command() default void.class; // HK: an invoker could potentially have more than one command
@@ -49,6 +53,7 @@ public @interface CommandPattern {
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
+  @Documented
   public @interface Receiver {
     String comment() default "";
     Class command() default void.class; // HK: the receiver should not know about the commands that are invoking it - look at my example GUIActionTest
@@ -57,6 +62,7 @@ public @interface CommandPattern {
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
+  @Documented
   public @interface Client {
     String comment() default "";
     Class[] participants() default {};
