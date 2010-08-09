@@ -1,4 +1,4 @@
-package org.jpatterns.gof.facade;
+package org.jpatterns.gof;
 
 import static junit.framework.Assert.assertEquals;
 import org.junit.Test;

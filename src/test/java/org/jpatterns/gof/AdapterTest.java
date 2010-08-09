@@ -1,9 +1,8 @@
-package org.jpatterns.gof.adapter;
+package org.jpatterns.gof;
 
 import org.jpatterns.PatternParticipants;
-import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
 /**
  * @author Heinz Kabutz
@@ -59,6 +58,7 @@ public class AdapterTest {
     Singer rapperClassAdapter = new RapperClassAdapter();
     assertEquals("rapper talks", new Rapper().talk(), rapperClassAdapter.sing());
   }
+
   @Test
   public void testRapperObjectAdapterRapsInsteadOfSinging() {
     Singer rapperObjectAdapter = new RapperObjectAdapter(new Rapper());

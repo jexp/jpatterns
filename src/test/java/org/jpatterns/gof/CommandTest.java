@@ -1,9 +1,8 @@
-package org.jpatterns.gof.command;
+package org.jpatterns.gof;
 
 import org.jpatterns.*;
-import org.junit.Test;
-
 import static org.junit.Assert.assertEquals;
+import org.junit.Test;
 
 /**
  * @author Michael Hunger

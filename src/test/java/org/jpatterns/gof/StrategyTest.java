@@ -1,4 +1,4 @@
-package org.jpatterns.gof.strategy;
+package org.jpatterns.gof;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;

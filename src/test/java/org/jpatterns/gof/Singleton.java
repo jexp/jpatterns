@@ -1,4 +1,4 @@
-package org.jpatterns.gof.singleton;
+package org.jpatterns.gof;
 
 /**
  * @author Alex Gout
@@ -8,12 +8,12 @@ package org.jpatterns.gof.singleton;
 public class Singleton {
   private static Singleton INSTANCE = new Singleton();
 
-  private Singleton(){
+  private Singleton() {
 
   }
 
   @SingletonPattern.SingletonMethod
-  public static final Singleton getInstance(){
+  public static final Singleton getInstance() {
     return INSTANCE;
   }
 }

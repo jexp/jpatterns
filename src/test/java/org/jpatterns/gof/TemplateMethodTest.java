@@ -1,4 +1,4 @@
-package org.jpatterns.gof.templatemethod;
+package org.jpatterns.gof;
 
 import static org.easymock.EasyMock.*;
 import static org.junit.Assert.assertEquals;
@@ -33,10 +33,13 @@ public class TemplateMethodTest {
       }
       throw ex;
     }
+
     @TemplateMethodPattern.PrimitiveMethod
     protected abstract void setUp(Object[] params) throws Exception;
+
     @TemplateMethodPattern.PrimitiveMethod
     protected abstract Object doExecute(Object[] params) throws Exception;
+
     @TemplateMethodPattern.PrimitiveMethod
     protected abstract void tearDown(Object[] params) throws Exception;
   }
@@ -70,14 +73,17 @@ public class TemplateMethodTest {
   private static class FileHelper extends CloseHelper {
     private final String filename;
     private BufferedReader reader;
+
     public FileHelper(String filename) {
       this.filename = filename;
     }
+
     protected void setUp(Object[] params) throws FileNotFoundException {
       reader = new BufferedReader(new InputStreamReader(
           new FileInputStream(filename)
       ));
     }
+
     protected Integer doExecute(Object[] params) throws IOException {
       String s;
       int lines = 0;
@@ -87,6 +93,7 @@ public class TemplateMethodTest {
       }
       return lines;
     }
+
     protected void tearDown(Object[] params) throws IOException {
       reader.close();
     }

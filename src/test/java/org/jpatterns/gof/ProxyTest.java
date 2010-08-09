@@ -1,10 +1,9 @@
-package org.jpatterns.gof.proxy;
+package org.jpatterns.gof;
 
 import org.jpatterns.PatternParticipants;
-import org.junit.Test;
-
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import org.junit.Test;
 
 /**
  * @author Heinz Kabutz
@@ -64,6 +63,7 @@ public class ProxyTest {
     public void eatenBy(Norwegian eater) {
       eater.becomeSick();
     }
+
     public void storedBy(Norwegian owner) {
       owner.becomeSick();
     }

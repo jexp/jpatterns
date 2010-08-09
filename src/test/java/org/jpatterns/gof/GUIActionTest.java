@@ -1,4 +1,4 @@
-package org.jpatterns.gof.command;
+package org.jpatterns.gof;
 
 import org.jpatterns.PatternParticipants;
 import org.junit.Test;
@@ -23,10 +23,12 @@ public class GUIActionTest {
   @PatternParticipants(MyReceiver.class)
   private static class FooAction extends AbstractAction {
     private final MyReceiver receiver;
+
     private FooAction(MyReceiver receiver) {
       super("Foo");
       this.receiver = receiver;
     }
+
     public void actionPerformed(ActionEvent e) {
       receiver.foo();
     }
@@ -35,10 +37,12 @@ public class GUIActionTest {
   @CommandPattern.ConcreteCommand
   private static class BarAction extends AbstractAction {
     private final MyReceiver receiver;
+
     private BarAction(MyReceiver receiver) {
       super("Bar");
       this.receiver = receiver;
     }
+
     public void actionPerformed(ActionEvent e) {
       receiver.bar();
     }
@@ -49,6 +53,7 @@ public class GUIActionTest {
     public void foo() {
       System.out.println("foo was pressed");
     }
+
     public void bar() {
       System.out.println("bar was pressed");
     }
