@@ -1,6 +1,7 @@
 package org.jpatterns.gof;
 
-import org.jpatterns.*;
+import org.jpatterns.DesignPattern;
+import org.jpatterns.Type;
 
 import java.lang.annotation.*;
 
@@ -13,4 +14,35 @@ import java.lang.annotation.*;
 @Documented
 @DesignPattern(type = Type.CREATIONAL)
 public @interface AbstractFactoryPattern {
+
+    @Retention(value = RetentionPolicy.RUNTIME)
+    @Target(value = ElementType.TYPE)
+    @Documented
+    public @interface AbstractProduct {
+    }
+
+    @Retention(value = RetentionPolicy.RUNTIME)
+    @Target(value = ElementType.TYPE)
+    @Documented
+    public @interface ConcreteProduct {
+    }
+
+    @Retention(value = RetentionPolicy.RUNTIME)
+    @Target(value = ElementType.METHOD)
+    @Documented
+    public @interface FactoryMethod {
+    }
+
+    @Retention(value = RetentionPolicy.RUNTIME)
+    @Target(value = ElementType.TYPE)
+    @Documented
+    public @interface AbstractFactory {
+    }
+
+    @Retention(value = RetentionPolicy.RUNTIME)
+    @Target(value = ElementType.TYPE)
+    @Documented
+    public @interface ConcreteFactory {
+    }
+
 }

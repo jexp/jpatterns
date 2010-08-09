@@ -9,7 +9,6 @@ import java.lang.annotation.*;
  * @since 2010-08-08
  */
 @Retention(value = RetentionPolicy.RUNTIME)
-// HK: I think we should use RUNTIME so that the information about the patterns is always available, even to Reflection
 @Target(value = ElementType.TYPE)
 @Documented
 @DesignPattern(source = Source.GoF,
