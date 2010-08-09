@@ -106,25 +106,32 @@
       <file leaf-file-name="jpatterns.iml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jpatterns.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="7" selection-start="282" selection-end="282" vertical-scroll-proportion="0.056157634">
+            <state line="3" column="7" selection-start="282" selection-end="282" vertical-scroll-proportion="0.05626851">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdapterPattern.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="AdapterPattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AdapterPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="18" selection-start="285" selection-end="285" vertical-scroll-proportion="0.22135922">
+            <state line="14" column="18" selection-start="285" selection-end="285" vertical-scroll-proportion="0.22178988">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractFactoryStructure.gif" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryStructure.gif">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="BridgePattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BridgePattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="18" selection-start="285" selection-end="285" vertical-scroll-proportion="0.22135922">
+            <state line="14" column="18" selection-start="285" selection-end="285" vertical-scroll-proportion="0.22178988">
               <folding />
             </state>
           </provider>
@@ -702,7 +709,7 @@
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved gof annotations into a single package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed package names" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -737,6 +744,7 @@
     <MESSAGE value="Updated strategy to use inner annotations instead of enums for roles" />
     <MESSAGE value="Added empty annotation classes for each of the GoF patterns" />
     <MESSAGE value="Moved gof annotations into a single package" />
+    <MESSAGE value="Fixed package names" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -782,23 +790,28 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/jpatterns.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="7" selection-start="282" selection-end="282" vertical-scroll-proportion="0.056157634">
+        <state line="3" column="7" selection-start="282" selection-end="282" vertical-scroll-proportion="0.05626851">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BridgePattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="285" selection-end="285" vertical-scroll-proportion="0.22135922">
+        <state line="14" column="18" selection-start="285" selection-end="285" vertical-scroll-proportion="0.22178988">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AdapterPattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="285" selection-end="285" vertical-scroll-proportion="0.22135922">
+        <state line="14" column="18" selection-start="285" selection-end="285" vertical-scroll-proportion="0.22178988">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryStructure.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
