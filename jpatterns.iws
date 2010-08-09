@@ -16,38 +16,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="Removed comments() and participants">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/chainofresponsibility/ChainOfResponsibilityPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/chainofresponsibility/ChainOfResponsibilityPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/chainofresponsibility/ChainOfResponsibilityPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/mediator/MediatorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/mediator/MediatorPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/prototype/PrototypePattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/iterator/IteratorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/iterator/IteratorPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/observer/ObserverPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/factorymethod/FactoryMethodPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/factorymethod/FactoryMethodPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/factorymethod/FactoryMethodPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/visitor/VisitorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/visitor/VisitorPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/flyweight/FlyweightPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/interpreter/InterpreterPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/visitor/VisitorPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/state/StatePattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/builder/BuilderPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/state/StatePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/state/StatePattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/strategy/StrategyPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/strategy/StrategyPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/interpreter/InterpreterPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/interpreter/InterpreterPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/bridge/BridgePattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/observer/ObserverPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/observer/ObserverPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/abstractfactory/AbstractFactoryPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/memento/MementoPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/bridge/BridgePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/bridge/BridgePattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/memento/MementoPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/memento/MementoPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/bridge/BridgePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/bridge/BridgePattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/chainofresponsibility/ChainOfResponsibilityPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/chainofresponsibility/ChainOfResponsibilityPattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/decorator/DecoratorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/decorator/DecoratorPattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/abstractfactory/AbstractFactoryPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/abstractfactory/AbstractFactoryPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/mediator/MediatorPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/prototype/PrototypePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/prototype/PrototypePattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/mediator/MediatorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/mediator/MediatorPattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/flyweight/FlyweightPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/flyweight/FlyweightPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/decorator/DecoratorPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/prototype/PrototypePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/prototype/PrototypePattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/iterator/IteratorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/iterator/IteratorPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/factorymethod/FactoryMethodPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/factorymethod/FactoryMethodPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/visitor/VisitorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/visitor/VisitorPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/state/StatePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/state/StatePattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpatterns.iws" afterPath="$PROJECT_DIR$/jpatterns.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/builder/BuilderPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/builder/BuilderPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/iterator/IteratorPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/interpreter/InterpreterPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/interpreter/InterpreterPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/observer/ObserverPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/observer/ObserverPattern.java" />
     </list>
     <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path="$USER_HOME_GRIFFON$/" />
@@ -111,19 +95,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" highlightNonProjectFiles="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="IteratorPattern.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/iterator/IteratorPattern.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="18" selection-start="294" selection-end="294" vertical-scroll-proportion="0.23360656">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MediatorPattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/mediator/MediatorPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="18" selection-start="294" selection-end="294" vertical-scroll-proportion="0.23360656">
+            <state line="14" column="18" selection-start="294" selection-end="294" vertical-scroll-proportion="0.22937626">
               <folding />
             </state>
           </provider>
@@ -132,7 +107,7 @@
       <file leaf-file-name="MementoPattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/memento/MementoPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="18" selection-start="293" selection-end="293" vertical-scroll-proportion="0.23360656">
+            <state line="14" column="18" selection-start="293" selection-end="293" vertical-scroll-proportion="0.22937626">
               <folding />
             </state>
           </provider>
@@ -141,7 +116,7 @@
       <file leaf-file-name="ObserverPattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/observer/ObserverPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="18" selection-start="294" selection-end="294" vertical-scroll-proportion="0.23360656">
+            <state line="14" column="18" selection-start="294" selection-end="294" vertical-scroll-proportion="0.22937626">
               <folding />
             </state>
           </provider>
@@ -150,16 +125,25 @@
       <file leaf-file-name="StatePattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/state/StatePattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="18" selection-start="291" selection-end="291" vertical-scroll-proportion="0.23360656">
+            <state line="14" column="18" selection-start="291" selection-end="291" vertical-scroll-proportion="0.22937626">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VisitorPattern.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="VisitorPattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/visitor/VisitorPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="6" selection-start="230" selection-end="230" vertical-scroll-proportion="0.19467214">
+            <state line="12" column="6" selection-start="230" selection-end="230" vertical-scroll-proportion="0.19114688">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jpatterns.iml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/jpatterns.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="7" selection-start="282" selection-end="282" vertical-scroll-proportion="0.058222678">
               <folding />
             </state>
           </provider>
@@ -168,7 +152,7 @@
       <file leaf-file-name="TemplateMethodPattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/templatemethod/TemplateMethodPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="18" selection-start="322" selection-end="322" vertical-scroll-proportion="0.23360656">
+            <state line="14" column="18" selection-start="322" selection-end="322" vertical-scroll-proportion="0.22937626">
               <folding />
             </state>
           </provider>
@@ -177,7 +161,7 @@
       <file leaf-file-name="StrategyPattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/strategy/StrategyPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="32" selection-start="223" selection-end="223" vertical-scroll-proportion="0.17520492">
+            <state line="11" column="32" selection-start="223" selection-end="223" vertical-scroll-proportion="0.17203219">
               <folding />
             </state>
           </provider>
@@ -186,7 +170,7 @@
       <file leaf-file-name="PrototypePattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/prototype/PrototypePattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="18" selection-start="295" selection-end="295" vertical-scroll-proportion="0.23360656">
+            <state line="14" column="18" selection-start="295" selection-end="295" vertical-scroll-proportion="0.22937626">
               <folding />
             </state>
           </provider>
@@ -195,7 +179,7 @@
       <file leaf-file-name="ProxyPattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/proxy/ProxyPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="18" selection-start="344" selection-end="344" vertical-scroll-proportion="0.25702393">
+            <state line="15" column="18" selection-start="344" selection-end="344" vertical-scroll-proportion="0.25229827">
               <folding />
             </state>
           </provider>
@@ -773,7 +757,7 @@
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated strategy to use inner annotations instead of enums for roles" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added empty annotation classes for each of the GoF patterns" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -806,6 +790,7 @@
     <MESSAGE value="Changed name for jar file build" />
     <MESSAGE value="Deleted CompositeRole" />
     <MESSAGE value="Updated strategy to use inner annotations instead of enums for roles" />
+    <MESSAGE value="Added empty annotation classes for each of the GoF patterns" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -849,13 +834,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/decorator/DecoratorPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="32" selection-start="224" selection-end="224" vertical-scroll-proportion="0.17520492">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/flyweight/FlyweightPattern.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="18" selection-start="295" selection-end="295" vertical-scroll-proportion="0.23360656">
@@ -900,63 +878,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/mediator/MediatorPattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="294" selection-end="294" vertical-scroll-proportion="0.23360656">
+        <state line="14" column="18" selection-start="294" selection-end="294" vertical-scroll-proportion="0.22937626">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/proxy/ProxyPattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="18" selection-start="344" selection-end="344" vertical-scroll-proportion="0.25702393">
+        <state line="15" column="18" selection-start="344" selection-end="344" vertical-scroll-proportion="0.25229827">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/prototype/PrototypePattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="295" selection-end="295" vertical-scroll-proportion="0.23360656">
+        <state line="14" column="18" selection-start="295" selection-end="295" vertical-scroll-proportion="0.22937626">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/memento/MementoPattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="293" selection-end="293" vertical-scroll-proportion="0.23360656">
+        <state line="14" column="18" selection-start="293" selection-end="293" vertical-scroll-proportion="0.22937626">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/templatemethod/TemplateMethodPattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="322" selection-end="322" vertical-scroll-proportion="0.23360656">
+        <state line="14" column="18" selection-start="322" selection-end="322" vertical-scroll-proportion="0.22937626">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/strategy/StrategyPattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="32" selection-start="223" selection-end="223" vertical-scroll-proportion="0.17520492">
+        <state line="11" column="32" selection-start="223" selection-end="223" vertical-scroll-proportion="0.17203219">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/observer/ObserverPattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="294" selection-end="294" vertical-scroll-proportion="0.23360656">
+        <state line="14" column="18" selection-start="294" selection-end="294" vertical-scroll-proportion="0.22937626">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/state/StatePattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="291" selection-end="291" vertical-scroll-proportion="0.23360656">
+        <state line="14" column="18" selection-start="291" selection-end="291" vertical-scroll-proportion="0.22937626">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/visitor/VisitorPattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="230" selection-end="230" vertical-scroll-proportion="0.19467214">
+        <state line="12" column="6" selection-start="230" selection-end="230" vertical-scroll-proportion="0.19114688">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jpatterns.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="7" selection-start="282" selection-end="282" vertical-scroll-proportion="0.058222678">
           <folding />
         </state>
       </provider>
