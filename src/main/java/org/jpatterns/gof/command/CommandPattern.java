@@ -7,7 +7,7 @@ import java.lang.annotation.*;
 
 /**
  * @author Michael Hunger
- * @since 08.08.2010
+ * @since 2010-08-08
  */
 @Retention(value = RetentionPolicy.RUNTIME)
 // HK: I think we should use RUNTIME so that the information about the patterns is always available, even to Reflection

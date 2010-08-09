@@ -2,7 +2,7 @@ package org.jpatterns;
 
 /**
  * @author Michael Hunger
- * @since 08.08.2010
+ * @since 2010-08-08
  */
 public enum Refactoring {
   ExtractMethodObject, ExtractParameterObject

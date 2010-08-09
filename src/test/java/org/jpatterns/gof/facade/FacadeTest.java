@@ -3,6 +3,10 @@ package org.jpatterns.gof.facade;
 import static junit.framework.Assert.assertEquals;
 import org.junit.Test;
 
+/**
+ * @author Heinz Kabutz
+ * @since 2010-08-09
+ */
 public class FacadeTest {
   @FacadePattern
   public static class Tests {

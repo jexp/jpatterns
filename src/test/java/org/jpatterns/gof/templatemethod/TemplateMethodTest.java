@@ -7,6 +7,10 @@ import org.junit.Test;
 import java.io.*;
 import java.sql.*;
 
+/**
+ * @author Heinz Kabutz
+ * @since 2010-08-09
+ */
 public class TemplateMethodTest {
   @TemplateMethodPattern(role = TemplateMethodRole.ABSTRACT_CLASS)
   private static abstract class CloseHelper {
@@ -102,6 +106,5 @@ public class TemplateMethodTest {
     final DBHelper dbHelper = new DBHelper(con);
     assertEquals((Integer) rows, dbHelper.run(params));
     verify(con, statement);
-
   }
 }

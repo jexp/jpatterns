@@ -4,6 +4,10 @@ import static org.jpatterns.gof.adapter.AdapterVariation.CLASS;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
+/**
+ * @author Heinz Kabutz
+ * @since 2010-08-09
+ */
 public class AdapterTest {
   private static interface Singer {
     String sing();

@@ -4,6 +4,10 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
+/**
+ * @author Heinz Kabutz
+ * @since 2010-08-09
+ */
 public class ProxyTest {
 
   @ProxyPattern(role = ProxyRole.CLIENT)

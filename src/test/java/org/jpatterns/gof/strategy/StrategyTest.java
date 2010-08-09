@@ -5,7 +5,10 @@ import org.junit.Test;
 
 import java.util.zip.Adler32;
 
-
+/**
+ * @author Heinz Kabutz
+ * @since 2010-08-09
+ */
 public class StrategyTest {
   @StrategyPattern
   private static interface Checksum {

@@ -5,7 +5,7 @@ import org.junit.Test;
 
 /**
  * @author Michael Hunger
- * @since 14.07.2010
+ * @since 2010-07-14
  */
 @CommandPattern.Invoker(command = CommandTest.Command.class)
 public class CommandTest {
