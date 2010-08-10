@@ -5,6 +5,14 @@ import org.jpatterns.*;
 import java.lang.annotation.*;
 
 /**
+ * <b>Intent [GoF, pg 233]:</b> Encapsulate a request as an object, thereby
+ * letting you parameterize clients with different requests, queue or log
+ * requests, and support undoable operations.
+ * <p/>
+ * The structure for the command is:
+ * <p/>
+ * <img src="http://www.jpatterns.org/uml/gof/CommandStructure.gif"/>
+ *
  * @author Michael Hunger
  * @since 2010-08-08
  */
@@ -16,10 +24,10 @@ import java.lang.annotation.*;
     urls = {"http://en.wikipedia.org/wiki/Command_pattern",
         "http://home.earthlink.net/~huston2/dp/command.html"},
     refactorings = {
-        Refactoring.ExtractParameterObject, // HK: I would leave out the refactorings for now - information overload - we can put that in later
+        Refactoring.ExtractParameterObject,
         Refactoring.ExtractMethodObject},
-    related = {CompositePattern.class})
-// HK: should we really do this?  I would not want to re-document everything that is already in GoF.  The purpose of these annotations should be to document patterns in our code.
+    related = {CompositePattern.class, MementoPattern.class,
+        PrototypePattern.class})
 
 public @interface CommandPattern {
   @Retention(value = RetentionPolicy.RUNTIME)

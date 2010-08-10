@@ -5,13 +5,26 @@ import org.jpatterns.*;
 import java.lang.annotation.*;
 
 /**
+ * <b>Intent [GoF, pg 139]:</b> Convert the interface of a class into another
+ * interface clients expect. Adapter lets classes work together that couldn't
+ * otherwise because of incompatible interfaces.
+ * <p/>
+ * The structure for an object adapter is:
+ * <p/>
+ * <img src="http://www.jpatterns.org/uml/gof/ObjectAdapterStructure.gif"/>
+ * <p/>
+ * The structure for a class adapter is:
+ * <p/>
+ * <img src="http://www.jpatterns.org/uml/gof/ClassAdapterStructure.gif"/>
+ *
  * @author Heinz Kabutz
  * @since 2010-07-28
  */
 @Retention(value = RetentionPolicy.RUNTIME)
 @Target(value = ElementType.TYPE)
 @Documented
-@DesignPattern(type = Type.STRUCTURAL)
+@DesignPattern(type = Type.STRUCTURAL,
+    related = {BridgePattern.class, DecoratorPattern.class, ProxyPattern.class})
 public @interface AdapterPattern {
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
