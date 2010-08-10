@@ -18,4 +18,21 @@ import java.lang.annotation.*;
     related = {AbstractFactoryPattern.class, CompositePattern.class,
         DecoratorPattern.class})
 public @interface PrototypePattern {
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Prototype {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface ConcretePrototype {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.METHOD)
+  @Documented
+  public @interface Operation {
+  }
 }

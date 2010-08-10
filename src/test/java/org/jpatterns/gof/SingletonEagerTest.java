@@ -4,7 +4,7 @@ import static junit.framework.Assert.assertNotNull;
 import org.junit.Test;
 
 public class SingletonEagerTest {
-  @SingletonPattern(variation = SingletonPattern.Variation.EAGER)
+  @SingletonPattern.Singleton(variation = SingletonPattern.Variation.EAGER)
   public static class EagerSingleton {
     private final static EagerSingleton INSTANCE = new EagerSingleton();
 

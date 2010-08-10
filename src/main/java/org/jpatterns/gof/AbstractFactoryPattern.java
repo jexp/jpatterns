@@ -12,7 +12,7 @@ import java.lang.annotation.*;
  * <p/>
  * <img src="http://www.jpatterns.org/uml/gof/AbstractFactoryUserViewStructure.gif"/>
  *
- * @author Heinz Kabutz
+ * @author Heinz Kabutz, Michael Hunger
  * @since 2010-08-09
  */
 @Retention(value = RetentionPolicy.RUNTIME)
@@ -22,7 +22,6 @@ import java.lang.annotation.*;
     related = {FactoryMethodPattern.class, PrototypePattern.class,
         SingletonPattern.class})
 public @interface AbstractFactoryPattern {
-
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
@@ -52,5 +51,4 @@ public @interface AbstractFactoryPattern {
   @Documented
   public @interface ConcreteFactory {
   }
-
-}
+} 

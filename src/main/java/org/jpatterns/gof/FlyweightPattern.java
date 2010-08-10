@@ -20,4 +20,27 @@ import java.lang.annotation.*;
     related = {CompositePattern.class, StatePattern.class,
         StrategyPattern.class})
 public @interface FlyweightPattern {
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface FlyweightFactory {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Flyweight {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface UnsharedConcreteFlyweight {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface ConcreteFlyweight {
+  }
 }

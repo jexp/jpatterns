@@ -5,7 +5,7 @@ import static junit.framework.Assert.assertNull;
 import org.junit.Test;
 
 public class SingletonLazyTest {
-  @SingletonPattern(variation = SingletonPattern.Variation.LAZY)
+  @SingletonPattern.Singleton(variation = SingletonPattern.Variation.LAZY)
   public static class LazySingleton {
     private volatile static LazySingleton INSTANCE;
 

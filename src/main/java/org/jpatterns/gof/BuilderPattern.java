@@ -18,4 +18,22 @@ import java.lang.annotation.*;
 @DesignPattern(type = Type.CREATIONAL,
     related = {AbstractFactoryPattern.class, CompositePattern.class})
 public @interface BuilderPattern {
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Director {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Builder {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface ConcreteBuilder {
+  }
+
 }

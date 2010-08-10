@@ -16,7 +16,7 @@ public class SingletonTest {
     assertSame(singleton, singleton2);
   }
 
-  @SingletonPattern(variation = SingletonPattern.Variation.EAGER)
+  @SingletonPattern.Singleton(variation = SingletonPattern.Variation.EAGER)
   public static class Singleton {
     private static Singleton INSTANCE = new Singleton();
 

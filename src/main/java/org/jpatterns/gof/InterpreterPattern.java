@@ -19,4 +19,27 @@ import java.lang.annotation.*;
     related = {CompositePattern.class, FlyweightPattern.class,
         IteratorPattern.class, VisitorPattern.class})
 public @interface InterpreterPattern {
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Context {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface AbstractExpression {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface TerminalExpression {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface NonterminalExpression {
+  }
 }

@@ -20,7 +20,12 @@ import java.lang.annotation.*;
     related = {AbstractFactoryPattern.class, BuilderPattern.class,
         PrototypePattern.class})
 public @interface SingletonPattern {
-  Variation variation() default Variation.LAZY;
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Singleton {
+    Variation variation() default Variation.LAZY;
+  }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.METHOD)

@@ -19,4 +19,27 @@ import java.lang.annotation.*;
 @DesignPattern(type = Type.STRUCTURAL,
     related = {AbstractFactoryPattern.class, AdapterPattern.class})
 public @interface BridgePattern {
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Abstraction {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface RefinedAbstraction {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface Implementor {
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.TYPE)
+  @Documented
+  public @interface ConcreteImplementor {
+  }
 }
