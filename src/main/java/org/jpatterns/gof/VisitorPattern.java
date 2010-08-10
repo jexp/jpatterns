@@ -11,6 +11,7 @@ import java.lang.annotation.*;
 @Retention(value = RetentionPolicy.RUNTIME)
 @Target(value = ElementType.TYPE)
 @Documented
-@DesignPattern(type = Type.BEHAVIORAL)
+@DesignPattern(type = Type.BEHAVIORAL,
+    related = {CompositePattern.class, InterpreterPattern.class})
 public @interface VisitorPattern {
 }

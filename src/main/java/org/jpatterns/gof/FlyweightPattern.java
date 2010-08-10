@@ -11,6 +11,8 @@ import java.lang.annotation.*;
 @Retention(value = RetentionPolicy.RUNTIME)
 @Target(value = ElementType.TYPE)
 @Documented
-@DesignPattern(type = Type.STRUCTURAL)
+@DesignPattern(type = Type.STRUCTURAL,
+    related = {CompositePattern.class, StatePattern.class,
+        StrategyPattern.class})
 public @interface FlyweightPattern {
 }

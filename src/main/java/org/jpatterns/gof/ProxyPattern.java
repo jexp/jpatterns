@@ -12,7 +12,8 @@ import java.lang.annotation.*;
 @Target(value = {ElementType.TYPE, ElementType.FIELD,
     ElementType.LOCAL_VARIABLE})
 @Documented
-@DesignPattern(type = Type.STRUCTURAL)
+@DesignPattern(type = Type.STRUCTURAL,
+    related = {AdapterPattern.class, DecoratorPattern.class})
 public @interface ProxyPattern {
   Variation variation() default Variation.STATIC_MANUAL;
 

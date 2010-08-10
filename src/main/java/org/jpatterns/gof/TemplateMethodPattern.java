@@ -11,7 +11,8 @@ import java.lang.annotation.*;
 @Retention(value = RetentionPolicy.RUNTIME)
 @Target(value = {ElementType.TYPE, ElementType.METHOD})
 @Documented
-@DesignPattern(type = Type.BEHAVIORAL)
+@DesignPattern(type = Type.BEHAVIORAL,
+    related = {FactoryMethodPattern.class, StrategyPattern.class})
 public @interface TemplateMethodPattern {
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)

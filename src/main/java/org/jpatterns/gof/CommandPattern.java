@@ -9,8 +9,6 @@ import java.lang.annotation.*;
  * letting you parameterize clients with different requests, queue or log
  * requests, and support undoable operations.
  * <p/>
- * The structure for the command is:
- * <p/>
  * <img src="http://www.jpatterns.org/uml/gof/CommandStructure.gif"/>
  *
  * @author Michael Hunger

@@ -9,8 +9,6 @@ import java.lang.annotation.*;
  * dynamically. Decorators provide a flexible alternative to subclassing for
  * extending functionality.
  * <p/>
- * The structure for the decorator is:
- * <p/>
  * <img src="http://www.jpatterns.org/uml/gof/DecoratorStructure.gif"/>
  *
  * @author Heinz Kabutz

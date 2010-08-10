@@ -11,7 +11,9 @@ import java.lang.annotation.*;
 @Retention(value = RetentionPolicy.RUNTIME)
 @Target(value = ElementType.TYPE)
 @Documented
-@DesignPattern(type = Type.CREATIONAL)
+@DesignPattern(type = Type.CREATIONAL,
+    related = {AbstractFactoryPattern.class, BuilderPattern.class,
+        PrototypePattern.class})
 public @interface SingletonPattern {
   Variation variation() default Variation.LAZY;
 

@@ -11,6 +11,8 @@ import java.lang.annotation.*;
 @Retention(value = RetentionPolicy.RUNTIME)
 @Target(value = ElementType.TYPE)
 @Documented
-@DesignPattern(type = Type.CREATIONAL)
+@DesignPattern(type = Type.CREATIONAL,
+    related = {AbstractFactoryPattern.class, CompositePattern.class,
+        DecoratorPattern.class})
 public @interface PrototypePattern {
 }
