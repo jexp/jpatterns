@@ -4,4 +4,4 @@
  * pattern structure using Java annotations.  The project is led by Michael
  * Hunger and Heinz Kabutz.
  */
-package org.jpatterns.gof;
+package org.jpatterns;

@@ -17,6 +17,7 @@
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="Removed comments() and participants">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpatterns.iws" afterPath="$PROJECT_DIR$/jpatterns.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/package-info.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/package-info.java" />
     </list>
     <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path="$USER_HOME_GRIFFON$/" />
