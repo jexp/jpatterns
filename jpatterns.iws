@@ -25,15 +25,15 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/MementoPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/MementoPattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BridgePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BridgePattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ChainOfResponsibilityPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ChainOfResponsibilityPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/VisitorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/VisitorPattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/StrategyPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/StrategyPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/VisitorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/VisitorPattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/SingletonPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/SingletonPattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/PrototypePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/PrototypePattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/MediatorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/MediatorPattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/DecoratorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/DecoratorPattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/FacadePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/FacadePattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ObserverPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ObserverPattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ObserverPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ObserverPattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AdapterPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AdapterPattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/FlyweightPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/FlyweightPattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/FactoryMethodPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/FactoryMethodPattern.java" />
@@ -743,7 +743,7 @@
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added package-info.java file to describe main package" />
+    <option name="LAST_COMMIT_MESSAGE" value="added participants() and comment() into all annotations" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -754,7 +754,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Added jpatterns-annotations-1.0.jar" />
     <MESSAGE value="Fixed @author tag" />
     <MESSAGE value="Deleted jpatterns jar file to be replaced" />
     <MESSAGE value="Added new jpatterns jar file" />
@@ -779,6 +778,7 @@
     <MESSAGE value="Added inner annotations for remaining GoF patterns - new jar file" />
     <MESSAGE value="added" />
     <MESSAGE value="added package-info.java file to describe main package" />
+    <MESSAGE value="added participants() and comment() into all annotations" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
