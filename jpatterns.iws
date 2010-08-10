@@ -16,8 +16,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="Removed comments() and participants">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpatterns-0.1.jar" afterPath="$PROJECT_DIR$/jpatterns-0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/package-info/java.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpatterns.iws" afterPath="$PROJECT_DIR$/jpatterns.iws" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/package-info.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/package-info.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/package-info.java" />
     </list>
     <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path="$USER_HOME_GRIFFON$/" />
@@ -81,15 +83,6 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" highlightNonProjectFiles="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="StatePattern.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/StatePattern.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="3" selection-start="598" selection-end="994" vertical-scroll-proportion="0.6571146">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="StrategyPattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/StrategyPattern.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,7 +95,16 @@
       <file leaf-file-name="AbstractFactoryPattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="11" selection-start="583" selection-end="583" vertical-scroll-proportion="0.25790513">
+            <state line="0" column="0" selection-start="0" selection-end="27" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdapterPattern.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AdapterPattern.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="18" selection-start="846" selection-end="846" vertical-scroll-proportion="0.38043478">
               <folding />
             </state>
           </provider>
@@ -119,7 +121,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Source.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Source.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/core/Source.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="6" column="12" selection-start="96" selection-end="96" vertical-scroll-proportion="0.11264822">
@@ -132,15 +134,6 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/gof/CommandGUIActionTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="13" column="13" selection-start="241" selection-end="241" vertical-scroll-proportion="0.15019763">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommandPattern.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/CommandPattern.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="18" selection-start="919" selection-end="919" vertical-scroll-proportion="0.33300394">
               <folding />
             </state>
           </provider>
@@ -164,10 +157,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TemplateMethodPattern.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/TemplateMethodPattern.java">
+      <file leaf-file-name="ChainOfResponsibilityPattern.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ChainOfResponsibilityPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="18" selection-start="712" selection-end="712" vertical-scroll-proportion="0.37549406">
+            <state line="22" column="18" selection-start="677" selection-end="677" vertical-scroll-proportion="0.37549406">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package-info.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/package-info.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="3" selection-start="237" selection-end="237" vertical-scroll-proportion="0.07509881">
               <folding />
             </state>
           </provider>
@@ -270,6 +272,70 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="jpatterns" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="jpatterns" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src/main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src/main/java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src/main/java/org/jpatterns" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="jpatterns" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="jpatterns" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src/main" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src/main/java" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src/main/java/org/jpatterns" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src/main/java/org/jpatterns/gof" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -596,7 +662,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="22" width="1902" height="1178" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
@@ -613,7 +679,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="0" />
       <window_info id="Maven projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24770643" order="3" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="3" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23637345" order="0" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23637345" order="0" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" order="8" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" order="2" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" order="5" />
@@ -639,7 +705,7 @@
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added inner annotations for remaining GoF patterns" />
+    <option name="LAST_COMMIT_MESSAGE" value="added" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -650,8 +716,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Changed Composite, Adapter and Proxy to use inner annotations.  Added PatternDetails for participants and comments." />
-    <MESSAGE value="Added PatternDetails for participants and comments." />
     <MESSAGE value="Removed comments() and participants" />
     <MESSAGE value="Added jpatterns-annotations-1.0.jar" />
     <MESSAGE value="Fixed @author tag" />
@@ -675,6 +739,8 @@
     <MESSAGE value="Added intents and structure links for remaining patterns" />
     <MESSAGE value="Deleted structure gifs, now all hosted on http://www.jpatterns.org/uml/gof" />
     <MESSAGE value="Added inner annotations for remaining GoF patterns" />
+    <MESSAGE value="Added inner annotations for remaining GoF patterns - new jar file" />
+    <MESSAGE value="added" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -718,27 +784,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/gof/SingletonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="29" selection-start="390" selection-end="400" vertical-scroll-proportion="0.31916997">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/gof/SingletonLazyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="29" selection-start="215" selection-end="215" vertical-scroll-proportion="0.093873516">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/SingletonPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="18" selection-start="587" selection-end="587" vertical-scroll-proportion="0.35671937">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ProxyPattern.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="0" selection-start="671" selection-end="802" vertical-scroll-proportion="0.5019763">
@@ -781,30 +826,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BridgePattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="18" selection-start="561" selection-end="561" vertical-scroll-proportion="0.33794466">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BuilderPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="18" selection-start="546" selection-end="546" vertical-scroll-proportion="0.31916997">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/StrategyPattern.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="18" selection-start="607" selection-end="607" vertical-scroll-proportion="0.35671937">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="11" selection-start="583" selection-end="583" vertical-scroll-proportion="0.25790513">
           <folding />
         </state>
       </provider>
@@ -828,6 +852,48 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/core/Source.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="12" selection-start="96" selection-end="96" vertical-scroll-proportion="0.11264822">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AdapterPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="18" selection-start="846" selection-end="846" vertical-scroll-proportion="0.38043478">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BridgePattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="18" selection-start="561" selection-end="561" vertical-scroll-proportion="0.33794466">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BuilderPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="18" selection-start="546" selection-end="546" vertical-scroll-proportion="0.31916997">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ChainOfResponsibilityPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="18" selection-start="677" selection-end="677" vertical-scroll-proportion="0.37549406">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="27" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="3" selection-start="237" selection-end="237" vertical-scroll-proportion="0.07509881">
           <folding />
         </state>
       </provider>
