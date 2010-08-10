@@ -20,24 +20,37 @@ import java.lang.annotation.*;
 @DesignPattern(type = Type.STRUCTURAL,
     related = {AdapterPattern.class, DecoratorPattern.class})
 public @interface ProxyPattern {
+  Class[] participants() default {};
+
+  String comment() default "";
+
   Variation variation() default Variation.STATIC_MANUAL;
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Subject {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface RealSubject {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Proxy {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
@@ -45,6 +58,9 @@ public @interface ProxyPattern {
       ElementType.LOCAL_VARIABLE})
   @Documented
   public @interface Client {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   public static enum Variation {

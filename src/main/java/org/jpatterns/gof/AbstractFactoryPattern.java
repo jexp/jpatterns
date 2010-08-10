@@ -22,33 +22,52 @@ import java.lang.annotation.*;
     related = {FactoryMethodPattern.class, PrototypePattern.class,
         SingletonPattern.class})
 public @interface AbstractFactoryPattern {
+  Class[] participants() default {};
+
+  String comment() default "";
+
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface AbstractProduct {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface ConcreteProduct {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.METHOD)
   @Documented
   public @interface FactoryMethod {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface AbstractFactory {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface ConcreteFactory {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 } 

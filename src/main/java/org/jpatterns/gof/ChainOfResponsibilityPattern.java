@@ -21,15 +21,25 @@ import java.lang.annotation.*;
 @DesignPattern(type = Type.BEHAVIORAL,
     related = {CompositePattern.class})
 public @interface ChainOfResponsibilityPattern {
+  Class[] participants() default {};
+
+  String comment() default "";
+
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Handler {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface ConcreteHandler {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 }

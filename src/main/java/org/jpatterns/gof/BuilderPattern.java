@@ -18,22 +18,35 @@ import java.lang.annotation.*;
 @DesignPattern(type = Type.CREATIONAL,
     related = {AbstractFactoryPattern.class, CompositePattern.class})
 public @interface BuilderPattern {
+  Class[] participants() default {};
+
+  String comment() default "";
+
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Director {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Builder {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface ConcreteBuilder {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
 }

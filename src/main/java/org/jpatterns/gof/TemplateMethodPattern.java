@@ -21,27 +21,43 @@ import java.lang.annotation.*;
 @DesignPattern(type = Type.BEHAVIORAL,
     related = {FactoryMethodPattern.class, StrategyPattern.class})
 public @interface TemplateMethodPattern {
+  Class[] participants() default {};
+
+  String comment() default "";
+
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface AbstractClass {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface ConcreteClass {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.METHOD)
   @Documented
   public @interface TemplateMethod {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.METHOD)
   @Documented
   public @interface PrimitiveMethod {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 }

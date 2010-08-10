@@ -20,21 +20,34 @@ import java.lang.annotation.*;
 @DesignPattern(type = Type.BEHAVIORAL,
     related = {FacadePattern.class, ObserverPattern.class})
 public @interface MementoPattern {
+  Class[] participants() default {};
+
+  String comment() default "";
+
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Originator {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Memento {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Caretaker {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 }

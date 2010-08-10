@@ -18,21 +18,34 @@ import java.lang.annotation.*;
     related = {AbstractFactoryPattern.class, CompositePattern.class,
         DecoratorPattern.class})
 public @interface PrototypePattern {
+  Class[] participants() default {};
+
+  String comment() default "";
+
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Prototype {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface ConcretePrototype {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.METHOD)
   @Documented
   public @interface Operation {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 }

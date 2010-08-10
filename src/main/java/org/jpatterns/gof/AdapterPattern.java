@@ -26,10 +26,18 @@ import java.lang.annotation.*;
 @DesignPattern(type = Type.STRUCTURAL,
     related = {BridgePattern.class, DecoratorPattern.class, ProxyPattern.class})
 public @interface AdapterPattern {
+  Class[] participants() default {};
+
+  String comment() default "";
+
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Adapter {
+    Class[] participants() default {};
+
+    String comment() default "";
+
     Variation value() default Variation.OBJECT;
   }
 
@@ -41,6 +49,9 @@ public @interface AdapterPattern {
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Adaptee {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   public enum Variation {

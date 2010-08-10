@@ -21,21 +21,34 @@ import java.lang.annotation.*;
     related = {ChainOfResponsibilityPattern.class, DecoratorPattern.class,
         FlyweightPattern.class, IteratorPattern.class, VisitorPattern.class})
 public @interface CompositePattern {
+  Class[] participants() default {};
+
+  String comment() default "";
+
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Component {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Leaf {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Composite {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 }

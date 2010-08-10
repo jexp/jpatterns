@@ -21,4 +21,7 @@ import java.lang.annotation.*;
     related = {AbstractFactoryPattern.class, MediatorPattern.class,
         SingletonPattern.class})
 public @interface FacadePattern {
+  Class[] participants() default {};
+
+  String comment() default "";
 }

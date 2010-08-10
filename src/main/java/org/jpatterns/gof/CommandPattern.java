@@ -28,10 +28,18 @@ import java.lang.annotation.*;
         PrototypePattern.class})
 
 public @interface CommandPattern {
+  Class[] participants() default {};
+
+  String comment() default "";
+
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Command {
+    Class[] participants() default {};
+
+    String comment() default "";
+
     boolean undoable() default false;
   }
 
@@ -39,23 +47,35 @@ public @interface CommandPattern {
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface ConcreteCommand {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Invoker {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Receiver {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Client {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 }

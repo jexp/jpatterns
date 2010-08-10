@@ -20,10 +20,18 @@ import java.lang.annotation.*;
     related = {AbstractFactoryPattern.class, BuilderPattern.class,
         PrototypePattern.class})
 public @interface SingletonPattern {
+  Class[] participants() default {};
+
+  String comment() default "";
+
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface Singleton {
+    Class[] participants() default {};
+
+    String comment() default "";
+
     Variation variation() default Variation.LAZY;
   }
 
@@ -31,6 +39,9 @@ public @interface SingletonPattern {
   @Target(value = ElementType.METHOD)
   @Documented
   public @interface SingletonMethod {
+    Class[] participants() default {};
+
+    String comment() default "";
   }
 
   public enum Variation {
