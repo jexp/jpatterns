@@ -1,6 +1,6 @@
 package org.jpatterns.gof;
 
-import org.jpatterns.*;
+import org.jpatterns.doc.*;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 

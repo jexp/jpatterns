@@ -1,4 +1,4 @@
-package org.jpatterns;
+package org.jpatterns.core;
 
 import java.lang.annotation.*;
 

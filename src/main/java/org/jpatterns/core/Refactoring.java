@@ -1,4 +1,4 @@
-package org.jpatterns;
+package org.jpatterns.core;
 
 /**
  * @author Michael Hunger

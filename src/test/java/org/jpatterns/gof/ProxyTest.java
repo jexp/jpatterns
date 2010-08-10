@@ -1,6 +1,6 @@
 package org.jpatterns.gof;
 
-import org.jpatterns.PatternParticipants;
+import org.jpatterns.doc.PatternParticipants;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;

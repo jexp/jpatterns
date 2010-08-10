@@ -1,6 +1,6 @@
 package org.jpatterns.gof;
 
-import org.jpatterns.*;
+import org.jpatterns.core.*;
 
 import java.lang.annotation.*;
 

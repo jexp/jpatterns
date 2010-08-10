@@ -1,4 +1,4 @@
-package org.jpatterns;
+package org.jpatterns.doc;
 
 import java.lang.annotation.*;
 
@@ -14,9 +14,9 @@ import java.lang.annotation.*;
     ElementType.LOCAL_VARIABLE,
     ElementType.METHOD,
     ElementType.PARAMETER
-})
+    })
 @Documented
 @Inherited
-public @interface PatternComment {
-  String value();
+public @interface PatternParticipants {
+  Class[] value();
 }

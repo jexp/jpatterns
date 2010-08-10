@@ -1,6 +1,6 @@
 package org.jpatterns.gof;
 
-import org.jpatterns.PatternParticipants;
+import org.jpatterns.doc.PatternParticipants;
 import org.junit.Test;
 
 import javax.swing.*;
