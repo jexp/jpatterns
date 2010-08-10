@@ -5,6 +5,9 @@ import org.jpatterns.core.*;
 import java.lang.annotation.*;
 
 /**
+ * <b>Intent [GoF, pg 117]:</b> Specify the kinds of objects to create using a
+ * prototypical instance, and create new objects by copying this prototype.
+ *
  * @author Heinz Kabutz
  * @since 2010-08-09
  */

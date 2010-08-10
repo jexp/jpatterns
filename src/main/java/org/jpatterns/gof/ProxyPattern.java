@@ -5,6 +5,11 @@ import org.jpatterns.core.*;
 import java.lang.annotation.*;
 
 /**
+ * <b>Intent [GoF, pg 207]:</b> Provide a surrogate or placeholder for another
+ * object to control access to it.
+ * <p/>
+ * <img src="http://www.jpatterns.org/uml/gof/ProxyStructure.gif"/>
+ *
  * @author Heinz Kabutz
  * @since 2010-07-28
  */

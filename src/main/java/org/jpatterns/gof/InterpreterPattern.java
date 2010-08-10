@@ -5,6 +5,10 @@ import org.jpatterns.core.*;
 import java.lang.annotation.*;
 
 /**
+ * <b>Intent [GoF, pg 243]:</b> Given a language, define a represention for its
+ * grammar along with an interpreter that uses the representation to interpret
+ * sentences in the language.
+ *
  * @author Heinz Kabutz
  * @since 2010-08-09
  */

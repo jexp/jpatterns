@@ -5,6 +5,12 @@ import org.jpatterns.core.*;
 import java.lang.annotation.*;
 
 /**
+ * <b>Intent [GoF, pg 107]:</b> Define an interface for creating an object, but
+ * let subclasses decide which class to instantiate. Factory Method lets a class
+ * defer instantiation to subclasses.
+ * <p/>
+ * <img src="http://www.jpatterns.org/uml/gof/FactoryMethodStructure.gif"/>
+ *
  * @author Heinz Kabutz
  * @since 2010-08-09
  */

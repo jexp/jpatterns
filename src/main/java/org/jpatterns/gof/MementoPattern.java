@@ -5,6 +5,12 @@ import org.jpatterns.core.*;
 import java.lang.annotation.*;
 
 /**
+ * <b>Intent [GoF, pg 283]:</b> Without violating encapsulation, capture and
+ * externalize an object's internal state so that the object can be restored to
+ * this state later.
+ * <p/>
+ * <img src="http://www.jpatterns.org/uml/gof/MementoStructure.gif"/>
+ *
  * @author Heinz Kabutz
  * @since 2010-08-09
  */

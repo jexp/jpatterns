@@ -5,6 +5,11 @@ import org.jpatterns.core.*;
 import java.lang.annotation.*;
 
 /**
+ * <b>Intent [GoF, pg 195]:</b> Use sharing to support large numbers of
+ * fine-grained objects efficiently.
+ * <p/>
+ * <img src="http://www.jpatterns.org/uml/gof/FlyweightStructure.gif"/>
+ *
  * @author Heinz Kabutz
  * @since 2010-07-28
  */
