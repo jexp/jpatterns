@@ -16,29 +16,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="Removed comments() and participants">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/StatePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/StatePattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/SingletonPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/SingletonPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/MediatorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/MediatorPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/PrototypePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/PrototypePattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/InterpreterPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/InterpreterPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BuilderPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BuilderPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/DecoratorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/DecoratorPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/jpatterns/gof/SingletonTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/jpatterns/gof/SingletonTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ObserverPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ObserverPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpatterns.iml" afterPath="$PROJECT_DIR$/jpatterns.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/MementoPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/MementoPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/jpatterns/gof/SingletonLazyTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/jpatterns/gof/SingletonLazyTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/org/jpatterns/gof/SingletonEagerTest.java" afterPath="$PROJECT_DIR$/src/test/java/org/jpatterns/gof/SingletonEagerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/FlyweightPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/FlyweightPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BridgePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BridgePattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpatterns-0.1.jar" afterPath="$PROJECT_DIR$/jpatterns-0.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/FactoryMethodPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/FactoryMethodPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ChainOfResponsibilityPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ChainOfResponsibilityPattern.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpatterns.iws" afterPath="$PROJECT_DIR$/jpatterns.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/IteratorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/IteratorPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/VisitorPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/VisitorPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/jpatterns/gof/IteratorTest.java" />
     </list>
     <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path="$USER_HOME_GRIFFON$/" />
@@ -273,6 +252,24 @@
         </PATH_ELEMENT>
         <PATH_ELEMENT>
           <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="jpatterns" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="jpatterns" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns" />
+          <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="PsiDirectory:/Users/heinz/work/projects/jpatterns/src" />
           <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
         </PATH_ELEMENT>
       </PATH>
@@ -642,7 +639,7 @@
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleted structure gifs, now all hosted on http://www.jpatterns.org/uml/gof" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added inner annotations for remaining GoF patterns" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -653,7 +650,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Changed TemplateMethodPattern to use inner annotations" />
     <MESSAGE value="Changed Composite, Adapter and Proxy to use inner annotations.  Added PatternDetails for participants and comments." />
     <MESSAGE value="Added PatternDetails for participants and comments." />
     <MESSAGE value="Removed comments() and participants" />
@@ -678,6 +674,7 @@
     <MESSAGE value="Added all related patterns" />
     <MESSAGE value="Added intents and structure links for remaining patterns" />
     <MESSAGE value="Deleted structure gifs, now all hosted on http://www.jpatterns.org/uml/gof" />
+    <MESSAGE value="Added inner annotations for remaining GoF patterns" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
