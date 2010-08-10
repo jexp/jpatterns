@@ -7,6 +7,30 @@
     <groupId>org.jpatterns</groupId>
     <artifactId>jpatterns</artifactId>
     <version>1.0</version>
+    <packaging>jar</packaging>
+    <name>Java Design Pattern Annotations</name>
+    <description>
+        Design Patterns are typically encoded into Java code in an ad-hoc fashion.
+        They are either embedded into the names of the classes or written into the Javadocs.
+        Unfortunately it is impossible to accurately determine a pattern based solely on the
+        class structure without knowing the intent of the code author.
+
+        JPatterns is a collection of annotations that make it easy to communicate the use
+        of (Design)Patterns within your code to your fellow developers and your future self.
+    </description>
+    <url>http://jpatterns.org</url>
+    <licenses>
+      <license>
+        <name>The Apache Software License, Version 2.0</name>
+        <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        <distribution>repo</distribution>
+      </license>
+    </licenses>
+    <scm>
+      <url>http://github.com/jexp/jpatterns</url>
+      <connection>git://github.com/jexp/jpatterns.git</connection>
+      <developerConnection>git@github.com:jexp/jpatterns.git</developerConnection>
+    </scm>
 
     <build>
         <plugins>
