@@ -16,9 +16,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" name="Default" comment="Removed comments() and participants">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/jpatterns-0.1.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/jpatterns-1.0.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpatterns.iws" afterPath="$PROJECT_DIR$/jpatterns.iws" />
     </list>
     <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path="$USER_HOME_GRIFFON$/" />
@@ -82,17 +81,6 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" highlightNonProjectFiles="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AbstractFactoryPattern.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryPattern.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="46" selection-start="386" selection-end="386" vertical-scroll-proportion="0.22619048">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="AdapterPattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AdapterPattern.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,13 +90,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BridgePattern.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BridgePattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BridgePattern.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="25" column="0" selection-start="631" selection-end="631" vertical-scroll-proportion="0.47123015">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -622,7 +619,7 @@
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed packages of top level classes to core and doc" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed version number of jar file" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -633,7 +630,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Reformatted code to indentation spacing of 2" />
     <MESSAGE value="Added Heinz author tag and changed date format to yyyy-MM-dd" />
     <MESSAGE value="Added @Documented tag to all the annotations" />
     <MESSAGE value="Added easymock and cglib to lib directory for easy compile" />
@@ -658,6 +654,7 @@
     <MESSAGE value="Updated test names to reflect package" />
     <MESSAGE value="Updated javadocs to point to UML, contain intents and related patterns" />
     <MESSAGE value="Changed packages of top level classes to core and doc" />
+    <MESSAGE value="Renamed version number of jar file" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -701,13 +698,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/DecoratorPattern.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="46" selection-start="371" selection-end="375" vertical-scroll-proportion="0.20652173">
@@ -749,13 +739,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AdapterPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="18" selection-start="846" selection-end="846" vertical-scroll-proportion="0.38194445">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -806,12 +789,26 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AdapterPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="18" selection-start="846" selection-end="846" vertical-scroll-proportion="0.38194445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BridgePattern.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="0" selection-start="631" selection-end="631" vertical-scroll-proportion="0.47123015">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>

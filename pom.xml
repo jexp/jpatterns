@@ -2,68 +2,72 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.jpatterns</groupId>
-    <artifactId>jpatterns</artifactId>
-    <version>1.0</version>
-    <packaging>jar</packaging>
-    <name>Java Design Pattern Annotations</name>
-    <description>
-        Design Patterns are typically encoded into Java code in an ad-hoc fashion.
-        They are either embedded into the names of the classes or written into the Javadocs.
-        Unfortunately it is impossible to accurately determine a pattern based solely on the
-        class structure without knowing the intent of the code author.
+  <groupId>org.jpatterns</groupId>
+  <artifactId>jpatterns</artifactId>
+  <version>0.1</version>
+  <packaging>jar</packaging>
+  <name>Java Design Pattern Annotations</name>
+  <description>
+    Design Patterns are typically encoded into Java code in an ad-hoc fashion.
+    They are either embedded into the names of the classes or written into the
+    Javadocs.
+    Unfortunately it is impossible to accurately determine a pattern based
+    solely on the
+    class structure without knowing the intent of the code author.
 
-        JPatterns is a collection of annotations that make it easy to communicate the use
-        of (Design)Patterns within your code to your fellow developers and your future self.
-    </description>
-    <url>http://jpatterns.org</url>
-    <licenses>
-      <license>
-        <name>The Apache Software License, Version 2.0</name>
-        <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-        <distribution>repo</distribution>
-      </license>
-    </licenses>
-    <scm>
-      <url>http://github.com/jexp/jpatterns</url>
-      <connection>git://github.com/jexp/jpatterns.git</connection>
-      <developerConnection>git@github.com:jexp/jpatterns.git</developerConnection>
-    </scm>
+    JPatterns is a collection of annotations that make it easy to communicate
+    the use
+    of (Design)Patterns within your code to your fellow developers and your
+    future self.
+  </description>
+  <url>http://jpatterns.org</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <url>http://github.com/jexp/jpatterns</url>
+    <connection>git://github.com/jexp/jpatterns.git</connection>
+    <developerConnection>git@github.com:jexp/jpatterns.git</developerConnection>
+  </scm>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.5</source>
-                    <target>1.5</target>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.7</version>
-            </plugin>
-        </plugins>
-    </build>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.5</source>
+          <target>1.5</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.7</version>
+      </plugin>
+    </plugins>
+  </build>
 
-    <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit-dep</artifactId>
-            <version>4.5</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.easymock</groupId>
-            <artifactId>easymock</artifactId>
-            <version>2.4</version>
-            <scope>test</scope>
-        </dependency>
-    </dependencies>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit-dep</artifactId>
+      <version>4.5</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.easymock</groupId>
+      <artifactId>easymock</artifactId>
+      <version>2.4</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 
 
 </project>
