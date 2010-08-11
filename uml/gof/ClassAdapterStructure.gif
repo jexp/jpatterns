@@ -1,0 +1,669 @@
+
+  
+  
+
+  
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <title>src/main/java/org/jpatterns/gof/ClassAdapterStructure.gif at 0ec6a9d67102468c795352b6cc36209f34012232 from jexp's jpatterns - GitHub</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub" />
+    <link rel="fluid-icon" href="http://github.com/fluidicon.png" title="GitHub" />
+
+    <link href="http://assets3.github.com/stylesheets/bundle_common.css?ad7093c760d70644206be97b3c0bc84a650562c3" media="screen" rel="stylesheet" type="text/css" />
+<link href="http://assets2.github.com/stylesheets/bundle_github.css?ad7093c760d70644206be97b3c0bc84a650562c3" media="screen" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" charset="utf-8">
+      var GitHub = {}
+      var github_user = 'kabutz'
+      
+    </script>
+    <script src="http://assets1.github.com/javascripts/jquery/jquery-1.4.2.min.js?ad7093c760d70644206be97b3c0bc84a650562c3" type="text/javascript"></script>
+    <script src="http://assets1.github.com/javascripts/bundle_common.js?ad7093c760d70644206be97b3c0bc84a650562c3" type="text/javascript"></script>
+<script src="http://assets2.github.com/javascripts/bundle_github.js?ad7093c760d70644206be97b3c0bc84a650562c3" type="text/javascript"></script>
+
+        <script type="text/javascript" charset="utf-8">
+      GitHub.spy({
+        repo: "jexp/jpatterns"
+      })
+    </script>
+
+    
+  
+    
+  
+
+  <link href="http://github.com/jexp/jpatterns/commits/0ec6a9d67102468c795352b6cc36209f34012232.atom" rel="alternate" title="Recent Commits to jpatterns:0ec6a9d67102468c795352b6cc36209f34012232" type="application/atom+xml" />
+
+    <META NAME="ROBOTS" CONTENT="NOINDEX, FOLLOW">    <meta name="description" content="Annotation for (Design) patterns to communicate pattern usage" />
+    <script type="text/javascript">
+      GitHub.nameWithOwner = GitHub.nameWithOwner || "jexp/jpatterns";
+      GitHub.currentRef = '';
+    </script>
+  
+
+            <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3769691-2']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script');
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        ga.setAttribute('async', 'true');
+        document.documentElement.firstChild.appendChild(ga);
+      })();
+    </script>
+
+  </head>
+
+  
+
+  <body>
+    
+
+    
+      <script type="text/javascript">
+        var _kmq = _kmq || [];
+        function _kms(u){
+          var s = document.createElement('script'); var f = document.getElementsByTagName('script')[0]; s.type = 'text/javascript'; s.async = true;
+          s.src = u; f.parentNode.insertBefore(s, f);
+        }
+        _kms('//i.kissmetrics.com/i.js');_kms('//doug1izaerwt3.cloudfront.net/406e8bf3a2b8846ead55afb3cfaf6664523e3a54.1.js');
+      </script>
+    
+
+    
+
+    
+
+    
+
+    <div class="subnavd" id="main">
+      <div id="header" class="pageheaded">
+        <div class="site">
+          <div class="logo">
+            <a href="https://github.com/"><img src="/images/modules/header/logov3.png" alt="github" /></a>
+          </div>
+          
+            
+
+
+
+
+
+
+  
+    <div class="userbox">
+      <div class="inner">
+        <div class="avatarname">
+          <a href="http://github.com/kabutz"><img src="http://www.gravatar.com/avatar/4ee8c8a4fc518be7d6c334065d4f5251?s=140&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-140.png" alt="" width="20" height="20"  /></a>
+          <a href="http://github.com/kabutz" class="name">kabutz</a>
+
+          
+          
+        </div>
+        <ul class="usernav">
+          <li><a href="https://github.com/">Dashboard</a></li>
+          <li>
+            
+            <a href="https://github.com/inbox">Inbox</a>
+            <a href="https://github.com/inbox" class="unread_count ">0</a>
+          </li>
+          <li><a href="https://github.com/account">Account Settings</a></li>
+                              <li><a href="/logout">Log Out</a></li>
+        </ul>
+      </div>
+    </div><!-- /.userbox -->
+  
+
+
+          
+          <div class="topsearch">
+  
+    <form action="/search" id="top_search_form" method="get">
+      <a href="/search" class="advanced-search tooltipped downwards" title="Advanced Search">Advanced Search</a>
+      <input type="search" class="search my_repos_autocompleter" name="q" results="5" placeholder="Search&hellip;" /> <input type="submit" value="Search" class="button" />
+      <input type="hidden" name="type" value="Everything" />
+      <input type="hidden" name="repo" value="" />
+      <input type="hidden" name="langOverride" value="" />
+      <input type="hidden" name="start_value" value="1" />
+    </form>
+  
+  
+    <ul class="nav">
+      <li><a href="/explore">Explore GitHub</a></li>
+      <li><a href="http://gist.github.com">Gist</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="http://help.github.com">Help</a></li>
+    </ul>
+  
+</div>
+
+        </div>
+      </div>
+
+      
+      
+        
+    <div class="site">
+      <div class="pagehead repohead vis-public   ">
+        <h1>
+          <a href="/jexp">jexp</a> / <strong><a href="http://github.com/jexp/jpatterns">jpatterns</a></strong>
+          
+          
+        </h1>
+
+        
+    <ul class="actions">
+      
+
+      
+        <li class="for-owner" style="display:none"><a href="https://github.com/jexp/jpatterns/edit" class="minibutton btn-admin "><span><span class="icon"></span>Admin</span></a></li>
+        <li>
+          <a href="/jexp/jpatterns/toggle_watch" class="minibutton btn-watch " id="watch_button" style="display:none"><span><span class="icon"></span>Watch</span></a>
+          <a href="/jexp/jpatterns/toggle_watch" class="minibutton btn-watch " id="unwatch_button" style="display:none"><span><span class="icon"></span>Unwatch</span></a>
+        </li>
+        
+          
+            <li class="for-notforked" style="display:none"><a href="/jexp/jpatterns/fork" class="minibutton btn-fork " id="fork_button" onclick="var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', '63654f107a9aec3b0fe5ce468feb2c2b4004a504'); f.appendChild(s);f.submit();return false;"><span><span class="icon"></span>Fork</span></a></li>
+            <li class="for-hasfork" style="display:none"><a href="#" class="minibutton btn-fork " id="your_fork_button"><span><span class="icon"></span>Your Fork</span></a></li>
+          
+
+          
+          <li id="pull_request_item" class='ospr' style="display:none"><a href="/jexp/jpatterns/pull_request/" class="minibutton btn-pull-request "><span><span class="icon"></span>Pull Request</span></a></li>
+          
+
+          <li><a href="#" class="minibutton btn-download " id="download_button"><span><span class="icon"></span>Download Source</span></a></li>
+        
+      
+      
+      <li class="repostats">
+        <ul class="repo-stats">
+          <li class="watchers"><a href="/jexp/jpatterns/watchers" title="Watchers" class="tooltipped downwards">5</a></li>
+          <li class="forks"><a href="/jexp/jpatterns/network" title="Forks" class="tooltipped downwards">2</a></li>
+        </ul>
+      </li>
+    </ul>
+
+
+        
+  <ul class="tabs">
+    <li><a href="http://github.com/jexp/jpatterns/tree/" class="selected" highlight="repo_source">Source</a></li>
+    <li><a href="http://github.com/jexp/jpatterns/commits/" highlight="repo_commits">Commits</a></li>
+
+    
+    <li><a href="/jexp/jpatterns/network" highlight="repo_network">Network (2)</a></li>
+
+    
+      <li><a href="/jexp/jpatterns/forkqueue" highlight="repo_fork_queue">Fork Queue</a></li>
+    
+
+    
+      
+      <li><a href="/jexp/jpatterns/issues" highlight="issues">Issues (0)</a></li>
+    
+
+    
+      
+      <li><a href="/jexp/jpatterns/downloads">Downloads (0)</a></li>
+    
+
+          
+      <li><a href="http://wiki.github.com/jexp/jpatterns/">Wiki (1)</a></li>
+    
+    <li><a href="/jexp/jpatterns/graphs" highlight="repo_graphs">Graphs</a></li>
+
+    <li class="contextswitch nochoices">
+      <span class="toggle leftwards tooltipped" title="0ec6a9d67102468c795352b6cc36209f34012232">
+        <em>Tree:</em>
+        <code>0ec6a9d</code>
+      </span>
+    </li>
+  </ul>
+
+  <div style="display:none" id="pl-description"><p><em class="placeholder">click here to add a description</em></p></div>
+  <div style="display:none" id="pl-homepage"><p><em class="placeholder">click here to add a homepage</em></p></div>
+
+  <div class="subnav-bar">
+  
+  <ul>
+    <li>
+      <a href="#" class="dropdown">Switch Branches (1)</a>
+      <ul>
+        
+          
+          
+            <li><a href="/jexp/jpatterns/blob/master/src/main/java/org/jpatterns/gof/ClassAdapterStructure.gif" action="show">master</a></li>
+          
+        
+      </ul>
+    </li>
+    <li>
+      <a href="#" class="dropdown defunct">Switch Tags (0)</a>
+      
+    </li>
+    <li>
+    
+    <a href="/jexp/jpatterns/branches/master" class="manage">Branch List</a>
+    
+    </li>
+  </ul>
+</div>
+
+  
+  
+  
+  
+  
+  
+
+
+
+        
+    <div id="repo_details" class="metabox clearfix">
+      <div id="repo_details_loader" class="metabox-loader" style="display:none">Sending Request&hellip;</div>
+
+      
+
+      <div id="repository_description" rel="repository_description_edit">
+        
+          <p>Annotation for (Design) patterns to communicate pattern usage
+            <span id="read_more" style="display:none">&mdash; <a href="#readme">Read more</a></span>
+          </p>
+        
+      </div>
+      <div id="repository_description_edit" style="display:none;" class="inline-edit">
+        <form action="/jexp/jpatterns/edit/update" method="post"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="63654f107a9aec3b0fe5ce468feb2c2b4004a504" /></div>
+          <input type="hidden" name="field" value="repository_description">
+          <input type="text" class="textfield" name="value" value="Annotation for (Design) patterns to communicate pattern usage">
+          <div class="form-actions">
+            <button class="minibutton"><span>Save</span></button> &nbsp; <a href="#" class="cancel">Cancel</a>
+          </div>
+        </form>
+      </div>
+
+      
+      <div class="repository-homepage" id="repository_homepage" rel="repository_homepage_edit">
+        <p><a href="http://jpatterns.org" rel="nofollow">http://jpatterns.org</a></p>
+      </div>
+      <div id="repository_homepage_edit" style="display:none;" class="inline-edit">
+        <form action="/jexp/jpatterns/edit/update" method="post"><div style="margin:0;padding:0"><input name="authenticity_token" type="hidden" value="63654f107a9aec3b0fe5ce468feb2c2b4004a504" /></div>
+          <input type="hidden" name="field" value="repository_homepage">
+          <input type="text" class="textfield" name="value" value="http://jpatterns.org">
+          <div class="form-actions">
+            <button class="minibutton"><span>Save</span></button> &nbsp; <a href="#" class="cancel">Cancel</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="rule "></div>
+
+            <div id="url_box" class="url-box">
+        <ul class="clone-urls">
+          
+            
+              <li id="private_clone_url"><a href="git@github.com:jexp/jpatterns.git" data-permissions="Read+Write">SSH</a></li>
+            
+            <li id="http_clone_url"><a href="https://kabutz@github.com/jexp/jpatterns.git" data-permissions="Read+Write">HTTP</a></li>
+            <li id="public_clone_url"><a href="git://github.com/jexp/jpatterns.git" data-permissions="Read-Only">Git Read-Only</a></li>
+          
+        </ul>
+        <input type="text" spellcheck="false" id="url_field" class="url-field" />
+              <span style="display:none" id="url_box_clippy"></span>
+      <span id="clippy_tooltip_url_box_clippy" class="clippy-tooltip tooltipped" title="copy to clipboard">
+      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+              width="14"
+              height="14"
+              class="clippy"
+              id="clippy" >
+      <param name="movie" value="http://assets0.github.com/flash/clippy.swf?v5"/>
+      <param name="allowScriptAccess" value="always" />
+      <param name="quality" value="high" />
+      <param name="scale" value="noscale" />
+      <param NAME="FlashVars" value="id=url_box_clippy&amp;copied=&amp;copyto=">
+      <param name="bgcolor" value="#FFFFFF">
+      <param name="wmode" value="opaque">
+      <embed src="http://assets0.github.com/flash/clippy.swf?v5"
+             width="14"
+             height="14"
+             name="clippy"
+             quality="high"
+             allowScriptAccess="always"
+             type="application/x-shockwave-flash"
+             pluginspage="http://www.macromedia.com/go/getflashplayer"
+             FlashVars="id=url_box_clippy&amp;copied=&amp;copyto="
+             bgcolor="#FFFFFF"
+             wmode="opaque"
+      />
+      </object>
+      </span>
+
+        <p id="url_description">This URL has <strong>Read+Write</strong> access</p>
+      </div>
+    </div>
+
+
+        
+
+      </div><!-- /.pagehead -->
+
+      
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  GitHub.currentCommitRef = '0ec6a9d67102468c795352b6cc36209f34012232'
+  GitHub.currentRepoOwner = 'jexp'
+  GitHub.currentRepo = "jpatterns"
+  GitHub.downloadRepo = '/jexp/jpatterns/archives/0ec6a9d67102468c795352b6cc36209f34012232'
+
+  
+    GitHub.hasWriteAccess = true
+    GitHub.hasAdminAccess = false
+    GitHub.watchingRepo = true
+    GitHub.ignoredRepo = false
+    GitHub.hasForkOfRepo = ""
+    GitHub.hasForked = false
+  
+
+  
+</script>
+
+
+
+
+
+
+
+
+
+
+  <div id="commit">
+    <div class="group">
+        
+  <div class="envelope commit">
+    <div class="human">
+      
+        <div class="message"><pre><a href="/jexp/jpatterns/commit/0ec6a9d67102468c795352b6cc36209f34012232">Added intents and structure links for remaining patterns</a> </pre></div>
+      
+
+      <div class="actor">
+        <div class="gravatar">
+          
+          <img src="http://www.gravatar.com/avatar/3b2d69488b0972edb28d849f5e19a784?s=140&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-140.png" alt="" width="30" height="30"  />
+        </div>
+        <div class="name">Dr Heinz M. Kabutz <span>(author)</span></div>
+        <div class="date">
+          <abbr class="relatize" title="2010-08-10 06:50:27">Tue Aug 10 06:50:27 -0700 2010</abbr>
+        </div>
+      </div>
+
+      
+
+    </div>
+    <div class="machine">
+      <span>c</span>ommit&nbsp;&nbsp;<a href="/jexp/jpatterns/commit/0ec6a9d67102468c795352b6cc36209f34012232" hotkey="c">0ec6a9d67102468c7953</a><br />
+      <span>t</span>ree&nbsp;&nbsp;&nbsp;&nbsp;<a href="/jexp/jpatterns/tree/0ec6a9d67102468c795352b6cc36209f34012232/src/main/java/org/jpatterns/gof/AbstractFactoryStructure.gif" hotkey="t">c1d7c43fc35e3d3921d4</a><br />
+      
+        <span>p</span>arent&nbsp;
+        
+        <a href="/jexp/jpatterns/commit/ed8bddfd73494ee5338ea62fb619f41f74d06e8a" hotkey="p">ed8bddfd73494ee5338e</a>
+      
+
+    </div>
+  </div>
+
+    </div>
+  </div>
+
+
+
+  
+    <div id="path">
+      <b><a href="/jexp/jpatterns/tree/0ec6a9d67102468c795352b6cc36209f34012232">jpatterns</a></b> / <a href="/jexp/jpatterns/tree/0ec6a9d67102468c795352b6cc36209f34012232/src">src</a> / <a href="/jexp/jpatterns/tree/0ec6a9d67102468c795352b6cc36209f34012232/src/main">main</a> / <a href="/jexp/jpatterns/tree/0ec6a9d67102468c795352b6cc36209f34012232/src/main/java">java</a> / <a href="/jexp/jpatterns/tree/0ec6a9d67102468c795352b6cc36209f34012232/src/main/java/org">org</a> / <a href="/jexp/jpatterns/tree/0ec6a9d67102468c795352b6cc36209f34012232/src/main/java/org/jpatterns">jpatterns</a> / <a href="/jexp/jpatterns/tree/0ec6a9d67102468c795352b6cc36209f34012232/src/main/java/org/jpatterns/gof">gof</a> / ClassAdapterStructure.gif       <span style="display:none" id="clippy_456">src/main/java/org/jpatterns/gof/ClassAdapterStructure.gif</span>
+      
+      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+              width="110"
+              height="14"
+              class="clippy"
+              id="clippy" >
+      <param name="movie" value="http://assets0.github.com/flash/clippy.swf?v5"/>
+      <param name="allowScriptAccess" value="always" />
+      <param name="quality" value="high" />
+      <param name="scale" value="noscale" />
+      <param NAME="FlashVars" value="id=clippy_456&amp;copied=copied!&amp;copyto=copy to clipboard">
+      <param name="bgcolor" value="#FFFFFF">
+      <param name="wmode" value="opaque">
+      <embed src="http://assets0.github.com/flash/clippy.swf?v5"
+             width="110"
+             height="14"
+             name="clippy"
+             quality="high"
+             allowScriptAccess="always"
+             type="application/x-shockwave-flash"
+             pluginspage="http://www.macromedia.com/go/getflashplayer"
+             FlashVars="id=clippy_456&amp;copied=copied!&amp;copyto=copy to clipboard"
+             bgcolor="#FFFFFF"
+             wmode="opaque"
+      />
+      </object>
+      
+
+    </div>
+
+    <div id="files">
+      <div class="file">
+        <div class="meta">
+          <div class="info">
+            <span class="icon"><img alt="Txt" height="16" src="http://assets2.github.com/images/icons/txt.png?ad7093c760d70644206be97b3c0bc84a650562c3" width="16" /></span>
+            <span class="mode" title="File Mode">100644</span>
+            
+            <span>1.995 kb</span>
+          </div>
+          <ul class="actions">
+            
+            <li><a href="/jexp/jpatterns/raw/0ec6a9d67102468c795352b6cc36209f34012232/src/main/java/org/jpatterns/gof/ClassAdapterStructure.gif" id="raw-url">raw</a></li>
+            
+            <li><a href="/jexp/jpatterns/commits/master/src/main/java/org/jpatterns/gof/ClassAdapterStructure.gif">history</a></li>
+          </ul>
+        </div>
+        
+  <div class="data syntax type-text">
+    
+      <div class="image">
+        
+        
+          <img src="/jexp/jpatterns/raw/0ec6a9d67102468c795352b6cc36209f34012232/src/main/java/org/jpatterns/gof/ClassAdapterStructure.gif" />
+        
+      </div>
+    
+  </div>
+
+
+      </div>
+    </div>
+
+  
+
+
+    </div>
+  
+      
+
+      <div class="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="site">
+        <div class="info">
+          <div class="links">
+            <a href="http://github.com/blog"><b>Blog</b></a> |
+            <a href="http://support.github.com?sso=hN9jp_Nb79I5Cfb1kgkQxanib_q-wTsZe7DxlFFktMRBV63ro7YIM7n3AxZ29XdLteHob7ZybFPMAtVRdg0w4b6YdGjeh-NF-vLdowAUA8TwmzmJSYR1LwGGYDqlLaqmDxd0pEaCkyUh_rEuoxXq1lMl5Pd3zv6teP3FLBU5BHOwknQjNBanP4WuB8QTrn7s5a_SPg07kMlgh9F3sZj3tVsFoJnn6_9FXpXZVV85JG0">Support</a> |
+            <a href="http://github.com/training">Training</a> |
+            <a href="http://jobs.github.com">Job Board</a> |
+            <a href="http://github.com/contact">Contact</a> |
+            <a href="http://develop.github.com">API</a> |
+            <a href="http://status.github.com">Status</a> |
+            <a href="http://twitter.com/github">Twitter</a> |
+            <a href="http://help.github.com">Help</a>
+          </div>
+          <div class="company">
+            &copy;
+            2010
+            <span id="_rrt" title="0.08473s from fe1.rs.github.com">GitHub</span> Inc.
+            All rights reserved. |
+            <a href="/site/terms">Terms of Service</a> |
+            <a href="/site/privacy">Privacy Policy</a> |
+            <a href="http://github.com/security">Security</a>
+          </div>
+        </div>
+        <div class="sponsor">
+          <div>
+            Powered by the <a href="http://www.rackspace.com">Dedicated
+            Servers</a> and<br/> <a href="http://www.rackspacecloud.com">Cloud
+            Computing</a> of Rackspace Hosting<span>&reg;</span>
+          </div>
+          <a href="http://www.rackspace.com">
+            <img alt="Dedicated Server" src="http://assets1.github.com/images/modules/footer/rackspace_logo.png?ad7093c760d70644206be97b3c0bc84a650562c3" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    
+      
+      
+        <!-- current locale:  -->
+        <div class="locales">
+          <div class="site">
+            <ul class="choices">
+              
+                
+                  <li><span class="current">English</span></li>
+                
+              
+                
+                  
+                    <li><a rel="nofollow" href="?locale=ca">Català</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a rel="nofollow" href="?locale=cs">Čeština</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a rel="nofollow" href="?locale=de">Deutsch</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a rel="nofollow" href="?locale=es">Español</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a rel="nofollow" href="?locale=fr">Français</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a rel="nofollow" href="?locale=hr">Hrvatski</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a rel="nofollow" href="?locale=id">Indonesia</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a rel="nofollow" href="?locale=it">Italiano</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a rel="nofollow" href="?locale=ja">日本語</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a rel="nofollow" href="?locale=nl">Nederlands</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a rel="nofollow" href="?locale=no">Norsk</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a rel="nofollow" href="?locale=pl">Polski</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a rel="nofollow" href="?locale=pt-BR">Português (BR)</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a rel="nofollow" href="?locale=sr">Српски</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a rel="nofollow" href="?locale=sv">Svenska</a></li>
+                  
+                
+              
+                
+                  
+                    <li><a rel="nofollow" href="?locale=zh">中文</a></li>
+                  
+                
+              
+            </ul>
+          </div>
+        </div>
+      
+    
+
+    <script>window._auth_token = "63654f107a9aec3b0fe5ce468feb2c2b4004a504"</script>
+    
+
+    <script type="text/javascript">
+      _kmq.push(['trackClick', 'entice_banner_link', 'Entice banner clicked']);
+      
+    </script>
+    
+  </body>
+</html>
+

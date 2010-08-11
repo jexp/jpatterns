@@ -18,7 +18,7 @@ public class SingletonTest {
 
   @SingletonPattern.Singleton(variation = SingletonPattern.Variation.EAGER)
   public static class Singleton {
-    private static Singleton INSTANCE = new Singleton();
+    private final static Singleton INSTANCE = new Singleton();
 
     private Singleton() {
     }
