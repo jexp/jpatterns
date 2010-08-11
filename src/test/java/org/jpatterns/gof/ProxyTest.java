@@ -1,6 +1,5 @@
 package org.jpatterns.gof;
 
-import org.jpatterns.doc.PatternParticipants;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
@@ -34,8 +33,8 @@ public class ProxyTest {
     }
   }
 
-  @ProxyPattern.Subject
-  @PatternParticipants({LutefiskProxy.class, LutefiskImpl.class})
+  @ProxyPattern.Subject(participants = {LutefiskProxy.class,
+      LutefiskImpl.class})
   private interface Lutefisk {
     void eatenBy(Norwegian eater);
 

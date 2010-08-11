@@ -1,6 +1,5 @@
 package org.jpatterns.gof;
 
-import org.jpatterns.doc.PatternParticipants;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
@@ -44,8 +43,8 @@ public class AdapterTest {
     }
   }
 
-  @AdapterPattern.Adapter(AdapterPattern.Variation.CLASS)
-  @PatternParticipants({Rapper.class, Singer.class})
+  @AdapterPattern.Adapter(value = AdapterPattern.Variation.CLASS,
+      participants = {Rapper.class, Singer.class})
   private static class RapperClassAdapter extends Rapper
       implements Singer {
     public String sing() {

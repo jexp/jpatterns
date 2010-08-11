@@ -5,6 +5,7 @@ import java.lang.annotation.*;
 /**
  * @author Heinz Kabutz
  * @since 2010-08-09
+ * @deprecated Please use the participants = {...} attribute in future
  */
 @Retention(value = RetentionPolicy.RUNTIME)
 @Target(value = {
@@ -17,6 +18,7 @@ import java.lang.annotation.*;
     })
 @Documented
 @Inherited
+@Deprecated
 public @interface PatternParticipants {
   Class[] value();
 }
