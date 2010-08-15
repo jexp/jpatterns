@@ -18,7 +18,7 @@ import java.lang.annotation.*;
 @Target(value = ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL,
-    related = {FacadePattern.class, ObserverPattern.class})
+    related = {MediatorPattern.class, SingletonPattern.class})
 public @interface ObserverPattern {
   Class[] participants() default {};
 

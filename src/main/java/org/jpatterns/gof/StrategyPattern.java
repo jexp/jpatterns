@@ -43,6 +43,15 @@ public @interface StrategyPattern {
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
+  @Target(value = ElementType.FIELD)
+  @Documented
+  public @interface StrategyField {
+    Class[] participants() default {};
+
+    String comment() default "";
+  }
+
+  @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = ElementType.TYPE)
   @Documented
   public @interface ConcreteStrategy {
