@@ -34,13 +34,13 @@ public class TemplateMethodTest {
       throw ex;
     }
 
-    @TemplateMethodPattern.PrimitiveMethod
+    @TemplateMethodPattern.PrimitiveOperation
     protected abstract void setUp(Object[] params) throws Exception;
 
-    @TemplateMethodPattern.PrimitiveMethod
+    @TemplateMethodPattern.PrimitiveOperation
     protected abstract Object doExecute(Object[] params) throws Exception;
 
-    @TemplateMethodPattern.PrimitiveMethod
+    @TemplateMethodPattern.PrimitiveOperation
     protected abstract void tearDown(Object[] params) throws Exception;
   }
 
@@ -53,17 +53,17 @@ public class TemplateMethodTest {
       this.con = con;
     }
 
-    @TemplateMethodPattern.PrimitiveMethod
+    @TemplateMethodPattern.PrimitiveOperation
     protected void setUp(Object[] params) throws SQLException {
       st = con.createStatement();
     }
 
-    @TemplateMethodPattern.PrimitiveMethod
+    @TemplateMethodPattern.PrimitiveOperation
     protected Integer doExecute(Object[] params) throws SQLException {
       return st.executeUpdate((String) params[0]);
     }
 
-    @TemplateMethodPattern.PrimitiveMethod
+    @TemplateMethodPattern.PrimitiveOperation
     protected void tearDown(Object[] params) throws SQLException {
       st.close();
     }
