@@ -40,7 +40,7 @@ public class DaoTest {
 
 		public ValueObject getData() {
 			FullName data = ds.getData();
-			return new ValueObject(FIRST_NAME, LAST_NAME);
+			return new ValueObject(data.getFirstName(), data.getLastName());
 		}
 
 		public void setData(ValueObject valueObject) {
@@ -134,11 +134,20 @@ public class DaoTest {
 
 	class FullName {
 		private final String firstName;
+
 		private final String lastName;
 
 		public FullName(String firstName, String lastName) {
 			this.firstName = firstName;
 			this.lastName = lastName;
+		}
+
+		public String getFirstName() {
+			return firstName;
+		}
+
+		public String getLastName() {
+			return lastName;
 		}
 	}
 
