@@ -18,6 +18,7 @@ import org.jpatterns.core.Type;
  * source to obtain and store data
  * <p/>
  * <img src="http://www.jpatterns.org/uml/ee/DaoStructure.gif"/>
+ * <p/>
  * 
  * @author Marco Tedone
  * @since 2010-08-19
