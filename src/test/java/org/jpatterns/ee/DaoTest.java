@@ -11,8 +11,10 @@ public class DaoTest {
 	private static final String MODIFIED_FIRST_NAME = "firstNameModified";
 	private static final String MODIFIED_LAST_NAME = "modifiedLastName";
 
+	@DaoPattern.BusinessObject
 	class BusinessObject {
 
+		@DaoPattern.Dao(comment = "Mock dao to simulate connection to the database")
 		private final DataAccessObject dao = new DataAccessObject();
 
 		public ValueObject findThatValueObject() {
@@ -25,7 +27,9 @@ public class DaoTest {
 		 * @return The updated value object
 		 */
 		public ValueObject updateThatValueObject() {
+			@DaoPattern.ValueObject
 			ValueObject valueObject = dao.getData();
+
 			valueObject.setFirstName(MODIFIED_FIRST_NAME);
 			valueObject.setLastName(MODIFIED_LAST_NAME);
 			dao.setData(valueObject);
@@ -34,34 +38,38 @@ public class DaoTest {
 
 	}
 
+	@DaoPattern.Dao
 	class DataAccessObject {
 
+		@DaoPattern.DataSource(comment = "This is the DataSource which will connect to the database")
 		private DataSource ds = new DataSource();
 
 		public ValueObject getData() {
-			FullName data = ds.getData();
-			return new ValueObject(data.getFirstName(), data.getLastName());
+			FullName fullName = ds.getData();
+			return new ValueObject(fullName.getFirstName(), fullName.getLastName());
 		}
 
-		public void setData(ValueObject valueObject) {
+		public void setData(@DaoPattern.ValueObject ValueObject valueObject) {
 			ds.setData(valueObject);
 
 		}
 
 	}
 
+	@DaoPattern.DataSource
 	class DataSource {
 
 		public FullName getData() {
 			return new FullName(FIRST_NAME, LAST_NAME);
 		}
 
-		public void setData(ValueObject valueObject) {
+		public void setData(@DaoPattern.ValueObject ValueObject valueObject) {
 			// It would normally persist to the database
 		}
 
 	}
 
+	@DaoPattern.ValueObject
 	class ValueObject {
 
 		private String firstName;
@@ -77,16 +85,18 @@ public class DaoTest {
 			return firstName;
 		}
 
-		public void setFirstName(String firstName) {
-			this.firstName = firstName;
-		}
-
 		public String getLastName() {
 			return lastName;
 		}
 
-		public void setLastName(String lastName) {
-			this.lastName = lastName;
+		public void setLastName(String modifiedLastName) {
+			lastName = modifiedLastName;
+
+		}
+
+		public void setFirstName(String modifiedFirstName) {
+			firstName = modifiedFirstName;
+
 		}
 
 		@Override
@@ -95,8 +105,7 @@ public class DaoTest {
 			int result = 1;
 			result = prime * result
 					+ ((firstName == null) ? 0 : firstName.hashCode());
-			result = prime * result
-					+ ((lastName == null) ? 0 : lastName.hashCode());
+			result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 			return result;
 		}
 
@@ -154,10 +163,15 @@ public class DaoTest {
 	@Test
 	public void testCreateValueObject() {
 
+		@DaoPattern.ValueObject
 		ValueObject expected = new ValueObject(FIRST_NAME, LAST_NAME);
 
+		@DaoPattern.BusinessObject(comment = "This represents the client")
 		BusinessObject businessObject = new BusinessObject();
+
+		@DaoPattern.ValueObject
 		ValueObject valueObject = businessObject.findThatValueObject();
+
 		Assert.assertNotNull(valueObject);
 		Assert.assertEquals(expected, valueObject);
 	}
@@ -165,9 +179,11 @@ public class DaoTest {
 	@Test
 	public void testUpdateValueObject() {
 
+		@DaoPattern.ValueObject(comment = "This represents our expectation")
 		ValueObject expected = new ValueObject(MODIFIED_FIRST_NAME,
 				MODIFIED_LAST_NAME);
 
+		@DaoPattern.BusinessObject(comment = "This represents the client")
 		BusinessObject businessObject = new BusinessObject();
 		ValueObject valueObject = businessObject.updateThatValueObject();
 		Assert.assertNotNull(valueObject);
