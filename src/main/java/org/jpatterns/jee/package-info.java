@@ -10,4 +10,4 @@
  * @author Marco Tedone
  * @since 2010-08-19
  */
-package org.jpatterns.ee;
+package org.jpatterns.jee;

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package org.jpatterns.ee;
+package org.jpatterns.jee;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

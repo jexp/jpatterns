@@ -1,7 +1,8 @@
-package org.jpatterns.ee;
+package org.jpatterns.jee;
 
 import junit.framework.Assert;
 
+import org.jpatterns.jee.DaoPattern;
 import org.junit.Test;
 
 public class DaoTest {

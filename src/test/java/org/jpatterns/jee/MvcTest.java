@@ -1,4 +1,4 @@
-package org.jpatterns.ee;
+package org.jpatterns.jee;
 
 import java.io.IOException;
 import java.io.Serializable;
@@ -7,6 +7,7 @@ import java.util.Map;
 
 import junit.framework.Assert;
 
+import org.jpatterns.jee.ModelViewController;
 import org.junit.Test;
 
 public class MvcTest {

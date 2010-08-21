@@ -1,7 +1,8 @@
-package org.jpatterns.ee;
+package org.jpatterns.jee;
 
 import junit.framework.Assert;
 
+import org.jpatterns.jee.BusinessDelegatePattern;
 import org.junit.Test;
 
 public class BusinessDelegateTest {
