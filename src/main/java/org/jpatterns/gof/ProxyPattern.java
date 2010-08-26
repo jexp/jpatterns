@@ -51,6 +51,10 @@ public @interface ProxyPattern {
     Class[] participants() default {};
 
     String comment() default "";
+
+    Variation variation() default Variation.STATIC_MANUAL;
+
+    Type type() default Type.UNDEFINED;
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
@@ -68,6 +72,6 @@ public @interface ProxyPattern {
   }
 
   public static enum Type {
-    VIRTUAL, REMOTE, PROTECTION
+    UNDEFINED, VIRTUAL, REMOTE, PROTECTION
   }
 }

@@ -41,7 +41,9 @@ public class ProxyTest {
     void storedBy(Norwegian owner);
   }
 
-  @ProxyPattern.Proxy
+  @ProxyPattern.Proxy(
+      variation = ProxyPattern.Variation.STATIC_MANUAL,
+      type = ProxyPattern.Type.VIRTUAL)
   public static class LutefiskProxy implements Lutefisk {
     private Lutefisk realSubject;
 
