@@ -48,6 +48,35 @@ public class StrategyTest {
     }
   }
 
+  @StrategyPattern.ConcreteStrategy
+  private static class Heinz57 implements Checksum {
+    private long value = 57;
+
+    public void update(int b) {
+      value += b * 57;
+    }
+
+    public void update(byte[] b, int off, int len) {
+      for (int i = 0; i < len; i++) {
+        update(b[i + off]);
+      }
+    }
+
+    public void update(byte[] b) {
+      for (byte b1 : b) {
+        update(b1);
+      }
+    }
+
+    public void reset() {
+      value = 57;
+    }
+
+    public long getValue() {
+      return value;
+    }
+  }
+
   @Test
   public void adler32StrategyWorks() {
     final Checksum checksum = new MyAdler32();
