@@ -1,13 +1,8 @@
 package org.jpatterns.jee;
 
-import java.lang.annotation.Documented;
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
+import org.jpatterns.core.*;
 
-import org.jpatterns.core.DesignPattern;
-import org.jpatterns.core.Type;
+import java.lang.annotation.*;
 
 /**
  * <b> Intent: The Model View Controller (MVC) pattern divides an application in
@@ -23,40 +18,41 @@ import org.jpatterns.core.Type;
  * <p/>
  * <img src="http://www.jpatterns.org/uml/ee/MVCStructure.gif"/>
  * <p/>
- * 
+ *
  * @author Marco Tedone
  * @since 2010-08-21
  */
 @Retention(RetentionPolicy.RUNTIME)
-@Target( { ElementType.TYPE })
+@Target({ElementType.TYPE})
 @Documented
-@DesignPattern(type = Type.ENTERPRISE, related = { BusinessDelegatePattern.class })
+@DesignPattern(type = Type.ENTERPRISE, related = {
+    BusinessDelegatePattern.class})
 public @interface ModelViewController {
 
-	String comment() default "";
+  String comment() default "";
 
-	@Retention(RetentionPolicy.RUNTIME)
-	@Target(ElementType.TYPE)
-	@Documented
-	@DesignPattern(type = Type.ENTERPRISE)
-	public @interface View {
-		String comment() default "";
-	}
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
+  @Documented
+  @DesignPattern(type = Type.ENTERPRISE)
+  public @interface View {
+    String comment() default "";
+  }
 
-	@Retention(RetentionPolicy.RUNTIME)
-	@Target(ElementType.TYPE)
-	@Documented
-	@DesignPattern(type = Type.ENTERPRISE)
-	public @interface Controller {
-		String comment() default "";
-	}
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
+  @Documented
+  @DesignPattern(type = Type.ENTERPRISE)
+  public @interface Controller {
+    String comment() default "";
+  }
 
-	@Retention(RetentionPolicy.RUNTIME)
-	@Target(ElementType.TYPE)
-	@Documented
-	@DesignPattern(type = Type.ENTERPRISE)
-	public @interface Model {
-		String comment() default "";
-	}
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
+  @Documented
+  @DesignPattern(type = Type.ENTERPRISE)
+  public @interface Model {
+    String comment() default "";
+  }
 
 }
