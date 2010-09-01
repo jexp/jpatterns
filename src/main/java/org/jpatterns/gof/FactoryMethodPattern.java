@@ -17,8 +17,8 @@ import java.lang.annotation.*;
  * @author Heinz Kabutz
  * @since 2010-08-09
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.CREATIONAL,
     related = {AbstractFactoryPattern.class, TemplateMethodPattern.class,
@@ -28,8 +28,8 @@ public @interface FactoryMethodPattern {
 
   String comment() default "";
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Creator {
     Class[] participants() default {};
@@ -37,8 +37,8 @@ public @interface FactoryMethodPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Product {
     Class[] participants() default {};
@@ -46,8 +46,8 @@ public @interface FactoryMethodPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface ConcreteCreator {
     Class[] participants() default {};
@@ -55,8 +55,8 @@ public @interface FactoryMethodPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface ConcreteProduct {
     Class[] participants() default {};

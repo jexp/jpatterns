@@ -14,8 +14,8 @@ import java.lang.annotation.*;
  * @author Heinz Kabutz
  * @since 2010-08-09
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.STRUCTURAL,
     related = {AdapterPattern.class, CompositePattern.class,
@@ -25,8 +25,8 @@ public @interface DecoratorPattern {
 
   String comment() default "";
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Component {
     Class[] participants() default {};
@@ -34,8 +34,8 @@ public @interface DecoratorPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Decorator {
     Class[] participants() default {};
@@ -43,8 +43,8 @@ public @interface DecoratorPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface ConcreteComponent {
     Class[] participants() default {};
@@ -52,8 +52,8 @@ public @interface DecoratorPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface ConcreteDecorator {
     Class[] participants() default {};

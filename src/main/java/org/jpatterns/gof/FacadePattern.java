@@ -14,8 +14,8 @@ import java.lang.annotation.*;
  * @author Heinz Kabutz
  * @since 2010-07-28
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.STRUCTURAL,
     related = {AbstractFactoryPattern.class, MediatorPattern.class,

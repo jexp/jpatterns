@@ -14,8 +14,8 @@ import java.lang.annotation.*;
  * @author Heinz Kabutz
  * @since 2010-09-01
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = {ElementType.TYPE, ElementType.FIELD,
+@Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.TYPE, ElementType.FIELD,
     ElementType.LOCAL_VARIABLE})
 @Documented
 @DesignPattern(
@@ -28,8 +28,8 @@ public @interface NullObjectPattern {
 
   public abstract String comment() default "";
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface AbstractObject {
     public abstract Class[] participants() default {};
@@ -37,8 +37,8 @@ public @interface NullObjectPattern {
     public abstract String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface RealObject {
     public abstract Class[] participants() default {};
@@ -46,8 +46,8 @@ public @interface NullObjectPattern {
     public abstract String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface NullObject {
     public abstract Class[] participants() default {};
@@ -55,8 +55,8 @@ public @interface NullObjectPattern {
     public abstract String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = {ElementType.TYPE, ElementType.FIELD,
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target({ElementType.TYPE, ElementType.FIELD,
       ElementType.LOCAL_VARIABLE})
   @Documented
   public @interface Client {

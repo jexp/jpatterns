@@ -12,8 +12,8 @@ import java.lang.annotation.*;
  * @author Heinz Kabutz
  * @since 2010-08-09
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.CREATIONAL,
     related = {AbstractFactoryPattern.class, CompositePattern.class})
@@ -22,8 +22,8 @@ public @interface BuilderPattern {
 
   String comment() default "";
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Director {
     Class[] participants() default {};
@@ -31,8 +31,8 @@ public @interface BuilderPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Builder {
     Class[] participants() default {};
@@ -40,8 +40,8 @@ public @interface BuilderPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface ConcreteBuilder {
     Class[] participants() default {};

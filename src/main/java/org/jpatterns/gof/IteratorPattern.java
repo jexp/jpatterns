@@ -13,8 +13,8 @@ import java.lang.annotation.*;
  * @author Heinz Kabutz
  * @since 2010-08-09
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL,
     related = {CompositePattern.class, FactoryMethodPattern.class,
@@ -24,8 +24,8 @@ public @interface IteratorPattern {
 
   String comment() default "";
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Aggregate {
     Class[] participants() default {};
@@ -33,8 +33,8 @@ public @interface IteratorPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Iterator {
     Class[] participants() default {};
@@ -42,8 +42,8 @@ public @interface IteratorPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface ConcreteAggregate {
     Class[] participants() default {};
@@ -51,8 +51,8 @@ public @interface IteratorPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface ConcreteIterator {
     Class[] participants() default {};

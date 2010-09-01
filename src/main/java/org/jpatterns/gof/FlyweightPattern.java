@@ -13,8 +13,8 @@ import java.lang.annotation.*;
  * @author Heinz Kabutz
  * @since 2010-07-28
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.STRUCTURAL,
     related = {CompositePattern.class, StatePattern.class,
@@ -24,8 +24,8 @@ public @interface FlyweightPattern {
 
   String comment() default "";
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface FlyweightFactory {
     Class[] participants() default {};
@@ -33,8 +33,8 @@ public @interface FlyweightPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Flyweight {
     Class[] participants() default {};
@@ -42,8 +42,8 @@ public @interface FlyweightPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface UnsharedConcreteFlyweight {
     Class[] participants() default {};
@@ -51,8 +51,8 @@ public @interface FlyweightPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface ConcreteFlyweight {
     Class[] participants() default {};

@@ -14,8 +14,8 @@ import java.lang.annotation.*;
  * @author Heinz Kabutz
  * @since 2010-07-28
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.STRUCTURAL,
     related = {ChainOfResponsibilityPattern.class, DecoratorPattern.class,
@@ -25,8 +25,8 @@ public @interface CompositePattern {
 
   String comment() default "";
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Component {
     Class[] participants() default {};
@@ -34,8 +34,8 @@ public @interface CompositePattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Leaf {
     Class[] participants() default {};
@@ -43,8 +43,8 @@ public @interface CompositePattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Composite {
     Class[] participants() default {};

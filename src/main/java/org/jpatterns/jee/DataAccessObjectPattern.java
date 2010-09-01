@@ -18,8 +18,8 @@ import java.lang.annotation.*;
  * @author Marco Tedone
  * @since 2010-08-19
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 @Documented
 @DesignPattern(source = Source.CoreJ2EE,
     type = Type.ENTERPRISE)
@@ -28,8 +28,8 @@ public @interface DataAccessObjectPattern {
 
   String comment() default "";
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = {ElementType.TYPE, ElementType.FIELD,
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target({ElementType.TYPE, ElementType.FIELD,
       ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
   @Documented
   public @interface BusinessObject {
@@ -38,8 +38,8 @@ public @interface DataAccessObjectPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = {ElementType.TYPE, ElementType.FIELD,
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target({ElementType.TYPE, ElementType.FIELD,
       ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
   @Documented
   public @interface Dao {
@@ -48,8 +48,8 @@ public @interface DataAccessObjectPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = {ElementType.TYPE, ElementType.FIELD,
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target({ElementType.TYPE, ElementType.FIELD,
       ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
   @Documented
   public @interface DataSource {
@@ -63,8 +63,8 @@ public @interface DataAccessObjectPattern {
     DataSourceType dataSourceType() default DataSourceType.UNDEFINED;
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = {ElementType.TYPE, ElementType.FIELD,
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target({ElementType.TYPE, ElementType.FIELD,
       ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
   @Documented
   public @interface ValueObject {

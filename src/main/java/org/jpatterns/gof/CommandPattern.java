@@ -14,8 +14,8 @@ import java.lang.annotation.*;
  * @author Michael Hunger
  * @since 2010-08-08
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 @Documented
 @DesignPattern(source = Source.GoF,
     type = Type.BEHAVIORAL,
@@ -32,8 +32,8 @@ public @interface CommandPattern {
 
   String comment() default "";
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Command {
     Class[] participants() default {};
@@ -43,8 +43,8 @@ public @interface CommandPattern {
     boolean undoable() default false;
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface ConcreteCommand {
     Class[] participants() default {};
@@ -52,8 +52,8 @@ public @interface CommandPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Invoker {
     Class[] participants() default {};
@@ -61,8 +61,8 @@ public @interface CommandPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Receiver {
     Class[] participants() default {};
@@ -70,8 +70,8 @@ public @interface CommandPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Client {
     Class[] participants() default {};

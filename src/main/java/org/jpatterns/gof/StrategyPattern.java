@@ -14,8 +14,8 @@ import java.lang.annotation.*;
  * @author Heinz Kabutz
  * @since 2010-07-28
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL,
     related = {FlyweightPattern.class})
@@ -24,8 +24,8 @@ public @interface StrategyPattern {
 
   String comment() default "";
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Context {
     Class[] participants() default {};
@@ -33,8 +33,8 @@ public @interface StrategyPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Strategy {
     Class[] participants() default {};
@@ -42,8 +42,8 @@ public @interface StrategyPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.FIELD)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.FIELD)
   @Documented
   public @interface StrategyField {
     Class[] participants() default {};
@@ -51,8 +51,8 @@ public @interface StrategyPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface ConcreteStrategy {
     Class[] participants() default {};

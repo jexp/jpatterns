@@ -15,8 +15,8 @@ import java.lang.annotation.*;
  * @author Heinz Kabutz
  * @since 2010-07-28
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL,
     related = {CompositePattern.class})
@@ -25,8 +25,8 @@ public @interface ChainOfResponsibilityPattern {
 
   String comment() default "";
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Handler {
     Class[] participants() default {};
@@ -34,8 +34,8 @@ public @interface ChainOfResponsibilityPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface ConcreteHandler {
     Class[] participants() default {};

@@ -13,8 +13,8 @@ import java.lang.annotation.*;
  * @author Alex Gout
  * @since 2010-08-08
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.CREATIONAL,
     related = {AbstractFactoryPattern.class, BuilderPattern.class,
@@ -24,8 +24,8 @@ public @interface SingletonPattern {
 
   String comment() default "";
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Singleton {
     Class[] participants() default {};
@@ -35,8 +35,8 @@ public @interface SingletonPattern {
     Variation variation() default Variation.LAZY;
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.METHOD)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.METHOD)
   @Documented
   public @interface SingletonMethod {
     Class[] participants() default {};

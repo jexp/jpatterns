@@ -15,8 +15,8 @@ import java.lang.annotation.*;
  * @author Heinz Kabutz
  * @since 2010-07-28
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = {ElementType.TYPE, ElementType.METHOD})
+@Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.TYPE, ElementType.METHOD})
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL,
     related = {FactoryMethodPattern.class, StrategyPattern.class})
@@ -25,8 +25,8 @@ public @interface TemplateMethodPattern {
 
   String comment() default "";
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface AbstractClass {
     Class[] participants() default {};
@@ -34,8 +34,8 @@ public @interface TemplateMethodPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface ConcreteClass {
     Class[] participants() default {};
@@ -43,8 +43,8 @@ public @interface TemplateMethodPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.METHOD)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.METHOD)
   @Documented
   public @interface TemplateMethod {
     Class[] participants() default {};
@@ -57,8 +57,8 @@ public @interface TemplateMethodPattern {
    * @deprecated Misnamed, please use @PrimitiveOperation instead.
    */
   @Deprecated
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.METHOD)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.METHOD)
   @Documented
   public @interface PrimitiveMethod {
     Class[] participants() default {};
@@ -66,8 +66,8 @@ public @interface TemplateMethodPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.METHOD)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.METHOD)
   @Documented
   public @interface PrimitiveOperation {
     Class[] participants() default {};

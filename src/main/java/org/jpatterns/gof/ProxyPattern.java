@@ -13,8 +13,8 @@ import java.lang.annotation.*;
  * @author Heinz Kabutz
  * @since 2010-07-28
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = {ElementType.TYPE, ElementType.FIELD,
+@Retention(RetentionPolicy.RUNTIME)
+@Target({ElementType.TYPE, ElementType.FIELD,
     ElementType.LOCAL_VARIABLE})
 @Documented
 @DesignPattern(type = Type.STRUCTURAL,
@@ -26,8 +26,8 @@ public @interface ProxyPattern {
 
   Variation variation() default Variation.STATIC_MANUAL;
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Subject {
     Class[] participants() default {};
@@ -35,8 +35,8 @@ public @interface ProxyPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface RealSubject {
     Class[] participants() default {};
@@ -44,8 +44,8 @@ public @interface ProxyPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Proxy {
     Class[] participants() default {};
@@ -57,8 +57,8 @@ public @interface ProxyPattern {
     Type type() default Type.UNDEFINED;
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = {ElementType.TYPE, ElementType.FIELD,
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target({ElementType.TYPE, ElementType.FIELD,
       ElementType.LOCAL_VARIABLE})
   @Documented
   public @interface Client {
