@@ -41,5 +41,7 @@ public @interface ChainOfResponsibilityPattern {
     Class[] participants() default {};
 
     String comment() default "";
+
+    boolean defaultHandler() default false;
   }
 }
