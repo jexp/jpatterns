@@ -6,8 +6,8 @@ import java.lang.annotation.*;
  * @author Michael Hunger
  * @since 2010-07-14
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = ElementType.ANNOTATION_TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.ANNOTATION_TYPE)
 @Documented
 @Inherited
 public @interface DesignPattern {

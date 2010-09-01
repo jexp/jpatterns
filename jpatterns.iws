@@ -15,7 +15,16 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" name="Default" comment="Removed comments() and participants" />
+    <list default="true" name="Default" comment="Removed comments() and participants">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/doc/PatternComment.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/doc/PatternComment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AdapterPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AdapterPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BridgePattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/BridgePattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/core/DesignPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/core/DesignPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpatterns.iws" afterPath="$PROJECT_DIR$/jpatterns.iws" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryPattern.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/doc/PatternParticipants.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/doc/PatternParticipants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/jee/package-info.java" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/jee/package-info.java" />
+    </list>
     <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path="$USER_HOME_GRIFFON$/" />
   </component>
@@ -78,24 +87,6 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" highlightNonProjectFiles="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProxyTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/gof/ProxyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="205" selection-end="205" vertical-scroll-proportion="0.018774703">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NullObjectPattern.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/plopd/NullObjectPattern.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="18" selection-start="783" selection-end="783" vertical-scroll-proportion="0.3389328">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="NullObjectTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/plopd/NullObjectTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -105,10 +96,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="NullObjectPattern.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/plopd/NullObjectPattern.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="34" selection-start="783" selection-end="783" vertical-scroll-proportion="0.41304347">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DataAccessObjectPattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/DataAccessObjectPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="0" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.68083006">
+            <state line="25" column="34" selection-start="601" selection-end="601" vertical-scroll-proportion="0.33300394">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,7 +119,7 @@
       <file leaf-file-name="BusinessDelegatePattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/BusinessDelegatePattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="29" selection-start="760" selection-end="760" vertical-scroll-proportion="0.39426878">
+            <state line="28" column="18" selection-start="802" selection-end="802" vertical-scroll-proportion="0.41304347">
               <folding />
             </state>
           </provider>
@@ -128,7 +128,7 @@
       <file leaf-file-name="VisitorPattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/VisitorPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="874" selection-end="913" vertical-scroll-proportion="0.5019763">
+            <state line="30" column="32" selection-start="874" selection-end="874" vertical-scroll-proportion="0.5019763">
               <folding />
             </state>
           </provider>
@@ -138,6 +138,24 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/ModelViewController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="29" column="18" selection-start="959" selection-end="959" vertical-scroll-proportion="0.33300394">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package-info.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/package-info.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.18774703">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractFactoryPattern.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryPattern.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="34" selection-start="741" selection-end="741" vertical-scroll-proportion="0.33300394">
               <folding />
             </state>
           </provider>
@@ -160,26 +178,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BusinessDelegateTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="BusinessDelegateTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/jee/BusinessDelegateTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="13" selection-start="96" selection-end="96" vertical-scroll-proportion="0.07509881">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ModelViewControllerTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/jee/ModelViewControllerTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="13" selection-start="135" selection-end="135" vertical-scroll-proportion="0.15019763">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#getFirstName#0;class#PersonVO#0;class#ModelViewControllerTest#0" expanded="true" />
-                <element signature="method#getLastName#0;class#PersonVO#0;class#ModelViewControllerTest#0" expanded="true" />
-                <element signature="method#setFirstName#0;class#PersonVO#0;class#ModelViewControllerTest#0" expanded="true" />
-                <element signature="method#setLastName#0;class#PersonVO#0;class#ModelViewControllerTest#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -949,7 +952,7 @@
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed JEE pattern names to not use acronyms" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated JEE patterns to have participants and the correct source." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -960,7 +963,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="removed empty packages&#10;" />
     <MESSAGE value="Fixed dangling package reference" />
     <MESSAGE value="Updated jar file" />
     <MESSAGE value="Updated test names to reflect package" />
@@ -985,6 +987,7 @@
     <MESSAGE value="Added the strategy field annotation into test" />
     <MESSAGE value="Added NullObjectPattern" />
     <MESSAGE value="Changed JEE pattern names to not use acronyms" />
+    <MESSAGE value="Updated JEE patterns to have participants and the correct source." />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1028,16 +1031,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/uml/gof/AbstractFactoryUserViewStructure.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uml/gof/BridgeStructure.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/gof/CompositeTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="13" selection-start="137" selection-end="137" vertical-scroll-proportion="0.05757576">
@@ -1073,43 +1066,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/plopd/NullObjectPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="18" selection-start="783" selection-end="783" vertical-scroll-proportion="0.3389328">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/plopd/NullObjectTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="13" selection-start="118" selection-end="118" vertical-scroll-proportion="0.07509881">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/VisitorPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="874" selection-end="913" vertical-scroll-proportion="0.5019763">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/DataAccessObjectPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.68083006">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/BusinessDelegatePattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="29" selection-start="760" selection-end="760" vertical-scroll-proportion="0.39426878">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/jee/ModelViewControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="13" selection-start="135" selection-end="135" vertical-scroll-proportion="0.15019763">
@@ -1120,13 +1076,6 @@
             <element signature="method#setFirstName#0;class#PersonVO#0;class#ModelViewControllerTest#0" expanded="true" />
             <element signature="method#setLastName#0;class#PersonVO#0;class#ModelViewControllerTest#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/ModelViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="18" selection-start="959" selection-end="959" vertical-scroll-proportion="0.33300394">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1148,6 +1097,64 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/jee/BusinessDelegateTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="13" selection-start="96" selection-end="96" vertical-scroll-proportion="0.07509881">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/BusinessDelegatePattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="18" selection-start="802" selection-end="802" vertical-scroll-proportion="0.41304347">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/DataAccessObjectPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="34" selection-start="601" selection-end="601" vertical-scroll-proportion="0.33300394">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/VisitorPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="32" selection-start="874" selection-end="874" vertical-scroll-proportion="0.5019763">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/ModelViewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="18" selection-start="959" selection-end="959" vertical-scroll-proportion="0.33300394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/AbstractFactoryPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="34" selection-start="741" selection-end="741" vertical-scroll-proportion="0.33300394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/package-info.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="362" selection-end="362" vertical-scroll-proportion="0.18774703">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/plopd/NullObjectTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="118" selection-end="118" vertical-scroll-proportion="0.07509881">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/plopd/NullObjectPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="34" selection-start="783" selection-end="783" vertical-scroll-proportion="0.41304347">
           <folding />
         </state>
       </provider>

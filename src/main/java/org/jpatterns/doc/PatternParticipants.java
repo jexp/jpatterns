@@ -7,8 +7,8 @@ import java.lang.annotation.*;
  * @since 2010-08-09
  * @deprecated Please use the participants = {...} attribute in future
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = {
+@Retention(RetentionPolicy.RUNTIME)
+@Target({
     ElementType.TYPE,
     ElementType.CONSTRUCTOR,
     ElementType.FIELD,

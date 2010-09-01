@@ -15,8 +15,8 @@ import java.lang.annotation.*;
  * @author Heinz Kabutz, Michael Hunger
  * @since 2010-08-09
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.CREATIONAL,
     related = {FactoryMethodPattern.class, PrototypePattern.class,
@@ -26,8 +26,8 @@ public @interface AbstractFactoryPattern {
 
   String comment() default "";
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface AbstractProduct {
     Class[] participants() default {};
@@ -35,8 +35,8 @@ public @interface AbstractFactoryPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface ConcreteProduct {
     Class[] participants() default {};
@@ -44,8 +44,8 @@ public @interface AbstractFactoryPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.METHOD)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.METHOD)
   @Documented
   public @interface FactoryMethod {
     Class[] participants() default {};
@@ -53,8 +53,8 @@ public @interface AbstractFactoryPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface AbstractFactory {
     Class[] participants() default {};
@@ -62,8 +62,8 @@ public @interface AbstractFactoryPattern {
     String comment() default "";
   }
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface ConcreteFactory {
     Class[] participants() default {};

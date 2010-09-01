@@ -20,8 +20,8 @@ import java.lang.annotation.*;
  * @author Heinz Kabutz
  * @since 2010-07-28
  */
-@Retention(value = RetentionPolicy.RUNTIME)
-@Target(value = ElementType.TYPE)
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.STRUCTURAL,
     related = {BridgePattern.class, DecoratorPattern.class, ProxyPattern.class})
@@ -30,8 +30,8 @@ public @interface AdapterPattern {
 
   String comment() default "";
 
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Adapter {
     Class[] participants() default {};
@@ -45,8 +45,8 @@ public @interface AdapterPattern {
    * We would hardly ever use this annotation as the adaptee is
    * usually not aware that he is being adapted.
    */
-  @Retention(value = RetentionPolicy.RUNTIME)
-  @Target(value = ElementType.TYPE)
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
   @Documented
   public @interface Adaptee {
     Class[] participants() default {};
