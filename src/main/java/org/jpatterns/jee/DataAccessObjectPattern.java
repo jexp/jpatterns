@@ -21,8 +21,10 @@ import java.lang.annotation.*;
 @Retention(value = RetentionPolicy.RUNTIME)
 @Target(value = ElementType.TYPE)
 @Documented
-@DesignPattern(type = Type.ENTERPRISE)
+@DesignPattern(source = Source.CoreJ2EE,
+    type = Type.ENTERPRISE)
 public @interface DataAccessObjectPattern {
+  Class[] participants() default {};
 
   String comment() default "";
 
@@ -30,8 +32,9 @@ public @interface DataAccessObjectPattern {
   @Target(value = {ElementType.TYPE, ElementType.FIELD,
       ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
   @Documented
-  @DesignPattern(type = Type.ENTERPRISE)
   public @interface BusinessObject {
+    Class[] participants() default {};
+
     String comment() default "";
   }
 
@@ -39,8 +42,9 @@ public @interface DataAccessObjectPattern {
   @Target(value = {ElementType.TYPE, ElementType.FIELD,
       ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
   @Documented
-  @DesignPattern(type = Type.ENTERPRISE)
   public @interface Dao {
+    Class[] participants() default {};
+
     String comment() default "";
   }
 
@@ -48,27 +52,30 @@ public @interface DataAccessObjectPattern {
   @Target(value = {ElementType.TYPE, ElementType.FIELD,
       ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
   @Documented
-  @DesignPattern(type = Type.ENTERPRISE)
   public @interface DataSource {
+    Class[] participants() default {};
+
     String comment() default "";
 
     // Giving users the possibility to specify which datasource they are using
     // might be useful for maintainance. The information is optional anyway
 
-    DataSourceType dataSourceType() default DataSourceType.NOT_DOCUMENTED;
+    DataSourceType dataSourceType() default DataSourceType.UNDEFINED;
   }
 
   @Retention(value = RetentionPolicy.RUNTIME)
   @Target(value = {ElementType.TYPE, ElementType.FIELD,
       ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
   @Documented
-  @DesignPattern(type = Type.ENTERPRISE)
   public @interface ValueObject {
+    Class[] participants() default {};
+
     String comment() default "";
   }
 
   public enum DataSourceType {
-    HIBERNATE, SPRING, ORACLE, DB2, MYSQL, SQLSERVER, SYBASE, BERKELEY, NOT_DOCUMENTED
+    HIBERNATE, SPRING, ORACLE, DB2, MYSQL, SQLSERVER, SYBASE, BERKELEY,
+    UNDEFINED
   }
 
 }

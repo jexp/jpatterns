@@ -24,9 +24,10 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})
 @Documented
-@DesignPattern(type = Type.ENTERPRISE, related = {Adapter.class,
-    FacadePattern.class})
+@DesignPattern(source = Source.CoreJ2EE, type = Type.ENTERPRISE,
+    related = {Adapter.class, FacadePattern.class})
 public @interface BusinessDelegatePattern {
+  Class[] participants() default {};
 
   String comment() default "";
 
@@ -34,8 +35,9 @@ public @interface BusinessDelegatePattern {
   @Target({ElementType.TYPE, ElementType.FIELD, ElementType.LOCAL_VARIABLE,
       ElementType.PARAMETER})
   @Documented
-  @DesignPattern(type = Type.ENTERPRISE)
   public @interface BusinessDelegate {
+    Class[] participants() default {};
+
     String comment() default "";
   }
 
@@ -43,9 +45,9 @@ public @interface BusinessDelegatePattern {
   @Target({ElementType.TYPE, ElementType.FIELD, ElementType.LOCAL_VARIABLE,
       ElementType.PARAMETER})
   @Documented
-  @DesignPattern(type = Type.ENTERPRISE)
   public @interface BusinessService {
+    Class[] participants() default {};
+
     String comment() default "";
   }
-
 }

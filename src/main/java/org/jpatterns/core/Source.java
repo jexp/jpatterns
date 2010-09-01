@@ -5,5 +5,5 @@ package org.jpatterns.core;
  * @since 2010-07-14
  */
 public enum Source {
-  GoF, POSA, PoEAA, PLoPD3, Hophe
+  GoF, POSA, PoEAA, PLoPD3, CoreJ2EE, Other, Hophe
 }

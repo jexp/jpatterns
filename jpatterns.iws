@@ -15,15 +15,7 @@
     <option name="historyRevisionsNumber" value="4" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" name="Default" comment="Removed comments() and participants">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/jpatterns/jee/DataAccessObjectPattern.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/jpatterns/jee/DataAccessObjectTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/org/jpatterns/jee/MvcTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jpatterns.iws" afterPath="$PROJECT_DIR$/jpatterns.iws" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/org/jpatterns/jee/DaoTest.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/org/jpatterns/jee/ModelViewControllerTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/org/jpatterns/jee/DaoPattern.java" afterPath="" />
-    </list>
+    <list default="true" name="Default" comment="Removed comments() and participants" />
     <ignored path="$USER_HOME_GRAILS$/" />
     <ignored path="$USER_HOME_GRIFFON$/" />
   </component>
@@ -86,24 +78,6 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" highlightNonProjectFiles="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="StrategyTest.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/gof/StrategyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="20" selection-start="229" selection-end="229" vertical-scroll-proportion="0.018774703">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProxyPattern.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/ProxyPattern.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="18" selection-start="598" selection-end="598" vertical-scroll-proportion="0.018774703">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ProxyTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/gof/ProxyTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -134,7 +108,7 @@
       <file leaf-file-name="DataAccessObjectPattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/DataAccessObjectPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="18" selection-start="571" selection-end="571" vertical-scroll-proportion="0.3389328">
+            <state line="66" column="0" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.68083006">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,16 +119,25 @@
       <file leaf-file-name="BusinessDelegatePattern.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/BusinessDelegatePattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="18" selection-start="776" selection-end="776" vertical-scroll-proportion="0.41304347">
+            <state line="27" column="29" selection-start="760" selection-end="760" vertical-scroll-proportion="0.39426878">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModelViewController.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="VisitorPattern.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/VisitorPattern.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="30" column="0" selection-start="874" selection-end="913" vertical-scroll-proportion="0.5019763">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModelViewController.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/ModelViewController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="18" selection-start="980" selection-end="980" vertical-scroll-proportion="0.34288538">
+            <state line="29" column="18" selection-start="959" selection-end="959" vertical-scroll-proportion="0.33300394">
               <folding />
             </state>
           </provider>
@@ -163,7 +146,24 @@
       <file leaf-file-name="DataAccessObjectTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/jee/DataAccessObjectTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="30" selection-start="113" selection-end="113" vertical-scroll-proportion="0.07509881">
+            <state line="5" column="13" selection-start="96" selection-end="96" vertical-scroll-proportion="0.093873516">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getFirstName#0;class#ValueObject#0;class#DataAccessObjectTest#0" expanded="true" />
+                <element signature="method#getLastName#0;class#ValueObject#0;class#DataAccessObjectTest#0" expanded="true" />
+                <element signature="method#setLastName#0;class#ValueObject#0;class#DataAccessObjectTest#0" expanded="true" />
+                <element signature="method#setFirstName#0;class#ValueObject#0;class#DataAccessObjectTest#0" expanded="true" />
+                <element signature="method#getFirstName#0;class#FullName#0;class#DataAccessObjectTest#0" expanded="true" />
+                <element signature="method#getLastName#0;class#FullName#0;class#DataAccessObjectTest#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BusinessDelegateTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/jee/BusinessDelegateTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="13" selection-start="96" selection-end="96" vertical-scroll-proportion="0.07509881">
               <folding />
             </state>
           </provider>
@@ -172,7 +172,7 @@
       <file leaf-file-name="ModelViewControllerTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/jee/ModelViewControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="33" selection-start="155" selection-end="155" vertical-scroll-proportion="0.07509881">
+            <state line="8" column="13" selection-start="135" selection-end="135" vertical-scroll-proportion="0.15019763">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getFirstName#0;class#PersonVO#0;class#ModelViewControllerTest#0" expanded="true" />
@@ -949,7 +949,7 @@
     <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
     <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added NullObjectPattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed JEE pattern names to not use acronyms" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
@@ -960,7 +960,6 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="Moved gof annotation tests into a single package" />
     <MESSAGE value="removed empty packages&#10;" />
     <MESSAGE value="Fixed dangling package reference" />
     <MESSAGE value="Updated jar file" />
@@ -985,6 +984,7 @@
     <MESSAGE value="Fixed naming of primitive operations" />
     <MESSAGE value="Added the strategy field annotation into test" />
     <MESSAGE value="Added NullObjectPattern" />
+    <MESSAGE value="Changed JEE pattern names to not use acronyms" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -1028,16 +1028,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/uml/gof/VisitorStructure.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/uml/gof/FacadeStructure.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uml/gof/AbstractFactoryUserViewStructure.gif">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1097,16 +1087,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/jee/DataAccessObjectTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/gof/VisitorPattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="30" selection-start="113" selection-end="113" vertical-scroll-proportion="0.07509881">
+        <state line="30" column="0" selection-start="874" selection-end="913" vertical-scroll-proportion="0.5019763">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/DataAccessObjectPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="0" selection-start="1945" selection-end="1945" vertical-scroll-proportion="0.68083006">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/BusinessDelegatePattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="29" selection-start="760" selection-end="760" vertical-scroll-proportion="0.39426878">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/jee/ModelViewControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="33" selection-start="155" selection-end="155" vertical-scroll-proportion="0.07509881">
+        <state line="8" column="13" selection-start="135" selection-end="135" vertical-scroll-proportion="0.15019763">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getFirstName#0;class#PersonVO#0;class#ModelViewControllerTest#0" expanded="true" />
@@ -1117,25 +1123,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/DataAccessObjectPattern.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/ModelViewController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="18" selection-start="571" selection-end="571" vertical-scroll-proportion="0.3389328">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/BusinessDelegatePattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="18" selection-start="776" selection-end="776" vertical-scroll-proportion="0.41304347">
+        <state line="29" column="18" selection-start="959" selection-end="959" vertical-scroll-proportion="0.33300394">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/jpatterns/jee/ModelViewController.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/jee/DataAccessObjectTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="18" selection-start="980" selection-end="980" vertical-scroll-proportion="0.34288538">
+        <state line="5" column="13" selection-start="96" selection-end="96" vertical-scroll-proportion="0.093873516">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getFirstName#0;class#ValueObject#0;class#DataAccessObjectTest#0" expanded="true" />
+            <element signature="method#getLastName#0;class#ValueObject#0;class#DataAccessObjectTest#0" expanded="true" />
+            <element signature="method#setLastName#0;class#ValueObject#0;class#DataAccessObjectTest#0" expanded="true" />
+            <element signature="method#setFirstName#0;class#ValueObject#0;class#DataAccessObjectTest#0" expanded="true" />
+            <element signature="method#getFirstName#0;class#FullName#0;class#DataAccessObjectTest#0" expanded="true" />
+            <element signature="method#getLastName#0;class#FullName#0;class#DataAccessObjectTest#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/jpatterns/jee/BusinessDelegateTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="96" selection-end="96" vertical-scroll-proportion="0.07509881">
           <folding />
         </state>
       </provider>

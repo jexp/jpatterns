@@ -25,34 +25,37 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})
 @Documented
-@DesignPattern(type = Type.ENTERPRISE, related = {
-    BusinessDelegatePattern.class})
+@DesignPattern(source = Source.Other,
+    type = Type.ENTERPRISE)
 public @interface ModelViewController {
+  Class[] participants() default {};
 
   String comment() default "";
 
   @Retention(RetentionPolicy.RUNTIME)
   @Target(ElementType.TYPE)
   @Documented
-  @DesignPattern(type = Type.ENTERPRISE)
   public @interface View {
+    Class[] participants() default {};
+
     String comment() default "";
   }
 
   @Retention(RetentionPolicy.RUNTIME)
   @Target(ElementType.TYPE)
   @Documented
-  @DesignPattern(type = Type.ENTERPRISE)
   public @interface Controller {
+    Class[] participants() default {};
+
     String comment() default "";
   }
 
   @Retention(RetentionPolicy.RUNTIME)
   @Target(ElementType.TYPE)
   @Documented
-  @DesignPattern(type = Type.ENTERPRISE)
   public @interface Model {
+    Class[] participants() default {};
+
     String comment() default "";
   }
-
 }
