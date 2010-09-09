@@ -49,4 +49,13 @@ public @interface BuilderPattern {
     String comment() default "";
   }
 
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
+  @Documented
+  public @interface Product {
+    Class[] participants() default {};
+
+    String comment() default "";
+  }
+
 }
