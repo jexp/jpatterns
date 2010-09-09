@@ -11,7 +11,7 @@ import static junit.framework.Assert.assertEquals;
 public class AbstractFactoryTest {
   private String configuredLocale;
 
-  @AbstractFactoryPattern.AbstractProduct
+  @AbstractFactoryPattern.AbstractProduct(participants = AbstractLocalizedAnimalFactory.class)
   private static interface LocalizedAnimal {
     String talk();
   }
@@ -44,7 +44,7 @@ public class AbstractFactoryTest {
     }
   }
 
-  @AbstractFactoryPattern.ConcreteProduct
+  @AbstractFactoryPattern.AbstractFactory(participants = LocalizedAnimal.class)
   private static interface AbstractLocalizedAnimalFactory {
     LocalizedAnimal createCat();
 
@@ -116,7 +116,6 @@ public class AbstractFactoryTest {
 
     assertEquals("Meow", englishCat.talk());
     assertEquals("Cluck cluck", englishChicken.talk());
-
   }
 
 }
