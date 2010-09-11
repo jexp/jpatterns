@@ -23,14 +23,14 @@ public class FlyweightTest {
     Argabuthon, EroticonVI, Gagrakacka, Krikkit, Magrathea, NowWhat, ViltvodleVI, Vod, Xaxis
   }
 
-  @FlyweightPattern.Flyweight
+  @FlyweightPattern.Flyweight(participants = {AnonymousAlien.class, KnownAlien.class})
   private interface Alien {
     String getName();
   }
 
 
-  @FlyweightPattern.ConcreteFlyweight
-  @FlyweightPattern.FlyweightFactory
+  @FlyweightPattern.ConcreteFlyweight(participants = {Alien.class, KnownAlien.class})
+  @FlyweightPattern.FlyweightFactory(participants = {Alien.class, KnownAlien.class})
   private static class AnonymousAlien implements Alien {
     private static final Map<Alien, WeakReference<Alien>> anonymousAliens = new HashMap<Alien, WeakReference<Alien>>();
 
@@ -81,8 +81,8 @@ public class FlyweightTest {
     }
   }
 
-  @FlyweightPattern.UnsharedConcreteFlyweight
-  private static class KnownAlien {
+  @FlyweightPattern.UnsharedConcreteFlyweight(participants = {Alien.class, AnonymousAlien.class})
+  private static class KnownAlien implements Alien {
     private String name;
     private AlienRace alienRace;
 
