@@ -1,6 +1,7 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.creational;
 
 import org.jpatterns.core.*;
+import org.jpatterns.gof.behavioral.TemplateMethodPattern;
 
 import java.lang.annotation.*;
 
@@ -21,6 +22,10 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.CREATIONAL,
+    level = Level.SingleClass,
+    purpose = "Define an interface for creating an object, but let subclasses " +
+        "decide which class to instantiate. Factory Method lets a class defer " +
+        "instantiation to subclasses.",
     related = {AbstractFactoryPattern.class, TemplateMethodPattern.class,
         PrototypePattern.class})
 public @interface FactoryMethodPattern {

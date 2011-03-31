@@ -1,6 +1,7 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.creational;
 
 import org.jpatterns.core.*;
+import org.jpatterns.gof.creational.*;
 
 import java.lang.annotation.*;
 
@@ -17,6 +18,9 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.CREATIONAL,
+    level = Level.SingleClass,
+    purpose = "Ensure a class only has one instance, and provide a global " +
+        "point of access to it.",
     related = {AbstractFactoryPattern.class, BuilderPattern.class,
         PrototypePattern.class})
 public @interface SingletonPattern {

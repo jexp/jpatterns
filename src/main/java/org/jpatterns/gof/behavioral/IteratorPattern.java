@@ -1,6 +1,8 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.behavioral;
 
 import org.jpatterns.core.*;
+import org.jpatterns.gof.creational.FactoryMethodPattern;
+import org.jpatterns.gof.structural.CompositePattern;
 
 import java.lang.annotation.*;
 
@@ -17,6 +19,10 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL,
+    level = Level.Component,
+    purpose = "Provide a way to access the elements of an aggregate object " +
+        "sequentially without exposing its underlying representation.",
+    alsoKnown = {"Cursor"},
     related = {CompositePattern.class, FactoryMethodPattern.class,
         MementoPattern.class})
 public @interface IteratorPattern {

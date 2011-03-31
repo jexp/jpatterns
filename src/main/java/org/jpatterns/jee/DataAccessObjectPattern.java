@@ -22,7 +22,10 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(source = Source.CoreJ2EE,
-    type = Type.ENTERPRISE)
+    type = Type.ENTERPRISE,
+    level = Level.Component,
+    purpose = "Abstract and encapsulate all access to the data source. The DAO " +
+        "manages the connection with the data source to obtain and store data")
 public @interface DataAccessObjectPattern {
   Class[] participants() default {};
 

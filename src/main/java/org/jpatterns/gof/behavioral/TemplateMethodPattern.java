@@ -1,6 +1,7 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.behavioral;
 
 import org.jpatterns.core.*;
+import org.jpatterns.gof.creational.FactoryMethodPattern;
 
 import java.lang.annotation.*;
 
@@ -19,6 +20,10 @@ import java.lang.annotation.*;
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL,
+    level = Level.SingleClass,
+    purpose = "Define the skeleton of an algorithm in an operation, deferring " +
+        "some steps to subclasses. Template Method lets subclasses redefine " +
+        "certain steps of an algorithm without changing the algorithm's structure.",
     related = {FactoryMethodPattern.class, StrategyPattern.class})
 public @interface TemplateMethodPattern {
   Class[] participants() default {};

@@ -1,4 +1,4 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.structural;
 
 import org.jpatterns.core.*;
 
@@ -24,6 +24,11 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.STRUCTURAL,
+    level = Level.Component,
+    purpose = "Convert the interface of a class into another interface clients " +
+        "expect. Adapter lets classes work together that couldn't otherwise " +
+        "because of incompatible interfaces.",
+    alsoKnown = {"Wrapper"},
     related = {BridgePattern.class, DecoratorPattern.class, ProxyPattern.class})
 public @interface AdapterPattern {
   Class[] participants() default {};

@@ -1,6 +1,7 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.behavioral;
 
 import org.jpatterns.core.*;
+import org.jpatterns.gof.structural.FacadePattern;
 
 import java.lang.annotation.*;
 
@@ -18,6 +19,11 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL,
+    level = Level.SingleClass,
+    purpose = "Without violating encapsulation, capture and externalize an " +
+        "object's internal state so that the object can be restored to this " +
+        "state later.",
+    alsoKnown = {"Token", "Snapshot"},
     related = {FacadePattern.class, ObserverPattern.class})
 public @interface MementoPattern {
   Class[] participants() default {};

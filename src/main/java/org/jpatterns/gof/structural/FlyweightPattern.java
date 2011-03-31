@@ -1,6 +1,7 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.structural;
 
 import org.jpatterns.core.*;
+import org.jpatterns.gof.behavioral.*;
 
 import java.lang.annotation.*;
 
@@ -17,6 +18,9 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.STRUCTURAL,
+    level = Level.Component,
+    purpose = "Use sharing to support large numbers of fine-grained objects " +
+        "efficiently.",
     related = {CompositePattern.class, StatePattern.class,
         StrategyPattern.class})
 public @interface FlyweightPattern {

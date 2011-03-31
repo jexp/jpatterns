@@ -1,6 +1,7 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.structural;
 
 import org.jpatterns.core.*;
+import org.jpatterns.gof.structural.*;
 
 import java.lang.annotation.*;
 
@@ -18,6 +19,10 @@ import java.lang.annotation.*;
     ElementType.LOCAL_VARIABLE})
 @Documented
 @DesignPattern(type = Type.STRUCTURAL,
+    level = Level.Component,
+    purpose = "Provide a surrogate or placeholder for another object to control " +
+        "access to it.",
+    alsoKnown = {"Surrogate"},
     related = {AdapterPattern.class, DecoratorPattern.class})
 public @interface ProxyPattern {
   Class[] participants() default {};

@@ -1,6 +1,7 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.behavioral;
 
 import org.jpatterns.core.*;
+import org.jpatterns.gof.structural.CompositePattern;
 
 import java.lang.annotation.*;
 
@@ -18,6 +19,10 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL,
+    level = Level.Component,
+    purpose = "Represent an operation to be performed on the elements of an " +
+        "object structure. Visitor lets you define a new operation without " +
+        "changing the classes of the elements on which it operates.",
     related = {CompositePattern.class, InterpreterPattern.class})
 public @interface VisitorPattern {
   Class[] participants() default {};

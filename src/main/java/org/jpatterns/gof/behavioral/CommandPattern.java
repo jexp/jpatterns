@@ -1,6 +1,8 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.behavioral;
 
 import org.jpatterns.core.*;
+import org.jpatterns.gof.creational.PrototypePattern;
+import org.jpatterns.gof.structural.CompositePattern;
 
 import java.lang.annotation.*;
 
@@ -19,13 +21,19 @@ import java.lang.annotation.*;
 @Documented
 @DesignPattern(source = Source.GoF,
     type = Type.BEHAVIORAL,
+    level = Level.SingleClass,
+    alsoKnown = {"Action", "Transaction"},
+    related = {CompositePattern.class, MementoPattern.class,
+        PrototypePattern.class},
+    purpose = "Encapsulate a request as an object, thereby letting you " +
+        "parameterize clients with different requests, queue or log requests, " +
+        "and support undoable operations.",
     urls = {"http://en.wikipedia.org/wiki/Command_pattern",
         "http://home.earthlink.net/~huston2/dp/command.html"},
     refactorings = {
         Refactoring.ExtractParameterObject,
-        Refactoring.ExtractMethodObject},
-    related = {CompositePattern.class, MementoPattern.class,
-        PrototypePattern.class})
+        Refactoring.ExtractMethodObject}
+)
 
 public @interface CommandPattern {
   Class[] participants() default {};

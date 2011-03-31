@@ -1,6 +1,7 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.behavioral;
 
 import org.jpatterns.core.*;
+import org.jpatterns.gof.creational.SingletonPattern;
 
 import java.lang.annotation.*;
 
@@ -18,6 +19,11 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL,
+    level = Level.Component,
+    purpose = "Define a one-to-many dependency between objects so that when one " +
+        "object changes state, all its dependents are notified and updated " +
+        "automatically.",
+    alsoKnown = {"Publisher-Subscriber"},
     related = {MediatorPattern.class, SingletonPattern.class})
 public @interface ObserverPattern {
   Class[] participants() default {};

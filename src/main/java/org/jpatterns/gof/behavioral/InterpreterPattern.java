@@ -1,6 +1,7 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.behavioral;
 
 import org.jpatterns.core.*;
+import org.jpatterns.gof.structural.*;
 
 import java.lang.annotation.*;
 
@@ -16,6 +17,10 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL,
+    level = Level.SingleClass,
+    purpose = "Given a language, define a represention for its grammar along " +
+      "with an interpreter that uses the representation to interpret sentences " +
+      "in the language.",
     related = {CompositePattern.class, FlyweightPattern.class,
         IteratorPattern.class, VisitorPattern.class})
 public @interface InterpreterPattern {

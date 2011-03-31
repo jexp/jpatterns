@@ -1,6 +1,7 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.behavioral;
 
 import org.jpatterns.core.*;
+import org.jpatterns.gof.structural.FacadePattern;
 
 import java.lang.annotation.*;
 
@@ -19,6 +20,11 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL,
+    level = Level.Component,
+    purpose = "Define an object that encapsulates how a set of objects interact. " +
+        "Mediator promotes loose coupling by keeping objects from referring to " +
+        "each other explicitly, and it lets you vary their interaction " +
+        "independently.",
     related = {FacadePattern.class, ObserverPattern.class})
 public @interface MediatorPattern {
   Class[] participants() default {};

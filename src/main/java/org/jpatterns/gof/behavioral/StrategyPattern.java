@@ -1,6 +1,7 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.behavioral;
 
 import org.jpatterns.core.*;
+import org.jpatterns.gof.structural.FlyweightPattern;
 
 import java.lang.annotation.*;
 
@@ -18,6 +19,11 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL,
+    level = Level.Component,
+    purpose = "Define a family of algorithms, encapsulate each one, and make " +
+        "them interchangeable. Strategy lets the algorithm vary independently " +
+        "from clients that use it",
+    alsoKnown = {"Policy"},
     related = {FlyweightPattern.class})
 public @interface StrategyPattern {
   Class[] participants() default {};

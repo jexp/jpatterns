@@ -1,6 +1,8 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.structural;
 
 import org.jpatterns.core.*;
+import org.jpatterns.gof.creational.AbstractFactoryPattern;
+import org.jpatterns.gof.structural.AdapterPattern;
 
 import java.lang.annotation.*;
 
@@ -17,6 +19,10 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.STRUCTURAL,
+    level = Level.Component,
+    purpose = "Decouple an abstraction from its implementation so that the two " +
+        "can vary independently.",
+    alsoKnown = {"Handle/Body"},
     related = {AbstractFactoryPattern.class, AdapterPattern.class})
 public @interface BridgePattern {
   Class[] participants() default {};

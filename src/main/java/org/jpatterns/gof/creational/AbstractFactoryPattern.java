@@ -1,4 +1,4 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.creational;
 
 import org.jpatterns.core.*;
 
@@ -19,6 +19,10 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.CREATIONAL,
+    level = Level.Component,
+    purpose = "Provide an interface for creating families of related or " +
+        "dependent objects without specifying their concrete classes.",
+    alsoKnown = {"Kit", "Toolkit"},
     related = {FactoryMethodPattern.class, PrototypePattern.class,
         SingletonPattern.class})
 public @interface AbstractFactoryPattern {

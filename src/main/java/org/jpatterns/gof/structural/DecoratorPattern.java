@@ -1,6 +1,7 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.structural;
 
 import org.jpatterns.core.*;
+import org.jpatterns.gof.behavioral.StrategyPattern;
 
 import java.lang.annotation.*;
 
@@ -18,6 +19,11 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.STRUCTURAL,
+    level = Level.Component,
+    purpose = "Attach additional responsibilities to an object dynamically. " +
+        "Decorators provide a flexible alternative to subclassing for extending " +
+        "functionality.",
+    alsoKnown = {"Wrapper"},
     related = {AdapterPattern.class, CompositePattern.class,
         StrategyPattern.class})
 public @interface DecoratorPattern {

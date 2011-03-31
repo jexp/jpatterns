@@ -1,6 +1,8 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.behavioral;
 
 import org.jpatterns.core.*;
+import org.jpatterns.gof.creational.SingletonPattern;
+import org.jpatterns.gof.structural.FlyweightPattern;
 
 import java.lang.annotation.*;
 
@@ -17,6 +19,10 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.BEHAVIORAL,
+    level = Level.SingleClass,
+    purpose = "Allow an object to alter its behavior when its internal state " +
+        "changes. The object will appear to change its class.",
+    alsoKnown = {"Objects for States"},
     related = {FlyweightPattern.class, SingletonPattern.class})
 public @interface StatePattern {
   Class[] participants() default {};
