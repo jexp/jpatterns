@@ -9,7 +9,7 @@ Design Patterns are typically encoded into Java code in an ad-hoc fashion.
 They are either embedded into the names of the classes or written into the Javadocs.
 Unfortunately it is impossible to accurately determine a pattern based solely on the class structure without knowing the intent of the code author.
 
-We follow the KISS principle by using reasonable defaults for the annotation attributes.
+We follow the [KISS principle](https://en.wikipedia.org/wiki/KISS_principle) by using reasonable defaults for the annotation attributes.
 Thus, if you are writing a composite, you can simply specify:
 
 ```java
