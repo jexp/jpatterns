@@ -213,12 +213,14 @@ So long as a pattern has a weak name, it means that it is not a clear concept, a
 
 ### JUnit Patterns Overview
 From the JUnit Cook's Tour
-![Figure 6: JUnit Patterns Summary](./docs/cookstour-image6.gif)
+
+![Figure 6: JUnit Patterns Summary](./doc/cookstour-image6.gif)
 
 ### How do the annotations work?
-![ava.util.zip.Adler32 UML](./docs/crc32adler32uml.gif)
 
-JPatterns.org Annotations
+![ava.util.zip.Adler32 UML](./doc/crc32adler32uml.gif)
+
+Code with JPatterns.org Annotations
 
 ```java
 @StrategyPattern.Strategy
