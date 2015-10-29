@@ -1,4 +1,4 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.creational;
 
 import org.junit.Test;
 

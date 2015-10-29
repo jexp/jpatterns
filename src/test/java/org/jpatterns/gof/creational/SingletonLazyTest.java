@@ -1,4 +1,4 @@
-package org.jpatterns.gof;
+package org.jpatterns.gof.creational;
 
 import static junit.framework.Assert.assertNotNull;
 import static junit.framework.Assert.assertNull;
