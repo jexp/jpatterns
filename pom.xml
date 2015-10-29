@@ -39,6 +39,7 @@
     <developers>
         <developer>
             <name>Dr Heinz M. Kabutz</name>
+			<email>heinz@javaspecialists.eu</email>
         </developer>
         <developer>
             <name>Michael Hunger</name>
@@ -57,6 +58,15 @@
     <issueManagement>
         <url>https://github.com/jexp/jpatterns/issues</url>
     </issueManagement>
+    <mailingLists>
+        <mailingList>
+            <name>JPatterns Mail List</name>
+            <archive>https://groups.google.com/forum/#!forum/jpatterns</archive>
+        </mailingList>
+    </mailingLists>
+    <prerequisites>
+        <maven>3.0.5</maven>
+    </prerequisites>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <jdk>1.5</jdk>
