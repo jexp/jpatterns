@@ -27,6 +27,7 @@
     of (Design)Patterns within your code to your fellow developers and your
     future self.
   </description>
+    <inceptionYear>2011</inceptionYear>
 	<url>http://jpatterns.org</url>
 	<licenses>
 		<license>
@@ -35,21 +36,48 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+    <developers>
+        <developer>
+            <name>Dr Heinz M. Kabutz</name>
+        </developer>
+        <developer>
+            <name>Michael Hunger</name>
+            <email>github@jexp.de</email>
+        </developer>
+        <developer>
+            <name>Marco Tedone</name>
+            <email>marco.tedone@gmail.com</email>
+        </developer>
+    </developers>
 	<scm>
-		<url>http://github.com/jexp/jpatterns</url>
-		<connection>git://github.com/jexp/jpatterns.git</connection>
-		<developerConnection>git@github.com:jexp/jpatterns.git</developerConnection>
+		<url>https://github.com/jexp/jpatterns</url>
+		<connection>scm:git://github.com/jexp/jpatterns.git</connection>
+		<developerConnection>scm:git@github.com:jexp/jpatterns.git</developerConnection>
 	</scm>
+    <issueManagement>
+        <url>https://github.com/jexp/jpatterns/issues</url>
+    </issueManagement>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <jdk>1.5</jdk>
+    </properties>
 
 	<build>
 		<plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.3.2</version>
 				<configuration>
-					<source>1.5</source>
-					<target>1.5</target>
+					<source>${jdk}</source>
+					<target>${jdk}</target>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -68,6 +96,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
+                <version>2.4</version>
 				<executions>
 					<execution>
 						<id>attach-sources</id>
@@ -77,7 +106,30 @@
 					</execution>
 				</executions>
 			</plugin>
-		</plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-enforcer-plugin</artifactId>
+                <version>1.4.1</version>
+                <executions>
+                    <execution>
+                        <id>enforce</id>
+                        <goals>
+                            <goal>enforce</goal>
+                        </goals>
+                        <configuration>
+                            <rules>
+                                <requireJavaVersion>
+                                    <version>1.5</version>
+                                </requireJavaVersion>
+                                <requireReleaseDeps>
+                                    <onlyWhenRelease>true</onlyWhenRelease>
+                                </requireReleaseDeps>
+                            </rules>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
 	</build>
 
 	<dependencies>
