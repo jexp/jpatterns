@@ -51,6 +51,15 @@ public @interface MementoPattern {
   @Retention(RetentionPolicy.RUNTIME)
   @Target(ElementType.TYPE)
   @Documented
+  public @interface MementoImpl {
+    Class[] participants() default {};
+
+    String comment() default "";
+  }
+
+  @Retention(RetentionPolicy.RUNTIME)
+  @Target(ElementType.TYPE)
+  @Documented
   public @interface Caretaker {
     Class[] participants() default {};
 

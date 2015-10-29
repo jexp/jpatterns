@@ -26,7 +26,7 @@ import java.lang.annotation.*;
 @Target({ElementType.TYPE})
 @Documented
 @DesignPattern(source = Source.Other,
-    type = Type.ENTERPRISE, //TODO : maybe behavioral?
+    type = Type.ENTERPRISE,
     level = Level.Architecturial,
     purpose = "The Model View Controller (MVC) pattern divides an application " +
         "in three components: The View, the Controller and the Model.")
