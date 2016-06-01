@@ -4,8 +4,8 @@
 package org.jpatterns.jee;
 
 import org.jpatterns.core.*;
-import org.jpatterns.gof.AdapterPattern.Adapter;
-import org.jpatterns.gof.FacadePattern;
+import org.jpatterns.gof.structural.AdapterPattern.Adapter;
+import org.jpatterns.gof.structural.FacadePattern;
 
 import java.lang.annotation.*;
 
@@ -25,6 +25,10 @@ import java.lang.annotation.*;
 @Target({ElementType.TYPE})
 @Documented
 @DesignPattern(source = Source.CoreJ2EE, type = Type.ENTERPRISE,
+    level = Level.Component,
+    purpose = "use a BusinessDelegate to reduce coupling between " +
+        "presentation-tier clients and business services. The BusinessDelegate " +
+        "hides the underlying implementation details of the business service",
     related = {Adapter.class, FacadePattern.class})
 public @interface BusinessDelegatePattern {
   Class[] participants() default {};

@@ -12,12 +12,17 @@ import java.lang.annotation.*;
 @Inherited
 public @interface DesignPattern {
   Source source() default Source.GoF;
-
   Type type();
+  Level level();
+  String[] alsoKnown() default {};
+  Class[] related() default {};
+
+  String purpose() default "";
+  String introduction() default "";
+  String[] applicability() default {};
+  String implementation() default "";
+  String[] benefitsAndDrawbacks() default {};
 
   String[] urls() default {};
-
   Refactoring[] refactorings() default {};
-
-  Class[] related() default {};
 }
