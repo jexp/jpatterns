@@ -11,11 +11,11 @@ import java.lang.annotation.*;
  *
  * The structure for an object adapter is:
  *
- * <img alt="Object Adapter Structure" src="http://www.jpatterns.org/uml/gof/ObjectAdapterStructure.gif"/>
+ * <img alt="Object Adapter Structure" src="http://www.jpatterns.org/uml/gof/ObjectAdapterStructure.gif">
  *
  * The structure for a class adapter is:
  *
- * <img alt="Class Adapter Structure" src="http://www.jpatterns.org/uml/gof/ClassAdapterStructure.gif"/>
+ * <img alt="Class Adapter Structure" src="http://www.jpatterns.org/uml/gof/ClassAdapterStructure.gif">
  *
  * @author Heinz Kabutz
  * @since 2010-07-28

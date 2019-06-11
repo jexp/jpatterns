@@ -12,7 +12,7 @@ import java.lang.annotation.*;
  * access to the data source. The DAO manages the connection with the data
  * source to obtain and store data
  *
- * <img alt="DAO Structure" src="http://www.jpatterns.org/uml/ee/DaoStructure.gif"/>
+ * <img alt="DAO Structure" src="http://www.jpatterns.org/uml/ee/DaoStructure.gif">
  *
  *
  * @author Marco Tedone

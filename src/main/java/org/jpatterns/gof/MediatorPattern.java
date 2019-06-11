@@ -10,7 +10,7 @@ import java.lang.annotation.*;
  * referring to each other explicitly, and it lets you vary their interaction
  * independently.
  *
- * <img alt="Mediator Structure" src="http://www.jpatterns.org/uml/gof/MediatorStructure.gif"/>
+ * <img alt="Mediator Structure" src="http://www.jpatterns.org/uml/gof/MediatorStructure.gif">
  *
  * @author Heinz Kabutz
  * @since 2010-08-09

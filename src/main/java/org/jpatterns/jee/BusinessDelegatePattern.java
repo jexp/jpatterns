@@ -15,7 +15,7 @@ import java.lang.annotation.*;
  * BusinessDelegate hides the underlying implementation details of the business
  * service [...].
  *
- * <img alt="Business Delegate Structure" src="http://www.jpatterns.org/uml/ee/BusinessDelegateStructure.gif"/>
+ * <img alt="Business Delegate Structure" src="http://www.jpatterns.org/uml/ee/BusinessDelegateStructure.gif">
  *
  *
  * @author Marco Tedone

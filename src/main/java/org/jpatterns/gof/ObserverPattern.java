@@ -9,7 +9,7 @@ import java.lang.annotation.*;
  * so that when one object changes state, all its dependents are notified and
  * updated automatically.
  *
- * <img alt="Observer Structure" src="http://www.jpatterns.org/uml/gof/ObserverStructure.gif"/>
+ * <img alt="Observer Structure" src="http://www.jpatterns.org/uml/gof/ObserverStructure.gif">
  *
  * @author Heinz Kabutz
  * @since 2010-08-09

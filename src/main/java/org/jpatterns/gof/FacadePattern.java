@@ -9,7 +9,7 @@ import java.lang.annotation.*;
  * interfaces in a subsystem. Facade defines a higher-level interface that makes
  * the subsystem easier to use.
  *
- * <img alt="Facade Structure" src="http://www.jpatterns.org/uml/gof/FacadeStructure.gif"/>
+ * <img alt="Facade Structure" src="http://www.jpatterns.org/uml/gof/FacadeStructure.gif">
  *
  * @author Heinz Kabutz
  * @since 2010-07-28

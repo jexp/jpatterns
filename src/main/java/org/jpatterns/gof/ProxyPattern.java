@@ -8,7 +8,7 @@ import java.lang.annotation.*;
  * <b>Intent [GoF, pg 207]:</b> Provide a surrogate or placeholder for another
  * object to control access to it.
  *
- * <img alt="Proxy Structure" src="http://www.jpatterns.org/uml/gof/ProxyStructure.gif"/>
+ * <img alt="Proxy Structure" src="http://www.jpatterns.org/uml/gof/ProxyStructure.gif">
  *
  * @author Heinz Kabutz
  * @since 2010-07-28

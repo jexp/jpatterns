@@ -10,7 +10,7 @@ import java.lang.annotation.*;
  * subclasses redefine certain steps of an algorithm without changing the
  * algorithm's structure.
  *
- * <img alt="Template Method Structure" src="http://www.jpatterns.org/uml/gof/TemplateMethodStructure.gif"/>
+ * <img alt="Template Method Structure" src="http://www.jpatterns.org/uml/gof/TemplateMethodStructure.gif">
  *
  * @author Heinz Kabutz
  * @since 2010-07-28

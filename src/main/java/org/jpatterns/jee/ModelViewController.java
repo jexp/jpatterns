@@ -16,7 +16,7 @@ import java.lang.annotation.*;
  * offering both services and objects to the view</li>.
  * </ul>
  *
- * <img alt="MVC Structure" src="http://www.jpatterns.org/uml/ee/MVCStructure.gif"/>
+ * <img alt="MVC Structure" src="http://www.jpatterns.org/uml/ee/MVCStructure.gif">
  *
  *
  * @author Marco Tedone
