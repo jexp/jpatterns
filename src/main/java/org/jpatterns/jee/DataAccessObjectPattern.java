@@ -11,9 +11,9 @@ import java.lang.annotation.*;
  * <b>Intent [Core J2EE Patterns, pg 391]:</b> Abstract and encapsulate all
  * access to the data source. The DAO manages the connection with the data
  * source to obtain and store data
- * <p/>
+ *
  * <img src="http://www.jpatterns.org/uml/ee/DaoStructure.gif"/>
- * <p/>
+ *
  *
  * @author Marco Tedone
  * @since 2010-08-19

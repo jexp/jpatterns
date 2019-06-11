@@ -15,9 +15,9 @@ import java.lang.annotation.*;
  * <li><b>The Model</b> wraps the logic and the domain model of the application,
  * offering both services and objects to the view</li>.
  * </ul>
- * <p/>
+ *
  * <img src="http://www.jpatterns.org/uml/ee/MVCStructure.gif"/>
- * <p/>
+ *
  *
  * @author Marco Tedone
  * @since 2010-08-21

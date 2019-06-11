@@ -14,9 +14,9 @@ import java.lang.annotation.*;
  * coupling between presentation-tier clients and business services. The
  * BusinessDelegate hides the underlying implementation details of the business
  * service [...].
- * <p/>
+ *
  * <img src="http://www.jpatterns.org/uml/ee/BusinessDelegateStructure.gif"/>
- * <p/>
+ *
  *
  * @author Marco Tedone
  * @since 2010-08-21
