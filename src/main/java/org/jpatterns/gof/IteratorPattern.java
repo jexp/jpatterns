@@ -8,7 +8,7 @@ import java.lang.annotation.*;
  * <b>Intent [GoF, pg 257]:</b> Provide a way to access the elements of an
  * aggregate object sequentially without exposing its underlying representation.
  *
- * <img src="http://www.jpatterns.org/uml/gof/IteratorStructure.gif"/>
+ * <img alt="Iterator Structure" src="http://www.jpatterns.org/uml/gof/IteratorStructure.gif"/>
  *
  * @author Heinz Kabutz
  * @since 2010-08-09

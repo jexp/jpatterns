@@ -10,7 +10,7 @@ import java.lang.annotation.*;
  * the receiving objects and pass the request along the chain until an object
  * handles it.
  *
- * <img src="http://www.jpatterns.org/uml/gof/ChainOfResponsibilityStructure.gif"/>
+ * <img alt="Chain Of Responsibility Structure" src="http://www.jpatterns.org/uml/gof/ChainOfResponsibilityStructure.gif"/>
  *
  * @author Heinz Kabutz
  * @since 2010-07-28

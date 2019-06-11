@@ -9,7 +9,7 @@ import java.lang.annotation.*;
  * elements of an object structure. Visitor lets you define a new operation
  * without changing the classes of the elements on which it operates.
  *
- * <img src="http://www.jpatterns.org/uml/gof/VisitorStructure.gif"/>
+ * <img alt="Visitor Structure" src="http://www.jpatterns.org/uml/gof/VisitorStructure.gif"/>
  *
  * @author Heinz Kabutz
  * @since 2010-08-09

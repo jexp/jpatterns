@@ -9,7 +9,7 @@ import java.lang.annotation.*;
  * one, and make them interchangeable. Strategy lets the algorithm vary
  * independently from clients that use it.
  *
- * <img src="http://www.jpatterns.org/uml/gof/StrategyStructure.gif"/>
+ * <img alt="Strategy Structure" src="http://www.jpatterns.org/uml/gof/StrategyStructure.gif"/>
  *
  * @author Heinz Kabutz
  * @since 2010-07-28

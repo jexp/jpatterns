@@ -12,7 +12,7 @@ import java.lang.annotation.*;
  * This pattern refers to the GoF factory method, which differs greatly from the
  * static factory method commonly found in the refactoring literature.
  *
- * <img src="http://www.jpatterns.org/uml/gof/FactoryMethodStructure.gif"/>
+ * <img alt="Factory Method Structure" src="http://www.jpatterns.org/uml/gof/FactoryMethodStructure.gif"/>
  *
  * @author Heinz Kabutz
  * @since 2010-08-09

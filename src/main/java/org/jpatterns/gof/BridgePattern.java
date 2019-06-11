@@ -8,7 +8,7 @@ import java.lang.annotation.*;
  * <b>Intent [GoF, pg 151]:</b> Decouple an abstraction from its implementation
  * so that the two can vary independently.
  *
- * <img src="http://www.jpatterns.org/uml/gof/BridgeStructure.gif"/>
+ * <img alt="Bridge Structure" src="http://www.jpatterns.org/uml/gof/BridgeStructure.gif"/>
  *
  * @author Heinz Kabutz
  * @since 2010-07-28

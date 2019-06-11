@@ -9,7 +9,7 @@ import java.lang.annotation.*;
  * represent whole-part hierarchies. Composite lets clients treat individual
  * objects and compositions of objects uniformly.
  *
- * <img src="http://www.jpatterns.org/uml/gof/CompositeStructure.gif"/>
+ * <img alt="Composite Structure" src="http://www.jpatterns.org/uml/gof/CompositeStructure.gif"/>
  *
  * @author Heinz Kabutz
  * @since 2010-07-28

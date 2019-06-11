@@ -9,7 +9,7 @@ import java.lang.annotation.*;
  * externalize an object's internal state so that the object can be restored to
  * this state later.
  *
- * <img src="http://www.jpatterns.org/uml/gof/MementoStructure.gif"/>
+ * <img alt="Memento Structure" src="http://www.jpatterns.org/uml/gof/MementoStructure.gif"/>
  *
  * @author Heinz Kabutz
  * @since 2010-08-09
