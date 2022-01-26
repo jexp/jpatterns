@@ -7,7 +7,7 @@ import java.lang.annotation.*;
 /**
  * <b>Intent [GoF, pg 305]:</b> Allow an object to alter its behavior when its
  * internal state changes. The object will appear to change its class.
- *
+ * <p/>
  * <img alt="State Structure" src="http://www.jpatterns.org/uml/gof/StateStructure.gif">
  *
  * @author Heinz Kabutz

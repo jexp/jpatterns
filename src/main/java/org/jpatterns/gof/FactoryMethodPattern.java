@@ -8,10 +8,10 @@ import java.lang.annotation.*;
  * <b>Intent [GoF, pg 107]:</b> Define an interface for creating an object, but
  * let subclasses decide which class to instantiate. Factory Method lets a class
  * defer instantiation to subclasses.
- *
+ * <p/>
  * This pattern refers to the GoF factory method, which differs greatly from the
  * static factory method commonly found in the refactoring literature.
- *
+ * <p/>
  * <img alt="Factory Method Structure" src="http://www.jpatterns.org/uml/gof/FactoryMethodStructure.gif">
  *
  * @author Heinz Kabutz

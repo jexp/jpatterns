@@ -8,7 +8,7 @@ import java.lang.annotation.*;
  * <b>Intent [GoF, pg 163]:</b> Compose objects into tree structures to
  * represent whole-part hierarchies. Composite lets clients treat individual
  * objects and compositions of objects uniformly.
- *
+ * <p/>
  * <img alt="Composite Structure" src="http://www.jpatterns.org/uml/gof/CompositeStructure.gif">
  *
  * @author Heinz Kabutz

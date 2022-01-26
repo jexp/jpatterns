@@ -9,7 +9,7 @@ import java.lang.annotation.*;
  * receiver by giving more than one object a chance to handle the request. Chain
  * the receiving objects and pass the request along the chain until an object
  * handles it.
- *
+ * <p/>
  * <img alt="Chain Of Responsibility Structure" src="http://www.jpatterns.org/uml/gof/ChainOfResponsibilityStructure.gif">
  *
  * @author Heinz Kabutz

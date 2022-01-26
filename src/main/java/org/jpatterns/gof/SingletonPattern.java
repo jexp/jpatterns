@@ -7,7 +7,7 @@ import java.lang.annotation.*;
 /**
  * <b>Intent [GoF, pg 127]:</b> Ensure a class only has one instance, and
  * provide a global point of access to it.
- *
+ * <p/>
  * <img alt="Singleton Structure" src="http://www.jpatterns.org/uml/gof/SingletonStructure.gif">
  *
  * @author Alex Gout

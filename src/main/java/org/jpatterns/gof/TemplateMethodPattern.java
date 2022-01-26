@@ -9,7 +9,7 @@ import java.lang.annotation.*;
  * operation, deferring some steps to subclasses. Template Method lets
  * subclasses redefine certain steps of an algorithm without changing the
  * algorithm's structure.
- *
+ * <p/>
  * <img alt="Template Method Structure" src="http://www.jpatterns.org/uml/gof/TemplateMethodStructure.gif">
  *
  * @author Heinz Kabutz

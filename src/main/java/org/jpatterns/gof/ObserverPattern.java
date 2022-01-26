@@ -8,7 +8,7 @@ import java.lang.annotation.*;
  * <b>Intent [GoF, pg 293]:</b> Define a one-to-many dependency between objects
  * so that when one object changes state, all its dependents are notified and
  * updated automatically.
- *
+ * <p/>
  * <img alt="Observer Structure" src="http://www.jpatterns.org/uml/gof/ObserverStructure.gif">
  *
  * @author Heinz Kabutz

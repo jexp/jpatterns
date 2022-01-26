@@ -7,7 +7,7 @@ import java.lang.annotation.*;
 /**
  * <b>Intent [GoF, pg 195]:</b> Use sharing to support large numbers of
  * fine-grained objects efficiently.
- *
+ * <p/>
  * <img alt="Flyweight Structure" src="http://www.jpatterns.org/uml/gof/FlyweightStructure.gif">
  *
  * @author Heinz Kabutz

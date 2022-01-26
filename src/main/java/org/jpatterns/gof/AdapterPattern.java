@@ -8,13 +8,13 @@ import java.lang.annotation.*;
  * <b>Intent [GoF, pg 139]:</b> Convert the interface of a class into another
  * interface clients expect. Adapter lets classes work together that couldn't
  * otherwise because of incompatible interfaces.
- *
+ * <p/>
  * The structure for an object adapter is:
- *
+ * <p/>
  * <img alt="Object Adapter Structure" src="http://www.jpatterns.org/uml/gof/ObjectAdapterStructure.gif">
- *
+ * <p/>
  * The structure for a class adapter is:
- *
+ * <p/>
  * <img alt="Class Adapter Structure" src="http://www.jpatterns.org/uml/gof/ClassAdapterStructure.gif">
  *
  * @author Heinz Kabutz

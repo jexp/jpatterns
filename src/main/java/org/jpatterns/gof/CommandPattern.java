@@ -8,7 +8,7 @@ import java.lang.annotation.*;
  * <b>Intent [GoF, pg 233]:</b> Encapsulate a request as an object, thereby
  * letting you parameterize clients with different requests, queue or log
  * requests, and support undoable operations.
- *
+ * <p/>
  * <img alt="Command Structure" src="http://www.jpatterns.org/uml/gof/CommandStructure.gif">
  *
  * @author Michael Hunger

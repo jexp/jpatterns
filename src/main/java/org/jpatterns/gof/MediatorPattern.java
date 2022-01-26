@@ -9,7 +9,7 @@ import java.lang.annotation.*;
  * objects interact. Mediator promotes loose coupling by keeping objects from
  * referring to each other explicitly, and it lets you vary their interaction
  * independently.
- *
+ * <p/>
  * <img alt="Mediator Structure" src="http://www.jpatterns.org/uml/gof/MediatorStructure.gif">
  *
  * @author Heinz Kabutz
