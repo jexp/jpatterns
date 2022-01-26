@@ -1,9 +1,17 @@
 package org.jpatterns.plopd;
 
-import org.jpatterns.core.*;
-import org.jpatterns.gof.*;
+import org.jpatterns.core.DesignPattern;
+import org.jpatterns.core.Source;
+import org.jpatterns.core.Type;
+import org.jpatterns.gof.FlyweightPattern;
+import org.jpatterns.gof.SingletonPattern;
+import org.jpatterns.gof.StrategyPattern;
 
-import java.lang.annotation.*;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 /**
  * <b>Intent [PLoPD3, pg 5]:</b> A Null Object provides a surrogate for another
@@ -16,52 +24,52 @@ import java.lang.annotation.*;
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE, ElementType.FIELD,
-    ElementType.LOCAL_VARIABLE})
+        ElementType.LOCAL_VARIABLE})
 @Documented
 @DesignPattern(
-    source = Source.PLoPD3,
-    type = Type.BEHAVIORAL,
-    related = {FlyweightPattern.class, StrategyPattern.class,
-        SingletonPattern.class})
+        source = Source.PLoPD3,
+        type = Type.BEHAVIORAL,
+        related = {FlyweightPattern.class, StrategyPattern.class,
+                SingletonPattern.class})
 public @interface NullObjectPattern {
-  public abstract Class[] participants() default {};
-
-  public abstract String comment() default "";
-
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface AbstractObject {
     public abstract Class[] participants() default {};
 
     public abstract String comment() default "";
-  }
 
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface RealObject {
-    public abstract Class[] participants() default {};
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface AbstractObject {
+        public abstract Class[] participants() default {};
 
-    public abstract String comment() default "";
-  }
+        public abstract String comment() default "";
+    }
 
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface NullObject {
-    public abstract Class[] participants() default {};
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface RealObject {
+        public abstract Class[] participants() default {};
 
-    public abstract String comment() default "";
-  }
+        public abstract String comment() default "";
+    }
 
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target({ElementType.TYPE, ElementType.FIELD,
-      ElementType.LOCAL_VARIABLE})
-  @Documented
-  public @interface Client {
-    public abstract Class[] participants() default {};
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface NullObject {
+        public abstract Class[] participants() default {};
 
-    public abstract String comment() default "";
-  }
+        public abstract String comment() default "";
+    }
+
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target({ElementType.TYPE, ElementType.FIELD,
+            ElementType.LOCAL_VARIABLE})
+    @Documented
+    public @interface Client {
+        public abstract Class[] participants() default {};
+
+        public abstract String comment() default "";
+    }
 }

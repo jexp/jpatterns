@@ -3,17 +3,22 @@
  */
 package org.jpatterns.jee;
 
-import org.jpatterns.core.*;
+import org.jpatterns.core.DesignPattern;
+import org.jpatterns.core.Source;
+import org.jpatterns.core.Type;
 
-import java.lang.annotation.*;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 /**
  * <b>Intent [Core J2EE Patterns, pg 391]:</b> Abstract and encapsulate all
  * access to the data source. The DAO manages the connection with the data
  * source to obtain and store data
- * <p/>
- * <img src="http://www.jpatterns.org/uml/ee/DaoStructure.gif"/>
- * <p/>
+ * <p>
+ * <img alt="DAO Structure" src="http://www.jpatterns.org/uml/ee/DaoStructure.gif">
  *
  * @author Marco Tedone
  * @since 2010-08-19
@@ -22,60 +27,60 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(source = Source.CoreJ2EE,
-    type = Type.ENTERPRISE)
+        type = Type.ENTERPRISE)
 public @interface DataAccessObjectPattern {
-  Class[] participants() default {};
-
-  String comment() default "";
-
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target({ElementType.TYPE, ElementType.FIELD,
-      ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
-  @Documented
-  public @interface BusinessObject {
-    Class[] participants() default {};
-
-    String comment() default "";
-  }
-
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target({ElementType.TYPE, ElementType.FIELD,
-      ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
-  @Documented
-  public @interface Dao {
-    Class[] participants() default {};
-
-    String comment() default "";
-  }
-
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target({ElementType.TYPE, ElementType.FIELD,
-      ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
-  @Documented
-  public @interface DataSource {
     Class[] participants() default {};
 
     String comment() default "";
 
-    // Giving users the possibility to specify which datasource they are using
-    // might be useful for maintainance. The information is optional anyway
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target({ElementType.TYPE, ElementType.FIELD,
+            ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
+    @Documented
+    public @interface BusinessObject {
+        Class[] participants() default {};
 
-    DataSourceType dataSourceType() default DataSourceType.UNDEFINED;
-  }
+        String comment() default "";
+    }
 
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target({ElementType.TYPE, ElementType.FIELD,
-      ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
-  @Documented
-  public @interface ValueObject {
-    Class[] participants() default {};
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target({ElementType.TYPE, ElementType.FIELD,
+            ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
+    @Documented
+    public @interface Dao {
+        Class[] participants() default {};
 
-    String comment() default "";
-  }
+        String comment() default "";
+    }
 
-  public enum DataSourceType {
-    HIBERNATE, SPRING, ORACLE, DB2, MYSQL, SQLSERVER, SYBASE, BERKELEY,
-    UNDEFINED
-  }
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target({ElementType.TYPE, ElementType.FIELD,
+            ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
+    @Documented
+    public @interface DataSource {
+        Class[] participants() default {};
+
+        String comment() default "";
+
+        // Giving users the possibility to specify which datasource they are using
+        // might be useful for maintainance. The information is optional anyway
+
+        DataSourceType dataSourceType() default DataSourceType.UNDEFINED;
+    }
+
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target({ElementType.TYPE, ElementType.FIELD,
+            ElementType.LOCAL_VARIABLE, ElementType.PARAMETER})
+    @Documented
+    public @interface ValueObject {
+        Class[] participants() default {};
+
+        String comment() default "";
+    }
+
+    public enum DataSourceType {
+        HIBERNATE, SPRING, ORACLE, DB2, MYSQL, SQLSERVER, SYBASE, BERKELEY,
+        UNDEFINED
+    }
 
 }
