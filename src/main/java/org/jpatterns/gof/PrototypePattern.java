@@ -1,8 +1,13 @@
 package org.jpatterns.gof;
 
-import org.jpatterns.core.*;
+import org.jpatterns.core.DesignPattern;
+import org.jpatterns.core.Type;
 
-import java.lang.annotation.*;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 /**
  * <b>Intent [GoF, pg 117]:</b> Specify the kinds of objects to create using a
@@ -15,37 +20,37 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.CREATIONAL,
-    related = {AbstractFactoryPattern.class, CompositePattern.class,
-        DecoratorPattern.class})
+        related = {AbstractFactoryPattern.class, CompositePattern.class,
+                DecoratorPattern.class})
 public @interface PrototypePattern {
-  Class[] participants() default {};
-
-  String comment() default "";
-
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface Prototype {
     Class[] participants() default {};
 
     String comment() default "";
-  }
 
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface ConcretePrototype {
-    Class[] participants() default {};
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface Prototype {
+        Class[] participants() default {};
 
-    String comment() default "";
-  }
+        String comment() default "";
+    }
 
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.METHOD)
-  @Documented
-  public @interface Operation {
-    Class[] participants() default {};
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface ConcretePrototype {
+        Class[] participants() default {};
 
-    String comment() default "";
-  }
+        String comment() default "";
+    }
+
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.METHOD)
+    @Documented
+    public @interface Operation {
+        Class[] participants() default {};
+
+        String comment() default "";
+    }
 }

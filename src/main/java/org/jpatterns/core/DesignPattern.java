@@ -1,6 +1,11 @@
 package org.jpatterns.core;
 
-import java.lang.annotation.*;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Inherited;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 /**
  * @author Michael Hunger
@@ -11,13 +16,13 @@ import java.lang.annotation.*;
 @Documented
 @Inherited
 public @interface DesignPattern {
-  Source source() default Source.GoF;
+    Source source() default Source.GoF;
 
-  Type type();
+    Type type();
 
-  String[] urls() default {};
+    String[] urls() default {};
 
-  Refactoring[] refactorings() default {};
+    Refactoring[] refactorings() default {};
 
-  Class[] related() default {};
+    Class[] related() default {};
 }

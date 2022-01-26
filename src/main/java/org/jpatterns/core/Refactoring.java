@@ -5,5 +5,5 @@ package org.jpatterns.core;
  * @since 2010-08-08
  */
 public enum Refactoring {
-  ExtractMethodObject, ExtractParameterObject
+    ExtractMethodObject, ExtractParameterObject
 }

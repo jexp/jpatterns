@@ -1,14 +1,19 @@
 package org.jpatterns.gof;
 
-import org.jpatterns.core.*;
+import org.jpatterns.core.DesignPattern;
+import org.jpatterns.core.Type;
 
-import java.lang.annotation.*;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 /**
  * <b>Intent [GoF, pg 175]:</b> Attach additional responsibilities to an object
  * dynamically. Decorators provide a flexible alternative to subclassing for
  * extending functionality.
- * <p/>
+ * <p>
  * <img alt="Decorator Structure" src="http://www.jpatterns.org/uml/gof/DecoratorStructure.gif">
  *
  * @author Heinz Kabutz
@@ -18,46 +23,46 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.STRUCTURAL,
-    related = {AdapterPattern.class, CompositePattern.class,
-        StrategyPattern.class})
+        related = {AdapterPattern.class, CompositePattern.class,
+                StrategyPattern.class})
 public @interface DecoratorPattern {
-  Class[] participants() default {};
-
-  String comment() default "";
-
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface Component {
     Class[] participants() default {};
 
     String comment() default "";
-  }
 
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface Decorator {
-    Class[] participants() default {};
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface Component {
+        Class[] participants() default {};
 
-    String comment() default "";
-  }
+        String comment() default "";
+    }
 
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface ConcreteComponent {
-    Class[] participants() default {};
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface Decorator {
+        Class[] participants() default {};
 
-    String comment() default "";
-  }
+        String comment() default "";
+    }
 
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface ConcreteDecorator {
-    Class[] participants() default {};
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface ConcreteComponent {
+        Class[] participants() default {};
 
-    String comment() default "";
-  }
+        String comment() default "";
+    }
+
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface ConcreteDecorator {
+        Class[] participants() default {};
+
+        String comment() default "";
+    }
 }

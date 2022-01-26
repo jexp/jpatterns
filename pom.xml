@@ -12,7 +12,7 @@
 
     <groupId>org.jpatterns</groupId>
     <artifactId>jpatterns</artifactId>
-    <version>0.0.1</version>
+    <version>0.1</version>
     <packaging>jar</packaging>
     <name>Java Design Pattern Annotations</name>
     <description>
@@ -48,8 +48,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.3.2</version>
                 <configuration>
-                    <source>6</source>
-                    <target>6</target>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
             <plugin>

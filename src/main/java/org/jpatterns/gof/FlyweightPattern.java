@@ -1,13 +1,18 @@
 package org.jpatterns.gof;
 
-import org.jpatterns.core.*;
+import org.jpatterns.core.DesignPattern;
+import org.jpatterns.core.Type;
 
-import java.lang.annotation.*;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 /**
  * <b>Intent [GoF, pg 195]:</b> Use sharing to support large numbers of
  * fine-grained objects efficiently.
- * <p/>
+ * <p>
  * <img alt="Flyweight Structure" src="http://www.jpatterns.org/uml/gof/FlyweightStructure.gif">
  *
  * @author Heinz Kabutz
@@ -17,46 +22,46 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.STRUCTURAL,
-    related = {CompositePattern.class, StatePattern.class,
-        StrategyPattern.class})
+        related = {CompositePattern.class, StatePattern.class,
+                StrategyPattern.class})
 public @interface FlyweightPattern {
-  Class[] participants() default {};
-
-  String comment() default "";
-
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface FlyweightFactory {
     Class[] participants() default {};
 
     String comment() default "";
-  }
 
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface Flyweight {
-    Class[] participants() default {};
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface FlyweightFactory {
+        Class[] participants() default {};
 
-    String comment() default "";
-  }
+        String comment() default "";
+    }
 
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface UnsharedConcreteFlyweight {
-    Class[] participants() default {};
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface Flyweight {
+        Class[] participants() default {};
 
-    String comment() default "";
-  }
+        String comment() default "";
+    }
 
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface ConcreteFlyweight {
-    Class[] participants() default {};
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface UnsharedConcreteFlyweight {
+        Class[] participants() default {};
 
-    String comment() default "";
-  }
+        String comment() default "";
+    }
+
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface ConcreteFlyweight {
+        Class[] participants() default {};
+
+        String comment() default "";
+    }
 }

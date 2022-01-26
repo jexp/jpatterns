@@ -1,17 +1,22 @@
 package org.jpatterns.gof;
 
-import org.jpatterns.core.*;
+import org.jpatterns.core.DesignPattern;
+import org.jpatterns.core.Type;
 
-import java.lang.annotation.*;
+import java.lang.annotation.Documented;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
 
 /**
  * <b>Intent [GoF, pg 107]:</b> Define an interface for creating an object, but
  * let subclasses decide which class to instantiate. Factory Method lets a class
  * defer instantiation to subclasses.
- * <p/>
+ * <p>
  * This pattern refers to the GoF factory method, which differs greatly from the
  * static factory method commonly found in the refactoring literature.
- * <p/>
+ * <p>
  * <img alt="Factory Method Structure" src="http://www.jpatterns.org/uml/gof/FactoryMethodStructure.gif">
  *
  * @author Heinz Kabutz
@@ -21,46 +26,46 @@ import java.lang.annotation.*;
 @Target(ElementType.TYPE)
 @Documented
 @DesignPattern(type = Type.CREATIONAL,
-    related = {AbstractFactoryPattern.class, TemplateMethodPattern.class,
-        PrototypePattern.class})
+        related = {AbstractFactoryPattern.class, TemplateMethodPattern.class,
+                PrototypePattern.class})
 public @interface FactoryMethodPattern {
-  Class[] participants() default {};
-
-  String comment() default "";
-
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface Creator {
     Class[] participants() default {};
 
     String comment() default "";
-  }
 
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface Product {
-    Class[] participants() default {};
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface Creator {
+        Class[] participants() default {};
 
-    String comment() default "";
-  }
+        String comment() default "";
+    }
 
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface ConcreteCreator {
-    Class[] participants() default {};
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface Product {
+        Class[] participants() default {};
 
-    String comment() default "";
-  }
+        String comment() default "";
+    }
 
-  @Retention(RetentionPolicy.RUNTIME)
-  @Target(ElementType.TYPE)
-  @Documented
-  public @interface ConcreteProduct {
-    Class[] participants() default {};
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface ConcreteCreator {
+        Class[] participants() default {};
 
-    String comment() default "";
-  }
+        String comment() default "";
+    }
+
+    @Retention(RetentionPolicy.RUNTIME)
+    @Target(ElementType.TYPE)
+    @Documented
+    public @interface ConcreteProduct {
+        Class[] participants() default {};
+
+        String comment() default "";
+    }
 }
